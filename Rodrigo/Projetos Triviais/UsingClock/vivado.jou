@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Sep 17 08:20:15 2014
+# Process ID: 4324
+# Log file: C:/SDR_P/1/UsingClock/vivado.log
+# Journal file: C:/SDR_P/1/UsingClock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\SDR_P\1\UsingClock\UsingClock.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+open_hw_target
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_project
+create_project UsingSegmentDisplays C:/SDR_P/1/UsingSegmentDisplays -part xc7a100tcsg324-3
+add_files -norecurse {H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/TopTrivial.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/Clock_divider.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/SegmentDecoder.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/DidplayControl.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/Binary_to_BCD16.vhd}
+import_files -force -norecurse
+import_files -fileset constrs_1 -force -norecurse C:/SDR_P/1/UsingClock/UsingClock.srcs/constrs_1/new/SDR_const.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+open_hw_target
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

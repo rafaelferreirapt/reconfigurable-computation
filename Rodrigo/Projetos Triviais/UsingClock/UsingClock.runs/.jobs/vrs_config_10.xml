@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="E:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/SDR_P/1/UsingClock/UsingClock.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

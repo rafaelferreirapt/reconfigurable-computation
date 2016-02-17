@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Sep 17 08:20:15 2014
+# Process ID: 4324
+# Log file: C:/SDR_P/1/UsingClock/vivado.log
+# Journal file: C:/SDR_P/1/UsingClock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\SDR_P\1\UsingClock\UsingClock.xpr}
+INFO: [Project 1-313] Project file moved from 'H:/SDR_P/1/UsingClock' since last save.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 817.871 ; gain = 74.070
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Sep 17 08:25:05 2014] Launched synth_1...
+Run output will be captured here: C:/SDR_P/1/UsingClock/UsingClock.runs/synth_1/runme.log
+[Wed Sep 17 08:25:05 2014] Launched impl_1...
+Run output will be captured here: C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2014.2
+  **** Build date : Jun 11 2014-13:29:07
+    ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+****** Xilinx hw_server v2014.2
+  **** Build date : Jun 11 2014-13:29:07
+    ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+INFO: [Labtools 27-2286] Connecting to vcse_server host localhost port 60001
+INFO: [Labtools 27-109] Started Vivado Cse Server instance on port: 60001
+INFO: [Labtools 27-2286] Connecting to vcse_server host localhost port 60001
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 831.133 ; gain = 2.586
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2286] Connecting to vcse_server host localhost port 60001
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+open_hw_target
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2154] Reading 3825880 bytes from file C:/SDR_P/1/UsingClock/UsingClock.runs/impl_1/TopTrivial.bit...
+INFO: [Labtools 27-32] Done pin status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 945.539 ; gain = 108.152
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_project
+create_project UsingSegmentDisplays C:/SDR_P/1/UsingSegmentDisplays -part xc7a100tcsg324-3
+add_files -norecurse {H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/TopTrivial.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/Clock_divider.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/SegmentDecoder.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/DidplayControl.vhd H:/MostFrequentlyNeeded___2014/Education2011/2013_2014/Semester2/CR/AulasPraticas/CR_Aula1_2014_9_10_February/Binario_BCD/Binary_to_BCD16.vhd}
+import_files -force -norecurse
+import_files -fileset constrs_1 -force -norecurse C:/SDR_P/1/UsingClock/UsingClock.srcs/constrs_1/new/SDR_const.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Sep 17 08:38:08 2014] Launched synth_1...
+Run output will be captured here: C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/synth_1/runme.log
+[Wed Sep 17 08:38:08 2014] Launched impl_1...
+Run output will be captured here: C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/runme.log
+open_hw
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2286] Connecting to vcse_server host localhost port 60001
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274505419A]
+open_hw_target
+INFO: [Labtools 27-147] vcse_server: TCF plugin connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: TCF Plugin connection established with hw_server.
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/TopTrivial.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2154] Reading 3825880 bytes from file C:/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/TopTrivial.bit...
+INFO: [Labtools 27-32] Done pin status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 970.453 ; gain = 24.914
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 17 08:45:27 2014...

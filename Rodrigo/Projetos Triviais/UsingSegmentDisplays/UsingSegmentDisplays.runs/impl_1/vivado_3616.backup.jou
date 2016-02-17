@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jan 14 16:57:53 2016
+# Process ID: 3616
+# Current directory: E:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1
+# Command line: vivado.exe -log TopTrivial.vdi -applog -messageDb vivado.pb -mode batch -source TopTrivial.tcl -notrace
+# Log file: E:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1/TopTrivial.vdi
+# Journal file: E:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TopTrivial.tcl -notrace

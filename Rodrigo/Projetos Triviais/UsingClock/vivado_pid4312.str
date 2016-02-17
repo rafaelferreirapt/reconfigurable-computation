@@ -1,0 +1,93 @@
+/*
+
+Vivado v2014.2 (64-bit)
+SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+Process ID: 4312
+
+Current time: 	9/16/14 9:26:13 PM
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1600x1200
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.2/tps/win64/jre
+
+User name: 	iouliia
+User directory: H:/SDR_P/1/UsingClock
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Gui allocated memory:	122 mb
+Gui max memory:		3,066 mb
+Engine allocated memory: 500 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// co:P (cg:JFrame):  Opening project 'H:\SDR_P\1\UsingClock\UsingClock.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 mb (+61999kb) [00:00:02]
+// [Engine Memory]: 403 mb (+270612kb) [00:00:02]
+// [Engine Memory]: 429 mb (+27602kb) [00:00:03]
+// [GUI Memory]: 66 mb (+4555kb) [00:00:03]
+// [GUI Memory]: 86 mb (+21251kb) [00:00:03]
+// [Engine Memory]: 440 mb (+11337kb) [00:00:03]
+// [Engine Memory]: 441 mb (+1355kb) [00:00:04]
+// [Engine Memory]: 490 mb (+51593kb) [00:00:04]
+// [Engine Memory]: 492 mb (+1835kb) [00:00:04]
+// [Engine Memory]: 495 mb (+3358kb) [00:00:04]
+// [Engine Memory]: 496 mb (+507kb) [00:00:04]
+// [Engine Memory]: 498 mb (+2379kb) [00:00:04]
+// [Engine Memory]: 499 mb (+1101kb) [00:00:04]
+// Tcl Message: open_project {H:\SDR_P\1\UsingClock\UsingClock.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 500 mb (+1298kb) [00:00:05]
+dismissDialog("Opening project 'H:\\SDR_P\\1\\UsingClock\\UsingClock.xpr'"); // co:P (cg:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 503 mb (+3051kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 509 MB. GUI used memory: 34 MB. Current time: 9/16/14 9:26:15 PM
+// [Engine Memory]: 509 mb (+6303kb) [00:00:07]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopTrivial - Behavioral (SDR_first.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopTrivial - Behavioral (SDR_first.vhd)]", 1); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopTrivial - Behavioral (SDR_first.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopTrivial - Behavioral (SDR_first.vhd)]", 1, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 21, true); // w:X (v:w, cg:JFrame) - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 21); // w:X (v:w, cg:JFrame)
+// [Engine Memory]: 510 mb (+782kb) [00:00:19]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 24, true); // w:X (v:w, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 25, false); // w:X (v:w, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [Engine Memory]: 530 mb (+21114kb) [00:00:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 530 MB. GUI used memory: 39 MB. Current time: 9/16/14 9:26:35 PM
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ab:JMenuItem (ag:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// V:g (cg:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, V:g)
+// co:P (V:g):  Open Server : addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, co:P)
