@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:Y:/Development/ect_ua/reconfigurable-computation/Rafael/Nexys4_Master.xdc rfile:../../../../../../Nexys4_Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E3 [get_ports clk]
+set_property src_info {type:XDC file:1 line:191 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C12 [get_ports btnCpuReset]
+set_property src_info {type:XDC file:1 line:192 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Sep 16 21:29:08 2014
+# Process ID: 4768
+# Log file: H:/SDR_P/1/UsingClock/vivado.log
+# Journal file: H:/SDR_P/1/UsingClock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:\SDR_P\1\UsingClock\UsingClock.xpr}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw

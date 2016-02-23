@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../simulate_clock_divider.srcs/sources_1/new/MyTop.vhd"
+vhdl xil_defaultlib  "../../../simulate_clock_divider.srcs/sim_1/new/Simulation.vhd"
+
+# Do not sort compile order
+nosort

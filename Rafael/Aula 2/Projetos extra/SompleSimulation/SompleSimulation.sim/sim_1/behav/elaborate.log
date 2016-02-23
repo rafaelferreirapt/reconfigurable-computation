@@ -1,0 +1,14 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 15b979657b5f4e508b03c4f304b4b6a2 --debug typical --relax --mt 2 -L work -L secureip --snapshot for_example_behav work.for_example -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity work.ForSim [forsim_default]
+Compiling architecture behavior of entity work.for_example
+Built simulation snapshot for_example_behav

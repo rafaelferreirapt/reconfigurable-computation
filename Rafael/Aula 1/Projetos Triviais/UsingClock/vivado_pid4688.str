@@ -1,0 +1,87 @@
+/*
+
+Vivado v2014.2 (64-bit)
+SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+Process ID: 4688
+
+Current time: 	9/16/14 9:27:54 PM
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1600x1200
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.2/tps/win64/jre
+
+User name: 	iouliia
+User directory: H:/SDR_P/1/UsingClock
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Gui allocated memory:	122 mb
+Gui max memory:		3,066 mb
+Engine allocated memory: 490 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// co:P (cg:JFrame):  Opening project 'H:\SDR_P\1\UsingClock\UsingClock.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 mb (+60986kb) [00:00:02]
+// [Engine Memory]: 388 mb (+255416kb) [00:00:02]
+// [Engine Memory]: 414 mb (+27631kb) [00:00:03]
+// [GUI Memory]: 66 mb (+5457kb) [00:00:03]
+// [Engine Memory]: 419 mb (+5255kb) [00:00:03]
+// [GUI Memory]: 85 mb (+19793kb) [00:00:04]
+// [Engine Memory]: 429 mb (+9887kb) [00:00:04]
+// [Engine Memory]: 434 mb (+5783kb) [00:00:04]
+// [Engine Memory]: 483 mb (+51290kb) [00:00:04]
+// [Engine Memory]: 484 mb (+1236kb) [00:00:04]
+// [Engine Memory]: 485 mb (+794kb) [00:00:04]
+// [Engine Memory]: 486 mb (+942kb) [00:00:04]
+// [Engine Memory]: 487 mb (+1310kb) [00:00:04]
+// Tcl Message: open_project {H:\SDR_P\1\UsingClock\UsingClock.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 490 mb (+2617kb) [00:00:05]
+dismissDialog("Opening project 'H:\\SDR_P\\1\\UsingClock\\UsingClock.xpr'"); // co:P (cg:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 494 mb (+4255kb) [00:00:06]
+// [Engine Memory]: 498 mb (+3825kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 498 MB. GUI used memory: 35 MB. Current time: 9/16/14 9:27:56 PM
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 24, true); // w:X (v:w, cg:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 498 mb (+409kb) [00:00:08]
+// Tcl Message: open_hw 
+// [Engine Memory]: 500 mb (+1642kb) [00:00:08]
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Open recent target"); // h:k (JPanel:JComponent, cg:JFrame)
+// [Engine Memory]: 500 mb (+61kb) [00:00:10]
+selectMenuItem((HResource) null, "localhost:60001,localhost:3121,xilinx_tcf/Digilent/210274505419A,PARAM.FREQUENCY:15000000"); // ab:JMenuItem (ag:JPopupMenu, cg:JFrame)
+// co:P (cg:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -host localhost -port 60001 -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// [Engine Memory]: 504 mb (+4603kb) [00:00:35]
+// Elapsed time: 30 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, co:P)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// [Engine Memory]: 506 mb (+1794kb) [00:01:00]

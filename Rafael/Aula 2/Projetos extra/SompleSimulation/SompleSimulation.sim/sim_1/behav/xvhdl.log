@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Valeri/Desktop/Aula2_22Feb2016/ToElearningProjects/SompleSimulation/SompleSimulation.srcs/sources_1/new/ForSim.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity ForSim
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Valeri/Desktop/Aula2_22Feb2016/ToElearningProjects/SompleSimulation/SompleSimulation.srcs/sim_1/new/Sim.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity for_example

@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 16 15:32:15 2016
+# Process ID: 1012
+# Current directory: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.runs/impl_1
+# Command line: vivado.exe -log my.vdi -applog -messageDb vivado.pb -mode batch -source my.tcl -notrace
+# Log file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.runs/impl_1/my.vdi
+# Journal file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source my.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Nexys4_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 436.754 ; gain = 246.902
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 441.680 ; gain = 4.926

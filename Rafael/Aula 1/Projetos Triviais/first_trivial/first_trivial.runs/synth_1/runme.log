@@ -1,0 +1,29 @@
+
+*** Running vivado
+    with args -log my.vds -m64 -mode batch -messageDb vivado.pb -notrace -source my.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source my.tcl -notrace
+Command: synth_design -top my -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 262.184 ; gain = 91.301
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2757] this construct is only supported in VHDL 1076-2008 [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.srcs/sources_1/new/my.vhd:20]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.srcs/sources_1/new/my.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 298.285 ; gain = 127.402
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 16 15:52:24 2016...

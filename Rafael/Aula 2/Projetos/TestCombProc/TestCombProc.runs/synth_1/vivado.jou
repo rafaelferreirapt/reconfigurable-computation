@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Feb 21 19:22:28 2015
+# Process ID: 4036
+# Log file: I:/SDR_P/1/TestCombProc/TestCombProc.runs/synth_1/TestCombProc.vds
+# Journal file: I:/SDR_P/1/TestCombProc/TestCombProc.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TestCombProc.tcl

@@ -1,0 +1,5 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SDR_P/1/SynSym/SynSym.srcs/sources_1/new/Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SDR_P/1/SynSym/SynSym.srcs/sim_1/new/SimCount.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity for_example

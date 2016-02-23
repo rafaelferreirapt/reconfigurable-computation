@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Feb 20 17:49:34 2015
+# Process ID: 6136
+# Log file: F:/SDR_P/1/simulate_clock_divider/simulate_clock_divider.sim/sim_1/behav/webtalk.log
+# Journal file: F:/SDR_P/1/simulate_clock_divider/simulate_clock_divider.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source F:/SDR_P/1/simulate_clock_divider/simulate_clock_divider.sim/sim_1/behav/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
