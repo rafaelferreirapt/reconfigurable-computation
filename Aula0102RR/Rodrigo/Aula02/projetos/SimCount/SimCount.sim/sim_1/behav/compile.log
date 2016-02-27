@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Valeri/Desktop/Aula2_22Feb2016/ToElearningProjects/SimCount/SimCount.srcs/sources_1/new/Top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TestSeqProc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Valeri/Desktop/Aula2_22Feb2016/ToElearningProjects/SimCount/SimCount.srcs/sim_1/imports/new/Simulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench

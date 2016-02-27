@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../CountProcSeq.srcs/sources_1/new/Top.vhd"
+vhdl xil_defaultlib  "../../../CountProcSeq.srcs/sim_1/imports/new/Simulation.vhd"
+
+# Do not sort compile order
+nosort
