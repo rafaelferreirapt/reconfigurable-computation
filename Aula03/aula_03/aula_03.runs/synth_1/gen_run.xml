@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1456240516">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1456670804">
+  <File Type="RDS-DCP" Name="ex3.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RDS-DCP" Name="ex21d.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ex3_utilization_synth.pb"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RDS-UTIL-PB" Name="ex21d_utilization_synth.pb"/>
+  <File Type="RDS-PROPCONSTRS" Name="ex3_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ex3.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="PA-TCL" Name="ex21d.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ex21d_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="ex21d.vds"/>
-  <File Type="RDS-UTIL" Name="ex21d_utilization_synth.rpt"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ex21d_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ex21d_timing_summary_synth.pb"/>
+  <File Type="RDS-RDS" Name="ex3.vds"/>
+  <File Type="RDS-UTIL" Name="ex3_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ex3_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ex3_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/ex21d.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ex3.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula0102RR/Rodrigo/Aula02/aula02/aula02.srcs/sources_1/new/ex21d.vhd"/>
-        <Attr Name="ImportTime" Val="1456240510"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ex21b.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ex2.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula0102RR/Rodrigo/Aula02/aula02/aula02.srcs/sources_1/new/ex21b.vhd"/>
-        <Attr Name="ImportTime" Val="1456238605"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ex13.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ex1.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula0102RR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.srcs/sources_1/new/ex13.vhd"/>
-        <Attr Name="ImportTime" Val="1456236977"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/my.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ex5.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula0102RR/Rodrigo/Projetos Triviais/first_trivial/first_trivial.srcs/sources_1/new/my.vhd"/>
-        <Attr Name="ImportTime" Val="1455638077"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ex4.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ex21d"/>
+      <Option Name="TopModule" Val="ex3"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

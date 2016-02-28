@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Rodrigo/Aula02/aula02/aula02.runs/synth_1'
+HD_PWD='Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/aula_03.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ex21d.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ex21d.tcl
+EAStep vivado -log ex3.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ex3.tcl
