@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_ARITH.ALL;		-- additional libraries
 use IEEE.STD_LOGIC_UNSIGNED.ALL;	-- for conversion functions
 
 entity clock_divider is
-generic 	(	how_fast			: integer := 26  );		
+generic 	(	how_fast			: integer := 28  );		
 port 		( 	clk		            : in std_logic;
 				divided_clk		    : out std_logic	);
 end clock_divider;
