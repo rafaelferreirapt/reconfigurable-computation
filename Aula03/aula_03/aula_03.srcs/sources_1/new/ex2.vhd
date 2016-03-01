@@ -12,7 +12,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity ex2 is
 --  Port ( );
-Port ( sw : in std_logic_vector (15 downto 0);
+Port (  sw  :  in std_logic_vector (15 downto 0);
         led : out std_logic_vector (15 downto 0));
 end ex2;
 
