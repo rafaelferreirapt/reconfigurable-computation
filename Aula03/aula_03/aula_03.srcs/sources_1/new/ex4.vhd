@@ -37,67 +37,50 @@ entity ex4 is
 Port ( sw : in std_logic_vector (15 downto 0);
        seg : out STD_LOGIC_VECTOR (6 downto 0);
        an : out STD_LOGIC_VECTOR (7 downto 0);
-       led : out STD_LOGIC_VECTOR (8 downto 0));
+       led : out STD_LOGIC_VECTOR (15 downto 0);
+       clk : in std_logic);
 end ex4;
 
 architecture Behavioral of ex4 is
 signal divided_clk  : std_logic;
-variable res : std_logic_vector(8 downto 0);
+signal counter : std_logic_vector(1 downto 0);
 
-procedure display(variable input : std_logic_vector (8 downto 0);
-                  variable sw1   : std_logic_vector (7 downto 0);
-                  variable sw2   : std_logic_vector (7 downto 0);
-                  variable op    : std_logic_vector (1 downto 0))
-is 
-begin
-if sw2 = "00000000" and op = "11" then
-    seg <= "1000000";
-    an <= "11111110";
-elsif (to_integer(unsigned(sw1)) < to_integer(unsigned(sw2))) and op = "01" then
-    seg <= "0111111";
-    an <= "01111111";
-    led <= input;
-else
-    led <= input;
-end if;
-end display;
-
-function add(input: std_logic_vector (15 downto 0)) return std_logic_vector 
-    is variable res: std_logic_vector (8 downto 0);
+function add(input: std_logic_vector (15 downto 0)) return integer 
+    is variable res: integer range 0 to 512;
     
 begin
-    
-    res <= std_logic_vector(unsigned(input(15 downto 8) + unsigned(input(7 downto 0)));
+   
+    res := conv_integer(input(15 downto 8)) + conv_integer(input(7 downto 0));
     
     return res;
 end add;
 
-function sub(input: std_logic_vector (15 downto 0)) return std_logic_vector 
-    is variable res: std_logic_vector (8 downto 0);
+function sub(input: std_logic_vector (15 downto 0)) return integer 
+    is variable res: integer range -256 to 256;
     
 begin
     
-    res <= std_logic_vector(unsigned(input(15 downto 8) - unsigned(input(7 downto 0)));
+    res := conv_integer(input(15 downto 8)) - conv_integer(input(7 downto 0));
     
     return res;
 end sub;
 
-function mult(input: std_logic_vector (15 downto 0)) return std_logic_vector 
-    is variable res: std_logic_vector (8 downto 0);
+function mult(input: std_logic_vector (15 downto 0)) return integer 
+    is variable res: integer range 0 to 65536;
     
 begin
     
-    res <= std_logic_vector(unsigned(input(15 downto 8) * unsigned(input(7 downto 0)));
+    res := conv_integer(input(15 downto 8)) * conv_integer(input(7 downto 0));
     
     return res;
 end mult;
 
-function div(input: std_logic_vector (15 downto 0)) return std_logic_vector 
-    is variable res: std_logic_vector (8 downto 0);
+function div(input: std_logic_vector (15 downto 0)) return integer 
+    is variable res: integer range 0 to 256;
     
 begin
     
-    res <= std_logic_vector(unsigned(input(15 downto 8) / unsigned(input(7 downto 0)));
+    res := conv_integer(input(15 downto 8)) / conv_integer(input(7 downto 0));
     
     return res;
 end div;
@@ -106,18 +89,47 @@ begin
 
 process(divided_clk)
 begin
-res := add(sw);
-display(res,sw(15 downto 8),sw(7 downto 0),"00");
-res := sub(sw);
-display(res,sw(15 downto 8),sw(7 downto 0),"01");
-res := mult(sw);
-display(res,sw(15 downto 8),sw(7 downto 0),"10");
-res := div(sw);
-display(res,sw(15 downto 8),sw(7 downto 0),"11");
-
+if rising_edge(divided_clk) then
+    if counter = "00" then
+        counter <= "01";
+    elsif counter = "01" then
+        counter <= "10";
+    elsif counter = "10" then
+        counter <= "11";
+    else
+        counter <= "00";
+    end if;
+end if;
 end process;
 
-div:    entity xil_defaultlib.clock_divider
-        port map (clk, divided_clk);
+process(divided_clk, counter)
+begin
+    an <= "11111111";
+    if counter = "00" then
+        led <= std_logic_vector(to_unsigned(add(sw),16));  
+    elsif counter = "01" then
+        if conv_integer(sw(15 downto 8)) < conv_integer(sw(7 downto 0)) then
+            seg <= "0111111";
+            an <= "01111111";
+            led <= not std_logic_vector(to_unsigned(sub(sw),16));
+        else
+            led <= std_logic_vector(to_unsigned(sub(sw),16));
+        end if;
+    elsif counter = "10" then
+        led <= std_logic_vector(to_unsigned(mult(sw),16));
+    elsif counter = "11" then
+        if sw(7 downto 0) = "00000000" then
+            seg <= "1000000";
+            an <= "11111110";
+            led <= "0000000000000000";
+        else
+            led <= std_logic_vector(to_unsigned(div(sw),16));
+        end if;
+     end if;
+    
+end process;
+
+aa:    entity work.clock_divider
+       port map (clk, divided_clk);
 
 end Behavioral;
