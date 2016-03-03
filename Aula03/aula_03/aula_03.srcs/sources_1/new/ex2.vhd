@@ -22,29 +22,29 @@ architecture Behavioral of ex2 is
     variable count : integer range 0 to 14;
 
     begin
-    for i in sw'range loop
+    for i in input'range loop
         if i /= 0 then 
-            if sw(i) = '1' and sw(i-1) = '1' then count := count+1;
+            if input(i) = '1' and input(i-1) = '1' then count := count+1;
             end if;
         end if;
     end loop;
     case count is
-           when 0 => leds := "000000000000000";
-           when 1 => leds := "000000000000001";
-           when 2 => leds := "000000000000011";
-           when 3 => leds := "000000000000111";
-           when 4 => leds := "000000000001111";
-           when 5 => leds := "000000000011111";
-           when 6 => leds := "000000000111111";
-           when 7 => leds := "000000001111111";
-           when 8 => leds := "000000011111111";
-           when 9 => leds := "000000111111111";
-           when 10 => leds := "000001111111111";
-           when 11 => leds := "000011111111111";
-           when 12 => leds := "000111111111111";
-           when 13 => leds := "001111111111111";
-           when 14 => leds := "011111111111111";
-           when 15 => leds := "111111111111111";
+           when 0 => leds := "0000000000000000";
+           when 1 => leds := "0000000000000001";
+           when 2 => leds := "0000000000000011";
+           when 3 => leds := "0000000000000111";
+           when 4 => leds := "0000000000001111";
+           when 5 => leds := "0000000000011111";
+           when 6 => leds := "0000000000111111";
+           when 7 => leds := "0000000001111111";
+           when 8 => leds := "0000000011111111";
+           when 9 => leds := "0000000111111111";
+           when 10 => leds := "0000001111111111";
+           when 11 => leds := "0000011111111111";
+           when 12 => leds := "0000111111111111";
+           when 13 => leds := "0001111111111111";
+           when 14 => leds := "0011111111111111";
+           when 15 => leds := "0111111111111111";
     end case;
     return leds;
     end pairs;

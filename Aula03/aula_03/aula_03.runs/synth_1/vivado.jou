@@ -2,11 +2,11 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Tue Mar 01 11:24:28 2016
-# Process ID: 6892
-# Current directory: Z:/Desktop/CR/reconfigurable-computation.git/Aula03/aula_03/aula_03.runs/synth_1
-# Command line: vivado.exe -log full_adder.vds -mode batch -messageDb vivado.pb -notrace -source full_adder.tcl
-# Log file: Z:/Desktop/CR/reconfigurable-computation.git/Aula03/aula_03/aula_03.runs/synth_1/full_adder.vds
-# Journal file: Z:/Desktop/CR/reconfigurable-computation.git/Aula03/aula_03/aula_03.runs/synth_1\vivado.jou
+# Start of session at: Tue Mar 01 15:55:54 2016
+# Process ID: 168
+# Current directory: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.runs/synth_1
+# Command line: vivado.exe -log ex1.vds -mode batch -messageDb vivado.pb -notrace -source ex1.tcl
+# Log file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.runs/synth_1/ex1.vds
+# Journal file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source full_adder.tcl -notrace
+source ex1.tcl -notrace

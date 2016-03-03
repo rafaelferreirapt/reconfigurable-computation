@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.runs/synth_1'
+HD_PWD='Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,8 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ex1.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ex1.tcl
+# pre-commands:
+/bin/touch .init_design.begin.rst
+EAStep vivado -log ex1.vdi -applog -m64 -messageDb vivado.pb -mode batch -source ex1.tcl -notrace
+
+

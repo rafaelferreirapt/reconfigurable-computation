@@ -20,8 +20,8 @@ architecture Behavioral of ex1 is
     function left_sw(input: std_logic_vector (15 downto 0)) return std_logic_vector 
     is variable leds: std_logic_vector(15 downto 0);
     begin
-    for i in sw'range loop
-        if sw(i) = '1' then leds(i) := '1'; exit;
+    for i in input'range loop
+        if input(i) = '1' then leds(i) := '1'; exit;
         end if;
     end loop;
     return leds;
