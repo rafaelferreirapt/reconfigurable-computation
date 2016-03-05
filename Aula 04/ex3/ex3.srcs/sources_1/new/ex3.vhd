@@ -7,7 +7,7 @@ entity my is
     Port (  btnC    : in    std_logic;
             sw      : in    std_logic_vector(15 downto 0);
             led     : out   std_logic_vector(15 downto 0));
- 
+
 end my;
 
 architecture Behavioral of my is

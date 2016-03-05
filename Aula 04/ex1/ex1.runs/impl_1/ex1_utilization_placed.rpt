@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sat Mar 05 15:47:48 2016
+| Date         : Sat Mar 05 16:34:37 2016
 | Host         : RAFAELFERRE2C9F running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ex1_utilization_placed.rpt -pb ex1_utilization_placed.pb
 | Design       : ex1
@@ -115,8 +115,8 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   28 |    28 |       210 | 13.33 |
-|   IOB Master Pads           |   14 |       |           |       |
+| Bonded IOB                  |   27 |    27 |       210 | 12.86 |
+|   IOB Master Pads           |   13 |       |           |       |
 |   IOB Slave Pads            |   13 |       |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
@@ -176,7 +176,7 @@ Table of Contents
 +----------+------+---------------------+
 | LDCE     |   32 |        Flop & Latch |
 | IBUF     |   17 |                  IO |
-| OBUF     |   11 |                  IO |
+| OBUF     |   10 |                  IO |
 | LUT6     |    8 |                 LUT |
 | LUT3     |    4 |                 LUT |
 +----------+------+---------------------+

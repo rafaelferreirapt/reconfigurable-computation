@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date             : Sat Mar 05 15:49:04 2016
+| Date             : Sat Mar 05 16:35:27 2016
 | Host             : RAFAELFERRE2C9F running 64-bit major release  (build 9200)
 | Command          : 
 | Design           : ex1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 11.985 |
-| Dynamic (W)              | 11.748 |
-| Device Static (W)        | 0.237  |
+| Total On-Chip Power (W)  | 11.236 |
+| Dynamic (W)              | 11.018 |
+| Device Static (W)        | 0.218  |
 | Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 30.3   |
-| Junction Temperature (C) | 79.7   |
+| Max Ambient (C)          | 33.7   |
+| Junction Temperature (C) | 76.3   |
 | Confidence Level         | Low    |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -53,10 +53,10 @@ Table of Contents
 |   LUT as Logic |     0.039 |       10 |     63400 |            0.02 |
 |   Others       |     0.000 |        2 |       --- |             --- |
 |   Register     |     0.000 |       32 |    126800 |            0.03 |
-| Signals        |     0.169 |       56 |       --- |             --- |
-| I/O            |    11.539 |       28 |       210 |           13.33 |
-| Static Power   |     0.237 |          |           |                 |
-| Total          |    11.985 |          |           |                 |
+| Signals        |     0.168 |       55 |       --- |             --- |
+| I/O            |    10.810 |       27 |       210 |           12.86 |
+| Static Power   |     0.218 |          |           |                 |
+| Total          |    11.236 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -66,9 +66,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.403 |       0.277 |      0.126 |
-| Vccaux    |       1.800 |     0.453 |       0.420 |      0.032 |
-| Vcco33    |       3.300 |     3.251 |       3.247 |      0.004 |
+| Vccint    |       1.000 |     0.387 |       0.276 |      0.111 |
+| Vccaux    |       1.800 |     0.424 |       0.394 |      0.030 |
+| Vcco33    |       3.300 |     3.045 |       3.041 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -133,7 +133,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| ex1  |    11.748 |
+| ex1  |    11.018 |
 +------+-----------+
 
 

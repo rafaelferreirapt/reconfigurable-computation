@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sat Mar 05 15:47:42 2016
+| Date         : Sat Mar 05 16:34:34 2016
 | Host         : RAFAELFERRE2C9F running 64-bit major release  (build 9200)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 6
+             Violations found: 7
 
 2. REPORT DETAILS
 -----------------
@@ -41,10 +41,15 @@ Related violations: <none>
 
 BUFC-1#4 Warning
 Input Buffer Connections  
-Input buffer sw[8]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Input buffer sw[13]_IBUF_inst has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#5 Warning
+Input Buffer Connections  
+Input buffer sw[8]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#6 Warning
 Input Buffer Connections  
 Input buffer sw[9]_IBUF_inst has no loads. An input buffer must drive an internal load.
 Related violations: <none>

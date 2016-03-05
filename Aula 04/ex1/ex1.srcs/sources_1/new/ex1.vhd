@@ -15,7 +15,7 @@ architecture Behavioral of ex1 is
     signal matrix : linhas;
 begin
 
-led(15 downto 13) <= sw(15 downto 13);
+led(15 downto 14) <= sw(15 downto 14);
 
 process(btnC)
 begin
@@ -31,8 +31,7 @@ begin
     for i in matrix(conv_integer(sw(15 downto 14)))'range loop
         led(i) <= matrix(conv_integer(sw(15 downto 14)))(i);
     end loop;
-    led(15) <= sw(15);
-    led(14) <= sw(14);
+    led(15 downto 14) <= sw(15 downto 14);
 end process;
 
 end Behavioral;

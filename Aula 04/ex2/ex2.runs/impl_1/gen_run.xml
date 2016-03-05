@@ -1,2 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchTime="1457125520"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1457198045">
+  <File Type="OPT-DCP" Name="ex2_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="ex2_routed.dcp"/>
+  <File Type="PA-TCL" Name="ex2.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="ex2_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ex2_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="ex2_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ex2.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ex2_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ex2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ex2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ex2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ex2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ex2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ex2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ex2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ex2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ex2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ex2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="ex2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ex2_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ex2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ex2_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="ex2.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="ex2_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ex2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="ex2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ex2_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ex2_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ex2_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="ex2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ex2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ex2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ex2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ex2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ex2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ex2_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ex2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ex2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ex2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ex2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="ex2.bit"/>
+  <File Type="BG-BIN" Name="ex2.bin"/>
+  <File Type="BITSTR-MSK" Name="ex2.msk"/>
+  <File Type="BITSTR-RBT" Name="ex2.rbt"/>
+  <File Type="BITSTR-NKY" Name="ex2.nky"/>
+  <File Type="BITSTR-BMM" Name="ex2_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ex2.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="ex2.sysdef"/>
+  <File Type="BG-BGN" Name="ex2.bgn"/>
+  <File Type="BG-DRC" Name="ex2.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ex2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ex2"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Rodrigo/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula0102RR/Rodrigo/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1456874042"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

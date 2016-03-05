@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sat Mar 05 15:49:04 2016
+| Date         : Sat Mar 05 16:35:26 2016
 | Host         : RAFAELFERRE2C9F running 64-bit major release  (build 9200)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 11
+             Violations found: 12
 
 2. REPORT DETAILS
 -----------------
@@ -41,10 +41,15 @@ Related violations: <none>
 
 BUFC-1#4 Warning
 Input Buffer Connections  
-Input buffer sw[8]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Input buffer sw[13]_IBUF_inst has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#5 Warning
+Input Buffer Connections  
+Input buffer sw[8]_IBUF_inst has no loads. An input buffer must drive an internal load.
+Related violations: <none>
+
+BUFC-1#6 Warning
 Input Buffer Connections  
 Input buffer sw[9]_IBUF_inst has no loads. An input buffer must drive an internal load.
 Related violations: <none>
@@ -84,7 +89,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-5 net(s) have no routable loads. The problem bus(es) and/or net(s) are sw[8]_IBUF, sw[9]_IBUF, sw[10]_IBUF, sw[11]_IBUF, sw[12]_IBUF.
+6 net(s) have no routable loads. The problem bus(es) and/or net(s) are sw[8]_IBUF, sw[9]_IBUF, sw[10]_IBUF, sw[11]_IBUF, sw[12]_IBUF, sw[13]_IBUF.
 Related violations: <none>
 
 
