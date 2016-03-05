@@ -2,56 +2,24 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Fri Mar 04 21:03:10 2016
-# Process ID: 3628
+# Start of session at: Sat Mar 05 17:41:09 2016
+# Process ID: 3188
 # Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent644 Y:\Development\ect_ua\reconfigurable-computation\Aula03\aula_03\aula_03.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3252 Y:\Development\ect_ua\reconfigurable-computation\Aula03\aula_03\aula_03.xpr
 # Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/vivado.log
 # Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/aula_03.xpr
-INFO: [Project 1-313] Project file moved from 'X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula03/aula_03' since last save.
+INFO: [Project 1-313] Project file moved from 'Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
-WARNING: [filemgmt 56-2] IPStaticSourceDir: Could not find the directory 'Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/aula_03.ip_user_files/ipstatic', nor could it be found using path 'X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula03/aula_03/aula_03.ip_user_files/ipstatic'.
+WARNING: [filemgmt 56-2] IPStaticSourceDir: Could not find the directory 'Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/aula_03.ip_user_files/ipstatic', nor could it be found using path 'Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.ip_user_files/ipstatic'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 716.703 ; gain = 168.020
-save_project_as ex3 {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3} -force
-import_files
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
-remove_files {{Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex4.vhd}}
-file delete -force {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex4.vhd}
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 705.094 ; gain = 144.441
+set_property is_enabled true [get_files  Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/aula_03.srcs/sources_1/new/ex3.vhd]
 update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-remove_files {{Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex3.vhd}}
-file delete -force {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex3.vhd}
-remove_files {{Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex2.vhd}}
-file delete -force {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex2.vhd}
-remove_files {{Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex1.vhd}}
-file delete -force {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex1.vhd}
-remove_files {{Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex5.vhd}}
-file delete -force {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/new/ex5.vhd}
-remove_files {{Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/imports/new/clock_divider.vhd}}
-file delete -force {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.srcs/sources_1/imports/new/clock_divider.vhd}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-save_project_as ex1 {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1} -force
-import_files
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-save_project_as ex2 {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex2} -force
-import_files
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-save_project_as ex4 {Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex4} -force
-import_files
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 04 21:11:01 2016...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 05 17:53:22 2016...

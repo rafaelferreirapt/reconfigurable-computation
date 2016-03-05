@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.xpr">
+<Project Version="7" Minor="10" Path="Y:/Development/ect_ua/reconfigurable-computation/Aula03/aula_03/aula_03.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="46b5a8de90af4686b9a4c717536e6d21"/>
@@ -66,7 +66,6 @@
       <File Path="$PSRCDIR/sources_1/new/ex5.vhd">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -80,7 +79,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/ex3.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

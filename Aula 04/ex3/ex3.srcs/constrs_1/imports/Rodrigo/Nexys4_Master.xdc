@@ -5,9 +5,9 @@
 
 ### Clock signal
 ##Bank = 35, Pin name = IO_L12P_T1_MRCC_35,					Sch name = CLK100MHZ
-set_property PACKAGE_PIN E3 [get_ports clk]							
-	set_property IOSTANDARD LVCMOS33 [get_ports clk]
-	create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
+#set_property PACKAGE_PIN E3 [get_ports clk]							
+#	set_property IOSTANDARD LVCMOS33 [get_ports clk]
+#	create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
  
 ## Switches
 ##Bank = 34, Pin name = IO_L21P_T3_DQS_34,					Sch name = SW0
@@ -132,8 +132,8 @@ set_property PACKAGE_PIN P2 [get_ports {led[15]}]
 
 
 
-##7 segment display
-##Bank = 34, Pin name = IO_L2N_T0_34,						Sch name = CA
+#7 segment display
+#Bank = 34, Pin name = IO_L2N_T0_34,						Sch name = CA
 set_property PACKAGE_PIN L3 [get_ports {seg[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
 #Bank = 34, Pin name = IO_L3N_T0_DQS_34,					Sch name = CB
@@ -159,7 +159,7 @@ set_property PACKAGE_PIN L6 [get_ports {seg[6]}]
 ##set_property PACKAGE_PIN M4 [get_ports dp]							
 ##	set_property IOSTANDARD LVCMOS33 [get_ports dp]
 
-##Bank = 34, Pin name = IO_L18N_T2_34,						Sch name = AN0
+#Bank = 34, Pin name = IO_L18N_T2_34,						Sch name = AN0
 set_property PACKAGE_PIN N6 [get_ports {an[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[0]}]
 #Bank = 34, Pin name = IO_L18P_T2_34,						Sch name = AN1
@@ -186,13 +186,14 @@ set_property PACKAGE_PIN M1 [get_ports {an[7]}]
 
 
 
+
 ###Buttons
 ###Bank = 15, Pin name = IO_L3P_T0_DQS_AD1P_15,				Sch name = CPU_RESET
 ##set_property PACKAGE_PIN C12 [get_ports btnCpuReset]				
 #	#set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]
 ##Bank = 15, Pin name = IO_L11N_T1_SRCC_15,					Sch name = BTNC
-#set_property PACKAGE_PIN E16 [get_ports btnC]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnC]
+set_property PACKAGE_PIN E16 [get_ports btnC]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnC]
 ##Bank = 15, Pin name = IO_L14P_T2_SRCC_15,					Sch name = BTNU
 #set_property PACKAGE_PIN F15 [get_ports btnU]						
 #	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
