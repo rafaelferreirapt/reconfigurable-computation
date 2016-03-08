@@ -51,7 +51,7 @@ architecture Behavioral of ex3 is
     begin
        if var = "00000000" then
            bcd :=  "1000000";
-       elsif var = "00000000" then
+       elsif var = "00000001" then
            bcd := "1111001";
        elsif var = "00000010" then
            bcd := "0100100";
@@ -116,13 +116,13 @@ begin
             quo <= "00000000";
         else
             result_quo <= conv_integer(sw(15 downto 8)) / conv_integer(sw(7 downto 0));
-            result_res <= conv_integer(sw(15 downto 8)) rem conv_integer(sw(7 downto 0));
+            result_res <= conv_integer(sw(15 downto 8)) mod conv_integer(sw(7 downto 0));
             
             quo <= std_logic_vector(to_unsigned(result_quo, 8));
             res <= std_logic_vector(to_unsigned(result_res, 8));
         end if;
     end process;
     
-    entity work.clock_divider
-    port map (clk, divided_clk);
+aa:    entity work.clock_divider
+       port map (clk, divided_clk);
 end Behavioral;
