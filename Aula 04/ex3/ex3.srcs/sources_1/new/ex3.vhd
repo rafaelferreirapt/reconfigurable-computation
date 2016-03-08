@@ -22,7 +22,7 @@ architecture Behavioral of my is
     begin
        if var = "00000000" then
            bcd :=  "1000000";
-       elsif var = "00000000" then
+       elsif var = "00000001" then
            bcd := "1111001";
        elsif var = "00000010" then
            bcd := "0100100";
@@ -53,7 +53,7 @@ architecture Behavioral of my is
        elsif var = "00001111" then
            bcd := "0001110";
        else
-           bcd := "1111111";
+           bcd := "1111001";
        end if;
        return bcd;
     end to_bcd;
