@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex3/ex3.xpr">
+<Project Version="7" Minor="10" Path="Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula 04/ex3/ex3.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e2983949191d45f1adc6600fd47a9366"/>
