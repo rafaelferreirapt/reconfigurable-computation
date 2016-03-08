@@ -3,7 +3,11 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
+<<<<<<< HEAD
 <Project Version="7" Minor="10" Path="X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula 04/ex3/ex3.xpr">
+=======
+<Project Version="7" Minor="10" Path="Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula 04/ex3/ex3.xpr">
+>>>>>>> origin/master
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e2983949191d45f1adc6600fd47a9366"/>

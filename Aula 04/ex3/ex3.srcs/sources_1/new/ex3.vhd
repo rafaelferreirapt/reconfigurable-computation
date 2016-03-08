@@ -4,7 +4,8 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity my is
-    Port (  btnC    : in    std_logic;
+    Port (  clk     : in    std_logic;
+            btnC    : in    std_logic;
             sw      : in    std_logic_vector(15 downto 0);
             led     : out   std_logic_vector(15 downto 0);
             seg     : out STD_LOGIC_VECTOR (6 downto 0);
@@ -62,10 +63,12 @@ begin
 led(15 downto 13) <= sw(15 downto 13);
 led(2 downto 0) <= matrix(conv_integer(sw(15 downto 14)))(conv_integer(sw(13)));
 
-process(btnC)
+process(clk)
 begin
-    if btnC = '1' then
-        matrix(conv_integer(sw(15 downto 14)))(conv_integer(sw(13))) <= sw(2 downto 0);
+    if rising_edge(clk) then
+        if btnC = '1' then
+            matrix(conv_integer(sw(15 downto 14)))(conv_integer(sw(13))) <= sw(2 downto 0);
+        end if;
     end if;
 end process;
 

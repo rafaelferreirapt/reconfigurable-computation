@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sat Mar 05 17:50:48 2016
-| Host         : RAFAELFERRE2C9F running 64-bit major release  (build 9200)
+| Date         : Tue Mar 08 14:45:56 2016
+| Host         : RODRIGOCUNH821E running 64-bit major release  (build 9200)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 20
+             Violations found: 12
 
 2. REPORT DETAILS
 -----------------
@@ -85,46 +85,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PDRC-153#1 Warning
-Gated clock check  
-Net matrix[0][0] is a gated clock net sourced by a combinational pin matrix_reg[0][0][2]_i_1/O, cell matrix_reg[0][0][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#2 Warning
-Gated clock check  
-Net matrix[0][1] is a gated clock net sourced by a combinational pin matrix_reg[0][1][2]_i_1/O, cell matrix_reg[0][1][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#3 Warning
-Gated clock check  
-Net matrix[1][0] is a gated clock net sourced by a combinational pin matrix_reg[1][0][2]_i_1/O, cell matrix_reg[1][0][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#4 Warning
-Gated clock check  
-Net matrix[1][1] is a gated clock net sourced by a combinational pin matrix_reg[1][1][2]_i_1/O, cell matrix_reg[1][1][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
-Net matrix[2][0] is a gated clock net sourced by a combinational pin matrix_reg[2][0][2]_i_1/O, cell matrix_reg[2][0][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#6 Warning
-Gated clock check  
-Net matrix[2][1] is a gated clock net sourced by a combinational pin matrix_reg[2][1][2]_i_1/O, cell matrix_reg[2][1][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
-Gated clock check  
-Net matrix[3][0] is a gated clock net sourced by a combinational pin matrix_reg[3][0][2]_i_1/O, cell matrix_reg[3][0][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#8 Warning
-Gated clock check  
-Net matrix[3][1] is a gated clock net sourced by a combinational pin matrix_reg[3][1][2]_i_1/O, cell matrix_reg[3][1][2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 RTSTAT-10#1 Warning
