@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.srcs/sources_1/new/ex2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ex2
+WARNING: [VRFC 10-393] cannot access 'sw' from inside pure function 'pairs'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.srcs/sources_1/new/ex2.vhd:25]
+WARNING: [VRFC 10-393] cannot access 'sw' from inside pure function 'pairs'. [Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula03/aula_03/aula_03.srcs/sources_1/new/ex2.vhd:27]
