@@ -2,11 +2,11 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Sat Mar 05 16:34:02 2016
-# Process ID: 5852
-# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1
+# Start of session at: Fri Mar 11 10:20:47 2016
+# Process ID: 2092
+# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex51/ex51.runs/impl_1
 # Command line: vivado.exe -log ex1.vdi -applog -messageDb vivado.pb -mode batch -source ex1.tcl -notrace
-# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1/ex1.vdi
-# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1\vivado.jou
+# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex51/ex51.runs/impl_1/ex1.vdi
+# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex51/ex51.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source ex1.tcl -notrace

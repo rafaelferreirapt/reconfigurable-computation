@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1'
+HD_PWD='Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex51/ex51.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

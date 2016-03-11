@@ -4,34 +4,58 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ex1 is
-    Port ( btnC : in  std_logic;
+        generic(number_of_bits : integer:=16);
+    Port ( clk  : in  std_logic;
+           btnC : in  std_logic;
            sw   : in  std_logic_vector(15 downto 0);
-           led  : out std_logic_vector(15 downto 0));
+           led  : out std_logic_vector(4 downto 0));
 end ex1;
 
 architecture Behavioral of ex1 is
-    type colunas is array (7 downto 0) of std_logic;
-    type linhas is array (3 downto 0) of colunas;
-    signal matrix : linhas;
+    type state_type is (initial_state, final_state); -- enumeraçao de estados
+    signal C_S, N_S : state_type;
+    signal index, next_index : integer range 0 to number_of_bits-1;
+    signal Res, next_Res : integer range 0 to number_of_bits;
+    signal n_o_ones, next_n_o_ones : integer range 0 to number_of_bits;
 begin
 
-led(15 downto 14) <= sw(15 downto 14);
-
-process(btnC)
+process(clk) -- processo sequencial
 begin
-    if btnC = '1' then
-        for i in matrix(conv_integer(sw(15 downto 14)))'range loop
-            matrix(conv_integer(sw(15 downto 14)))(i) <= sw(i);
-        end loop;
+    if rising_edge(clk) then
+        if (btnC='1') then
+            C_S <= initial_state;
+            index <= 0;
+            n_o_ones <= 0;
+            Res <= 0;
+        else
+            C_S <= N_S;   -- indice do vetor
+            index <= next_index;
+            n_o_ones <= next_n_o_ones; -- número de uns
+            Res <= next_Res; -- resultado
+        end if;
     end if;
 end process;
-
-process(sw(15 downto 14), matrix)
+process(C_S, Sw, index, n_o_ones, Res) -- processo combinatório
 begin
-    for i in matrix(conv_integer(sw(15 downto 14)))'range loop
-        led(i) <= matrix(conv_integer(sw(15 downto 14)))(i);
-    end loop;
-    led(15 downto 14) <= sw(15 downto 14);
-end process;
-
-end Behavioral;
+    N_S     <= C_S;
+    next_index <= index;
+    next_n_o_ones <= n_o_ones;
+    next_Res    <= Res;
+    case C_S is
+        when initial_state => next_index <= index + 1;
+            N_S <= initial_state;
+            next_n_o_ones <= n_o_ones + conv_integer(sw(index));
+            if(index = number_of_bits-1) then
+                N_S <= final_state;
+            end if;
+        when final_state => N_S <= initial_state;
+            next_Res <= n_o_ones;
+            next_n_o_ones <= 0;
+            next_index <= 0;
+        when others => N_S <= initial_state;
+     end case;
+ end process;
+ 
+ led <= conv_std_logic_vector(Res, 5);
+ 
+ end Behavioral;
