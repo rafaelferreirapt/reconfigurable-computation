@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Fri Mar 11 23:47:36 2016
-# Process ID: 4808
+# Start of session at: Fri Mar 11 23:46:07 2016
+# Process ID: 3944
 # Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex51/ex51.runs/impl_1
 # Command line: vivado.exe -log exercise.vdi -applog -messageDb vivado.pb -mode batch -source exercise.tcl -notrace
 # Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex51/ex51.runs/impl_1/exercise.vdi
