@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Mar 13 15:47:18 2016
+# Process ID: 3068
+# Current directory: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.runs/impl_1
+# Command line: vivado.exe -log e08.vdi -applog -messageDb vivado.pb -mode batch -source e08.tcl -notrace
+# Log file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.runs/impl_1/e08.vdi
+# Journal file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source e08.tcl -notrace
