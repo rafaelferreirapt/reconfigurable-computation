@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1'
+HD_PWD='Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log ex1.vdi -applog -m64 -messageDb vivado.pb -mode batch -source ex1.tcl -notrace
+EAStep vivado -log e11.vdi -applog -m64 -messageDb vivado.pb -mode batch -source e11.tcl -notrace
 
 
