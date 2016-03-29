@@ -8,7 +8,7 @@
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7a100t_0" gui_info="">
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="Y:/Development/ect_ua/reconfigurable-computation/Aula05/bitstreams/ex1.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/bitstreams/ex2.bit"/>
     </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>

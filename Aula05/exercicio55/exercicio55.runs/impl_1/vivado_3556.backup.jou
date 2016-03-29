@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Mar 29 15:35:30 2016
+# Process ID: 3556
+# Current directory: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/exercicio55/exercicio55.runs/impl_1
+# Command line: vivado.exe -log Ex55_aula5.vdi -applog -messageDb vivado.pb -mode batch -source Ex55_aula5.tcl -notrace
+# Log file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/exercicio55/exercicio55.runs/impl_1/Ex55_aula5.vdi
+# Journal file: Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/exercicio55/exercicio55.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Ex55_aula5.tcl -notrace

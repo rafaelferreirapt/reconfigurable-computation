@@ -1,19 +1,11 @@
 #-----------------------------------------------------------
-# Vivado v2015.4 (64-bit)
-# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
-# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Tue Mar 29 09:30:20 2016
-# Process ID: 1828
-# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4660 Y:\Development\ect_ua\reconfigurable-computation\Aula05\exercicio54\exercicio54.xpr
-# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/vivado.log
-# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54\vivado.jou
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Apr 13 17:47:43 2015
+# Process ID: 1160
+# Log file: C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5_2/ex54/vivado.log
+# Journal file: C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5_2/ex54\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.xpr
-report_ip_status -name ip_status 
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-reset_run impl_1 -noclean_dir 
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
+open_project C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5_2/ex54/ex54.xpr
