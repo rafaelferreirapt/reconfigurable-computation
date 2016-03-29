@@ -21,6 +21,8 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -35,7 +37,7 @@ entity ex53 is
 generic( number_of_bits : integer := 1000);
 port (  clk : in std_logic;
         btnC : in std_logic;
-        an : in STD_LOGIC_VECTOR (7 downto 0);
+        an : out STD_LOGIC_VECTOR (7 downto 0);
         seg : out STD_LOGIC_VECTOR (6 downto 0));
 end ex53;
 
@@ -44,7 +46,7 @@ architecture Behavioral of ex53 is
     signal C_S, N_S : state_type;
     signal index, next_index : integer range 0 to 999;
     signal Res, next_Res : integer range 0 to 1000;
-    signal n_o_ones, next_n_o_ones : integer range 0 to 1000;
+    signal n_o_ones, next_n_o_ones, max_ones : integer range 0 to 1000;
     signal result   : std_logic_vector(9 downto 0);
     signal vetor    : std_logic_vector(999 downto 0);
     signal random_num : std_logic_vector(999 downto 0);
@@ -59,7 +61,8 @@ begin
                 index <= 0; 
                 n_o_ones <= 0; 
                 Res <= 0;
-                vetor <= random_num
+                vetor <= random_num;
+                --max_ones <= 0;
             else 
                 C_S <= N_S;
                 index <= next_index; -- índice do vetor
@@ -84,12 +87,15 @@ begin
                                     else
                                         next_n_o_ones <= 0;
                                     end if;
+                                    if next_n_o_ones > max_ones then
+                                        max_ones <= next_n_o_ones;
+                                    end if;
                                     if(index = number_of_bits - 1) then 
                                         N_S <= final_state;
                                     end if;
             when final_state => 
                                     N_S <= initial_state;
-                                    next_Res <= n_o_ones; 
+                                    next_Res <= max_ones; 
                                     next_n_o_ones <= 0; 
                                     next_index <= 0;
             when others => 
@@ -97,7 +103,7 @@ begin
         end case;
     end process;
     
-    resultado <=  conv_std_logic_vector(Res, 10);
+    result <= conv_std_logic_vector(Res,10);
     
     disp_cont:  entity work.EightDisplayControl
                 port map (  clk=>clk, 
@@ -106,9 +112,9 @@ begin
                             near_rightL=>"0000", 
                             rightL=>"0000",
                             leftR=>"0000", 
-                            near_leftR=>"00" & resultado(9 downto 8),
-                            near_rightR=>resultado(7 downto 4), 
-                            rightR=>resultado(3 downto 0),
+                            near_leftR=>"00" & result(9 downto 8),
+                            near_rightR=>result(7 downto 4), 
+                            rightR=>result(3 downto 0),
                             select_display=>an,
                             segments=>seg);
                             
