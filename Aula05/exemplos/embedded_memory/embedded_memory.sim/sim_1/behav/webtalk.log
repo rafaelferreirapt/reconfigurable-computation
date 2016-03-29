@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Mar 15 13:45:39 2015
+# Process ID: 4160
+# Log file: I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_commom_diviser.sim/sim_1/behav/webtalk.log
+# Journal file: I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_commom_diviser.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_commom_diviser.sim/sim_1/behav/xsim.dir/IGCD_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1091896545 -regid "174914471_178259212_210592973_360" -xml I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_..."
+    (file "I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_commom_diviser.sim/sim_1/behav/xsim.dir/IGCD_sim_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 15 13:45:40 2015...

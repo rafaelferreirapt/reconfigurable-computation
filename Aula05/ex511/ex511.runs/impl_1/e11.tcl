@@ -44,19 +44,17 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.cache/wt [current_project]
-  set_property parent.project_path Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.xpr [current_project]
-  set_property ip_repo_paths z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.cache/ip [current_project]
-  set_property ip_output_repo z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.cache/ip [current_project]
-  add_files -quiet Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.runs/synth_1/e11.dcp
-  read_xdc Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula05/ex511/ex511.srcs/constrs_1/imports/Rodrigo/Nexys4_Master.xdc
+  set_property webtalk.parent_dir Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex511/ex511.cache/wt [current_project]
+  set_property parent.project_path Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex511/ex511.xpr [current_project]
+  set_property ip_repo_paths y:/Development/ect_ua/reconfigurable-computation/Aula05/ex511/ex511.cache/ip [current_project]
+  set_property ip_output_repo y:/Development/ect_ua/reconfigurable-computation/Aula05/ex511/ex511.cache/ip [current_project]
+  add_files -quiet Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex511/ex511.runs/synth_1/e11.dcp
+  read_xdc Y:/Development/ect_ua/reconfigurable-computation/Aula05/ex511/ex511.srcs/constrs_1/imports/Rodrigo/Nexys4_Master.xdc
   link_design -top e11 -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

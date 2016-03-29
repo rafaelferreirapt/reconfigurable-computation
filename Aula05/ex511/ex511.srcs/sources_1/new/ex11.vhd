@@ -19,7 +19,7 @@ architecture Behavioral of e11 is
 	type state_type is (init, run_state); 
 	signal C_S, N_S 						: state_type;
 	signal Res, Res_next 					: integer range 0 to 255;
-	signal result : std_logic_vector(7 downto 0);
+	signal result : std_logic_vector(31 downto 0);
 
 begin
 A <= conv_integer(sw(15 downto 8));   B <= conv_integer(sw(7 downto 0));
@@ -64,10 +64,10 @@ process (C_S, A, B, FSM_A, FSM_B, Res)  -- this is a combinational process
 end process;
 
 led <= conv_std_logic_vector(Res,8);
-result <= conv_std_logic_vector(Res, 8);
+result <= conv_std_logic_vector(Res, 32);
 
 -- Display
 disp : entity work.EightDisplayControl
-           port map (clk, result(3 downto 0), result(7 downto 4),"0000","0000", "0000", "0000", "0000","0000", an, seg);
+           port map (clk, result(3 downto 0), result(7 downto 4),result(11 downto 8),result(15 downto 12), result(19 downto 16), result(23 downto 20), result(27 downto 24),result(31 downto 28), an, seg);
 
 end Behavioral;

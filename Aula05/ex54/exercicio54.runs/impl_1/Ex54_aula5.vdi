@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Mar 29 09:32:52 2016
+# Process ID: 4972
+# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1
+# Command line: vivado.exe -log Ex54_aula5.vdi -applog -messageDb vivado.pb -mode batch -source Ex54_aula5.tcl -notrace
+# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1/Ex54_aula5.vdi
+# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Ex54_aula5.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Mar 29 10:32:01 2016
+# Process ID: 2728
+# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1
+# Command line: vivado.exe -log Ex54_aula5.vdi -applog -messageDb vivado.pb -mode batch -source Ex54_aula5.tcl -notrace
+# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1/Ex54_aula5.vdi
+# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Ex54_aula5.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1

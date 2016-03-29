@@ -1,0 +1,176 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 1828
+
+Current time: 	3/29/16 9:30:36 AM BST
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1280x800
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	gipmon
+User home directory: C:/Users/gipmon
+User working directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/gipmon/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/gipmon/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	206 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 353 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// aH:y (cq:JFrame): Older Project Version: addNotify
+// [GUI Memory]: 30 MB (+28500kb) [00:00:08]
+// [Engine Memory]: 350 MB (+215493kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 362 MB. GUI used memory: 24 MB. Current time: 3/29/16 9:30:38 AM BST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aH:y)
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: Y:\Development\ect_ua\reconfigurable-computation\Aula05\exercicio54\exercicio54.xpr. Version: Vivado v2014.4 
+dismissDialog("Older Project Version"); // aH:y (cq:JFrame)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 382 MB (+14856kb) [00:00:38]
+// [GUI Memory]: 47 MB (+16623kb) [00:00:39]
+// [Engine Memory]: 402 MB (+796kb) [00:00:39]
+// [Engine Memory]: 426 MB (+5009kb) [00:00:41]
+// [GUI Memory]: 51 MB (+1645kb) [00:00:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5/exercicio54' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'exercicio54.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 438 MB. GUI used memory: 31 MB. Current time: 3/29/16 9:31:11 AM BST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: exercicio54; location: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54; part: xc7a100tcsg324-3
+// [GUI Memory]: 58 MB (+4605kb) [00:00:46]
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 700.809 ; gain = 75.117 
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 451 MB (+3074kb) [00:00:48]
+// a:a (cq:JFrame): Critical Messages: addNotify
+// ap:y (cq:JFrame): Project Upgraded: addNotify
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_REPORT_IP_STATUS, "Report IP Status"); // a:JButton (JPanel:JComponent, ap:y)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+dismissDialog("Project Upgraded"); // ap:y (cq:JFrame)
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// bF:g (cq:JFrame):  Report IP Status : addNotify
+dismissDialog("Report IP Status"); // bF:g (cq:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cq:JFrame)
+// PAPropertyPanels.initPanels (Ex54_aula5.vhd) elapsed time: 0.3s
+// [GUI Memory]: 62 MB (+1158kb) [00:01:05]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Ex54_aula5 - Behavioral (Ex54_aula5.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Ex54_aula5 - Behavioral (Ex54_aula5.vhd)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:aY (cq:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// 'bX' command handler elapsed time: 7 seconds
+dismissDialog("No Implementation Results Available"); // G:aY (cq:JFrame)
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bF:g (cq:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar 29 09:32:47 2016] Launched impl_1... Run output will be captured here: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1/runme.log 
+// [Engine Memory]: 476 MB (+2391kb) [00:02:20]
+dismissDialog("Generate Bitstream"); // bF:g (cq:JFrame)
+// [GUI Memory]: 67 MB (+1770kb) [00:02:22]
+// [GUI Memory]: 70 MB (+490kb) [00:04:26]
+// [GUI Memory]: 75 MB (+924kb) [00:13:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 477 MB. GUI used memory: 34 MB. Current time: 3/29/16 10:01:12 AM BST
+// Elapsed time: 3302 seconds
+selectCodeEditor("Ex54_aula5.vhd", 318, 78); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("Ex54_aula5.vhd", 156, 74); // bl:J (JPanel:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 483 MB. GUI used memory: 33 MB. Current time: 3/29/16 10:29:02 AM BST
+// Elapsed time: 142 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cq:JFrame)
+// aY:g (cq:JFrame): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a:JButton (JPanel:JComponent, aY:g)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// Elapsed time: 15 seconds
+dismissDialog("Cancel Implementation"); // aY:g (cq:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -noclean_dir  
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 768.754 ; gain = 0.000 
+// Elapsed time: 21 seconds
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:aY (cq:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:aY)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// 'bX' command handler elapsed time: 4 seconds
+dismissDialog("No Implementation Results Available"); // G:aY (cq:JFrame)
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// bF:g (cq:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar 29 10:31:50 2016] Launched impl_1... Run output will be captured here: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bF:g (cq:JFrame)
+// [GUI Memory]: 80 MB (+1312kb) [01:02:32]
+// Elapsed time: 1079 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cq:JFrame)
+// aY:g (cq:JFrame): Cancel Implementation: addNotify
+// Elapsed time: 34 seconds
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a:JButton (JPanel:JComponent, aY:g)
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a:JButton (JPanel:JComponent, aY:g)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bF:g)
+// Elapsed time: 38 seconds
+dismissDialog("Cancel Implementation"); // aY:g (cq:JFrame)
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+// Elapsed time: 37 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectButton("RDIResource.ProgressDialog_ARE_YOU_SURE_YOU_WANT_TO_CANCEL_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
