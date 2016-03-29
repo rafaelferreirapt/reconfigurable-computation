@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_commom_diviser.srcs/sources_1/new/use_display_control.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity FSM_new
+INFO: [VRFC 10-163] Analyzing VHDL file "I:/SDR_P/5/Iterative_greatest_commom_diviser/Iterative_greatest_commom_diviser.srcs/sim_1/new/stim_IGCD.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity IGCD_sim

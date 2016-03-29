@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Mar 15 10:21:09 2015
+# Process ID: 1584
+# Log file: I:/SDR_P/5/random2/random2.runs/impl_1/use_random2.vdi
+# Journal file: I:/SDR_P/5/random2/random2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source use_random2.tcl -notrace

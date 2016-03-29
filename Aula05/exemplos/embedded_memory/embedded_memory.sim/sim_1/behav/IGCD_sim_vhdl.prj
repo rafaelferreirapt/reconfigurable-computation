@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl work  "../../../Iterative_greatest_commom_diviser.srcs/sources_1/new/use_display_control.vhd"
+vhdl work  "../../../Iterative_greatest_commom_diviser.srcs/sim_1/new/stim_IGCD.vhd"
+
+# Do not sort compile order
+nosort

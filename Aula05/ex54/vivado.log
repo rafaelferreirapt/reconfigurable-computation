@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Mar 29 09:30:20 2016
+# Process ID: 1828
+# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4660 Y:\Development\ect_ua\reconfigurable-computation\Aula05\exercicio54\exercicio54.xpr
+# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/vivado.log
+# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5/exercicio54' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'Y:/NetbeansProjects/CoeGenerator/coe_from_java.coe', nor could it be found using path 'C:/Users/jeronimos/Documents/NetbeansProjects/CoeGenerator/coe_from_java.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'exercicio54.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_0' is locked:
+* IP definition 'Distributed Memory Generator (8.0)' for IP 'dist_mem_gen_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 700.809 ; gain = 75.117
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream
+[Tue Mar 29 09:32:47 2016] Launched impl_1...
+Run output will be captured here: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1/runme.log
+reset_run impl_1 -noclean_dir 
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 768.754 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Tue Mar 29 10:31:50 2016] Launched impl_1...
+Run output will be captured here: Y:/Development/ect_ua/reconfigurable-computation/Aula05/exercicio54/exercicio54.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 29 10:53:09 2016...
