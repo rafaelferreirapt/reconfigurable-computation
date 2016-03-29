@@ -1,12 +1,10 @@
 #-----------------------------------------------------------
-# Vivado v2015.4 (64-bit)
-# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
-# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Sat Mar 05 16:34:02 2016
-# Process ID: 5852
-# Current directory: Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1
-# Command line: vivado.exe -log ex1.vdi -applog -messageDb vivado.pb -mode batch -source ex1.tcl -notrace
-# Log file: Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1/ex1.vdi
-# Journal file: Y:/Development/ect_ua/reconfigurable-computation/Aula 04/ex1/ex1.runs/impl_1\vivado.jou
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Apr 09 16:16:14 2015
+# Process ID: 5764
+# Log file: C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5_2/ex58/ex58.runs/impl_1/use_Iterative_Sorter_FSM.vdi
+# Journal file: C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula5_2/ex58/ex58.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source ex1.tcl -notrace
+source use_Iterative_Sorter_FSM.tcl -notrace
