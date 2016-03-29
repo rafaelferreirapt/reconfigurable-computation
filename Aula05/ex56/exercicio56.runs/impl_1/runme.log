@@ -1,0 +1,679 @@
+
+*** Running vivado
+    with args -log Ex56_aula5.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Ex56_aula5.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source Ex56_aula5.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp' for cell 'lut'
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 454.863 ; gain = 264.215
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 457.137 ; gain = 2.273
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1b5a39b06
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1335bdd87
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 914.215 ; gain = 0.004
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1335bdd87
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 914.215 ; gain = 0.004
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 38 unconnected nets.
+INFO: [Opt 31-11] Eliminated 2 unconnected cells.
+Phase 3 Sweep | Checksum: 165963bdb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 914.215 ; gain = 0.004
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 914.215 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 165963bdb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 914.215 ; gain = 0.004
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: 19e1d3ab5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 964.230 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 19e1d3ab5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.672 . Memory (MB): peak = 964.230 ; gain = 50.016
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 74 Warnings, 74 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 964.230 ; gain = 509.367
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 964.230 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.runs/impl_1/Ex56_aula5_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 964.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: ea8dc3c6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 964.230 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: ea8dc3c6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: ea8dc3c6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 98973fdc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 134f0405f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 15b7f8b1d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 14183cbb7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 14183cbb7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 14183cbb7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: 14183cbb7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 14183cbb7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1926b12b7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1926b12b7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11eeea67c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1344298e9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3.4 Small Shape Detail Placement
+
+Phase 3.4.1 Commit Small Macros and Core Logic
+
+Phase 3.4.1.1 Commit Slice Clusters
+Phase 3.4.1.1 Commit Slice Clusters | Checksum: 1f8e6ee26
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 3.4.1 Commit Small Macros and Core Logic | Checksum: 1f8e6ee26
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1f8e6ee26
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1f8e6ee26
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 3.4 Small Shape Detail Placement | Checksum: 1f8e6ee26
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 1a525cfdb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1a525cfdb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1a525cfdb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1a525cfdb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 1a525cfdb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 1a525cfdb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 1c6fbfd64
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c6fbfd64
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+Ending Placer Task | Checksum: 12b38839e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 964.230 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 74 Warnings, 74 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 964.230 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 964.230 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 964.230 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 964.230 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 6d095592 ConstDB: 0 ShapeSum: be2f2e0c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1032d058b
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1062.934 ; gain = 98.703
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1032d058b
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1064.797 ; gain = 100.566
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1032d058b
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1073.035 ; gain = 108.805
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 260a819b6
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.177  | TNS=0.000  | WHS=-0.055 | THS=-1.714 |
+
+Phase 2 Router Initialization | Checksum: 1a3f81315
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 27519eb66
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1756d1ca7
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.065  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1756d1ca7
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+Phase 4 Rip-up And Reroute | Checksum: 1756d1ca7
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 10c1998c3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.144  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 10c1998c3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 10c1998c3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+Phase 5 Delay and Skew Optimization | Checksum: 10c1998c3
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 15dfd4dae
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.144  | TNS=0.000  | WHS=0.232  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 15dfd4dae
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0107934 %
+  Global Horizontal Routing Utilization  = 0.0103723 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 15dfd4dae
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1075.973 ; gain = 111.742
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 15dfd4dae
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1076.988 ; gain = 112.758
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 180a2ca60
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1076.988 ; gain = 112.758
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=8.144  | TNS=0.000  | WHS=0.232  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 180a2ca60
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1076.988 ; gain = 112.758
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1076.988 ; gain = 112.758
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 74 Warnings, 74 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:41 . Memory (MB): peak = 1076.988 ; gain = 112.758
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1076.988 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file X:/Partilhado 4A2S/CR/Praticas - Jerónimo/aula5/exercicio56/exercicio56.runs/impl_1/Ex56_aula5_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Ex56_aula5.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1410.688 ; gain = 319.742
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file Ex56_aula5.hwdef
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 29 10:50:55 2016...
