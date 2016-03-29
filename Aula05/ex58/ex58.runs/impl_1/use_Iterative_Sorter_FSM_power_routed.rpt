@@ -1,16 +1,16 @@
-Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date             : Thu Apr 09 16:17:32 2015
-| Host             : Jeronimo running 64-bit major release  (build 9200)
-| Command          : report_power -file use_Iterative_Sorter_FSM_power_routed.rpt -pb use_Iterative_Sorter_FSM_power_summary_routed.pb
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date             : Tue Mar 29 16:03:11 2016
+| Host             : RODRIGOCUNH821E running 64-bit major release  (build 9200)
+| Command          : 
 | Design           : use_Iterative_Sorter_FSM
 | Device           : xc7a100tcsg324-3
-| Design State     : Routed
+| Design State     : routed
 | Grade            : extended
 | Process          : typical
 | Characterization : Production
------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 
 Power Report
 
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     1388 |       --- |             --- |
-|   LUT as Logic |     0.002 |      511 |     63400 |            0.80 |
+| Slice Logic    |     0.002 |     1386 |       --- |             --- |
+|   LUT as Logic |     0.002 |      510 |     63400 |            0.80 |
 |   CARRY4       |    <0.001 |       37 |     15850 |            0.23 |
-|   Register     |    <0.001 |      557 |    126800 |            0.43 |
-|   F7/F8 Muxes  |    <0.001 |       48 |     63400 |            0.07 |
+|   Register     |    <0.001 |      556 |    126800 |            0.44 |
+|   F7/F8 Muxes  |    <0.001 |       48 |     63400 |            0.08 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     0.003 |      824 |       --- |             --- |
+| Signals        |     0.003 |      823 |       --- |             --- |
 | Block RAM      |     0.002 |      0.5 |       135 |            0.37 |
-| I/O            |     0.017 |       36 |       210 |           17.14 |
+| I/O            |     0.018 |       36 |       210 |           17.14 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.124 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

@@ -1,8 +1,8 @@
-Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-| Date         : Thu Apr 09 16:16:46 2015
-| Host         : Jeronimo running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Tue Mar 29 16:00:58 2016
+| Host         : RODRIGOCUNH821E running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file use_Iterative_Sorter_FSM_control_sets_placed.rpt
 | Design       : use_Iterative_Sorter_FSM
 | Device       : xc7a100t
@@ -23,7 +23,7 @@ Table of Contents
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
 | Number of unique control sets                                     |    18 |
-| Minimum Number of register sites lost to control set restrictions |    11 |
+| Minimum Number of register sites lost to control set restrictions |    12 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              28 |            8 |
+| No           | No                    | No                     |              27 |            7 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             256 |          109 |
+| Yes          | No                    | No                     |             256 |           99 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             273 |           95 |
+| Yes          | Yes                   | No                     |             273 |           79 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,24 +48,24 @@ Table of Contents
 +----------------+--------------------------+------------------+------------------+----------------+
 |  Clock Signal  |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+--------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG | sort/n_0_counter[15]_i_1 | btnC_IBUF        |                4 |             17 |
-|  clk_IBUF_BUFG |                          |                  |                8 |             28 |
-|  clk_IBUF_BUFG | n_0_big_number[127]_i_1  |                  |               13 |             32 |
-|  clk_IBUF_BUFG | n_0_big_number[31]_i_1   |                  |               13 |             32 |
-|  clk_IBUF_BUFG | n_0_big_number[63]_i_1   |                  |               15 |             32 |
-|  clk_IBUF_BUFG | n_0_big_number[95]_i_1   |                  |               15 |             32 |
+|  clk_IBUF_BUFG | sort/counter[15]_i_1_n_0 | btnC_IBUF        |                4 |             17 |
+|  clk_IBUF_BUFG |                          |                  |                7 |             27 |
+|  clk_IBUF_BUFG | big_number0[226]         |                  |               16 |             32 |
+|  clk_IBUF_BUFG | big_number0[194]         |                  |               11 |             32 |
+|  clk_IBUF_BUFG | big_number0[162]         |                  |               13 |             32 |
 |  clk_IBUF_BUFG | big_number0[130]         |                  |               12 |             32 |
-|  clk_IBUF_BUFG | big_number0[162]         |                  |               14 |             32 |
-|  clk_IBUF_BUFG | big_number0[194]         |                  |               16 |             32 |
-|  clk_IBUF_BUFG | big_number0[226]         |                  |               11 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[0][31]_i_1  | btnC_IBUF        |                8 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[1][31]_i_1  | btnC_IBUF        |               12 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[2][31]_i_1  | btnC_IBUF        |               15 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[3][31]_i_1  | btnC_IBUF        |               11 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[4][31]_i_1  | btnC_IBUF        |               12 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[5][31]_i_1  | btnC_IBUF        |               13 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[6][31]_i_1  | btnC_IBUF        |               13 |             32 |
-|  clk_IBUF_BUFG | sort/n_0_arr[7][31]_i_1  | btnC_IBUF        |                7 |             32 |
+|  clk_IBUF_BUFG | big_number[95]_i_1_n_0   |                  |               10 |             32 |
+|  clk_IBUF_BUFG | big_number[63]_i_1_n_0   |                  |               12 |             32 |
+|  clk_IBUF_BUFG | big_number[31]_i_1_n_0   |                  |               12 |             32 |
+|  clk_IBUF_BUFG | big_number[127]_i_1_n_0  |                  |               13 |             32 |
+|  clk_IBUF_BUFG | sort/arr[7][31]_i_1_n_0  | btnC_IBUF        |                7 |             32 |
+|  clk_IBUF_BUFG | sort/arr[6][31]_i_1_n_0  | btnC_IBUF        |               10 |             32 |
+|  clk_IBUF_BUFG | sort/arr[5][31]_i_1_n_0  | btnC_IBUF        |               10 |             32 |
+|  clk_IBUF_BUFG | sort/arr[4][31]_i_1_n_0  | btnC_IBUF        |               13 |             32 |
+|  clk_IBUF_BUFG | sort/arr[3][31]_i_1_n_0  | btnC_IBUF        |               11 |             32 |
+|  clk_IBUF_BUFG | sort/arr[2][31]_i_1_n_0  | btnC_IBUF        |               10 |             32 |
+|  clk_IBUF_BUFG | sort/arr[1][31]_i_1_n_0  | btnC_IBUF        |                9 |             32 |
+|  clk_IBUF_BUFG | sort/arr[0][31]_i_1_n_0  | btnC_IBUF        |                5 |             32 |
 +----------------+--------------------------+------------------+------------------+----------------+
 
 

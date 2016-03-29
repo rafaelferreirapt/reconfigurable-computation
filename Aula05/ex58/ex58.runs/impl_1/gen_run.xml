@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1428592535">
-  <File Type="PWROPT-DCP" Name="use_Iterative_Sorter_FSM_pwropt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1459263459">
+  <File Type="OPT-DCP" Name="use_Iterative_Sorter_FSM_opt.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
-  <File Type="PLACE-DCP" Name="use_Iterative_Sorter_FSM_placed.dcp"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
-  <File Type="PWROPT-DRC" Name="use_Iterative_Sorter_FSM_drc_pwropted.rpt"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="use_Iterative_Sorter_FSM_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="use_Iterative_Sorter_FSM_routed.dcp"/>
   <File Type="PA-TCL" Name="use_Iterative_Sorter_FSM.tcl"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="OPT-DCP" Name="use_Iterative_Sorter_FSM_opt.dcp"/>
   <File Type="OPT-DRC" Name="use_Iterative_Sorter_FSM_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="use_Iterative_Sorter_FSM.hwdef"/>
+  <File Type="PWROPT-DCP" Name="use_Iterative_Sorter_FSM_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="use_Iterative_Sorter_FSM_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="use_Iterative_Sorter_FSM_placed.dcp"/>
   <File Type="PLACE-IO" Name="use_Iterative_Sorter_FSM_io_placed.rpt"/>
   <File Type="PLACE-CLK" Name="use_Iterative_Sorter_FSM_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="use_Iterative_Sorter_FSM_utilization_placed.rpt"/>
@@ -17,21 +21,25 @@
   <File Type="PLACE-CTRL" Name="use_Iterative_Sorter_FSM_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="use_Iterative_Sorter_FSM_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="use_Iterative_Sorter_FSM_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="use_Iterative_Sorter_FSM_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="use_Iterative_Sorter_FSM_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="use_Iterative_Sorter_FSM.vdi"/>
   <File Type="PHYSOPT-DRC" Name="use_Iterative_Sorter_FSM_drc_physopted.rpt"/>
-  <File Type="ROUTE-DCP" Name="use_Iterative_Sorter_FSM_routed.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-DRC" Name="use_Iterative_Sorter_FSM_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="use_Iterative_Sorter_FSM_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="use_Iterative_Sorter_FSM_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="use_Iterative_Sorter_FSM_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="use_Iterative_Sorter_FSM_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="use_Iterative_Sorter_FSM_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="use_Iterative_Sorter_FSM_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="use_Iterative_Sorter_FSM_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="use_Iterative_Sorter_FSM_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="use_Iterative_Sorter_FSM_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="use_Iterative_Sorter_FSM_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="use_Iterative_Sorter_FSM_postroute_physopt.dcp"/>
-  <File Type="RDI-RDI" Name="use_Iterative_Sorter_FSM.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="use_Iterative_Sorter_FSM_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="use_Iterative_Sorter_FSM_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="use_Iterative_Sorter_FSM_timing_summary_postroute_physopted.rpx"/>
@@ -76,7 +84,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../NetbeansProjects/CoeGenerator/coe_from_java_ex_8_32.coe">
+    <File Path="$PSRCDIR/sources_1/new/coe_from_java_ex56.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -103,9 +111,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
-      <Desc>Vivado Implementation Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
