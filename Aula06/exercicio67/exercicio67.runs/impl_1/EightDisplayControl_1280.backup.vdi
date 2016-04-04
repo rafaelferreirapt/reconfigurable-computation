@@ -1,0 +1,394 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr 03 21:58:38 2015
+# Process ID: 4676
+# Log file: C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.runs/impl_1/EightDisplayControl.vdi
+# Journal file: C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source EightDisplayControl.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 448.434 ; gain = 264.785
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 450.102 ; gain = 1.668
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 18a304bd7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 905.754 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 16 cells.
+Phase 2 Constant Propagation | Checksum: 19bb152b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 905.754 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 28 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 230e8bbc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 905.754 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 230e8bbc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 905.754 ; gain = 0.000
+Implement Debug Cores | Checksum: 18a304bd7
+Logic Optimization | Checksum: 18a304bd7
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 230e8bbc0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 905.754 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 37 Warnings, 34 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 905.754 ; gain = 457.320
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 905.754 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/jeronimos/Documents/Universidade/CR/praticas/aula6/exercicio67/exercicio67.runs/impl_1/EightDisplayControl_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 18941ee87
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 905.754 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.754 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: bcc7c22e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 905.754 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: bcc7c22e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: bcc7c22e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: 32648acc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 87bf3830
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: eb864b32
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 2.1.2.1 Place Init Design | Checksum: 10b82927f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 10b82927f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 10b82927f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 10b82927f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 2.1 Placer Initialization Core | Checksum: 10b82927f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 2 Placer Initialization | Checksum: 10b82927f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 9948f901
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 9948f901
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 1be17f0a3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1b50ba539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 4.4 Small Shape Detail Placement | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 4 Detail Placement | Checksum: 16cea44bc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 5.2 Post Commit Optimization
+Phase 5.2 Post Commit Optimization | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 5.5 Placer Reporting
+Phase 5.5 Placer Reporting | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 1677c1404
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+Ending Placer Task | Checksum: 9c1da661
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 927.070 ; gain = 21.316
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 37 Warnings, 34 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 927.070 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 927.070 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 927.070 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 927.070 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
