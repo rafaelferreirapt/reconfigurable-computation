@@ -29,14 +29,32 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/imports/Binario_BCD/SegmentDecoder.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/Binario_BCD/SegmentDecoder.vhd"/>
+          <Attr Name="ImportTime" Val="1391975360"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../ex51/ex51.srcs/sources_1/new/segment_decoder.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../ex51/ex51.srcs/sources_1/new/EightDisplayControl.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/imports/Binario_BCD/DidplayControl.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/Binario_BCD/DidplayControl.vhd"/>
+          <Attr Name="ImportTime" Val="1459709516"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/imports/6/Binary_to_BCD16.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/6/Binary_to_BCD16.vhd"/>
+          <Attr Name="ImportTime" Val="1426935682"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

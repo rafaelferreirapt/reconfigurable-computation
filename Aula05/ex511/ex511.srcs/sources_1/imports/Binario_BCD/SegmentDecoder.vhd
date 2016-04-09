@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity segment_decoder is		-- see [26] for additional details
 		port ( BCD 			:  in  std_logic_vector (3 downto 0); 	-- decoder input
-               segments 	: out  std_logic_vector (7 downto 1)    );	-- decoder output
+             segments 	: out  std_logic_vector (7 downto 1)    );	-- decoder output
 end segment_decoder;
 
 architecture Behavioral of segment_decoder is

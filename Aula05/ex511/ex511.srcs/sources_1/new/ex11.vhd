@@ -67,7 +67,24 @@ led <= conv_std_logic_vector(Res,8);
 result <= conv_std_logic_vector(Res, 32);
 
 -- Display
-disp : entity work.EightDisplayControl
-           port map (clk, result(3 downto 0), result(7 downto 4),result(11 downto 8),result(15 downto 12), result(19 downto 16), result(23 downto 20), result(27 downto 24),result(31 downto 28), an, seg);
+
+disp_cont: entity work.EightDisplayControl 
+    port map ( clk=>clk, leftL=>"0000", near_leftL=>"0000",
+               near_rightL=>"0000", rightL=>BCD4,
+	           leftR=>BCD3, near_leftR=>BCD2,
+	           near_rightR=>BCD1, rightR=>BCD0,
+	           select_display=>sel_disp,segments=>seg);
+
+BCD_dec:    entity work.BinToBCD16  
+port map ( 	clk 	=> clk,
+          	reset 	=> '0', 
+         	ready 	=> open,
+          	binary 	=> result,
+          	request => '1',
+          	BCD4 	=> BCD4,
+          	BCD3 	=> BCD3,
+          	BCD2 	=> BCD2,
+          	BCD1 	=> BCD1,
+          	BCD0 	=> BCD0);
 
 end Behavioral;
