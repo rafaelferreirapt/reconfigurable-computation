@@ -1,0 +1,25 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port btnC -pg 1 -y 120 -defaultsOSRD
+preplace port clk -pg 1 -y 40 -defaultsOSRD
+preplace portBus sw -pg 1 -y 160 -defaultsOSRD
+preplace portBus an -pg 1 -y 110 -defaultsOSRD
+preplace portBus seg -pg 1 -y 130 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 2 -y 150 -defaultsOSRD
+preplace netloc BinToBCD16_0_BCD0 1 2 1 N
+preplace netloc BinToBCD16_0_BCD1 1 2 1 N
+preplace netloc btnC_1 1 0 2 NJ 120 140
+preplace netloc BinToBCD16_0_BCD2 1 2 1 N
+preplace netloc BinToBCD16_0_BCD3 1 2 1 N
+preplace netloc BinToBCD16_0_BCD4 1 2 1 N
+preplace netloc clk_1 1 0 3 NJ 40 150 40 NJ
+preplace netloc xlconstant_0_dout 1 1 1 NJ
+preplace netloc EightDisplayControl_0_select_display 1 3 1 NJ
+preplace netloc sw_1 1 0 2 NJ 160 NJ
+preplace netloc EightDisplayControl_0_segments 1 3 1 NJ
+levelinfo -pg 1 0 80 250 490 640 -top 0 -bot 260
+",
+}

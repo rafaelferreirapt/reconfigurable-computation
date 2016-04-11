@@ -49,15 +49,15 @@ start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir Y:/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.cache/wt [current_project]
-  set_property parent.project_path Y:/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.xpr [current_project]
+  set_property webtalk.parent_dir Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.cache/wt [current_project]
+  set_property parent.project_path Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.xpr [current_project]
   set_property ip_repo_paths {
-  y:/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.cache/ip
-  Y:/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository
+  z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.cache/ip
+  Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/Projects2016/UserDefinedRepository
 } [current_project]
-  set_property ip_output_repo y:/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.cache/ip [current_project]
-  add_files -quiet Y:/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.runs/synth_1/ex1_wrapper.dcp
-  read_xdc Y:/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.srcs/constrs_1/imports/Rodrigo/Nexys4_Master.xdc
+  set_property ip_output_repo z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.cache/ip [current_project]
+  add_files -quiet Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.runs/synth_1/ex1_wrapper.dcp
+  read_xdc Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.srcs/constrs_1/imports/Rodrigo/Nexys4_Master.xdc
   link_design -top ex1_wrapper -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
