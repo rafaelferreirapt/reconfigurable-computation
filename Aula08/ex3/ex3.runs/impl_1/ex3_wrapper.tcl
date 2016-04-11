@@ -48,17 +48,16 @@ set_msg_config -id {HDL 9-1654} -limit 100000
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex3/ex3.cache/wt [current_project]
-  set_property parent.project_path Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex3/ex3.xpr [current_project]
+  set_property webtalk.parent_dir /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.cache/wt [current_project]
+  set_property parent.project_path /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.xpr [current_project]
   set_property ip_repo_paths {
-  z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex3/ex3.cache/ip
-  Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/Projects2016/UserDefinedRepository
+  /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.cache/ip
+  /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository
 } [current_project]
-  set_property ip_output_repo z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex3/ex3.cache/ip [current_project]
-  add_files -quiet Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex3/ex3.runs/synth_1/ex3_wrapper.dcp
-  read_xdc Z:/Desktop/StudyWorkTeam/4ano/2Semestre/CR/Aula08/ex1/ex1.srcs/constrs_1/imports/Rodrigo/Nexys4_Master.xdc
+  set_property ip_output_repo /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.cache/ip [current_project]
+  add_files -quiet /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.runs/synth_1/ex3_wrapper.dcp
+  read_xdc /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex1/ex1.srcs/constrs_1/imports/Rodrigo/Nexys4_Master.xdc
   link_design -top ex3_wrapper -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -60,7 +60,7 @@ ENTITY ex3_blk_mem_gen_0_1 IS
   PORT (
     clka : IN STD_LOGIC;
     addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+    douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END ex3_blk_mem_gen_0_1;
 
@@ -151,16 +151,16 @@ ARCHITECTURE ex3_blk_mem_gen_0_1_arch OF ex3_blk_mem_gen_0_1 IS
       regcea : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      dina : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       clkb : IN STD_LOGIC;
       rstb : IN STD_LOGIC;
       enb : IN STD_LOGIC;
       regceb : IN STD_LOGIC;
       web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       addrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      dinb : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      doutb : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      dinb : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      doutb : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       injectsbiterr : IN STD_LOGIC;
       injectdbiterr : IN STD_LOGIC;
       eccpipece : IN STD_LOGIC;
@@ -181,7 +181,7 @@ ARCHITECTURE ex3_blk_mem_gen_0_1_arch OF ex3_blk_mem_gen_0_1 IS
       s_axi_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_awvalid : IN STD_LOGIC;
       s_axi_awready : OUT STD_LOGIC;
-      s_axi_wdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      s_axi_wdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       s_axi_wstrb : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       s_axi_wlast : IN STD_LOGIC;
       s_axi_wvalid : IN STD_LOGIC;
@@ -198,7 +198,7 @@ ARCHITECTURE ex3_blk_mem_gen_0_1_arch OF ex3_blk_mem_gen_0_1 IS
       s_axi_arvalid : IN STD_LOGIC;
       s_axi_arready : OUT STD_LOGIC;
       s_axi_rid : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      s_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      s_axi_rdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_rlast : OUT STD_LOGIC;
       s_axi_rvalid : OUT STD_LOGIC;
@@ -246,8 +246,8 @@ BEGIN
       C_USE_BYTE_WEA => 0,
       C_WEA_WIDTH => 1,
       C_WRITE_MODE_A => "WRITE_FIRST",
-      C_WRITE_WIDTH_A => 32,
-      C_READ_WIDTH_A => 32,
+      C_WRITE_WIDTH_A => 16,
+      C_READ_WIDTH_A => 16,
       C_WRITE_DEPTH_A => 16,
       C_READ_DEPTH_A => 16,
       C_ADDRA_WIDTH => 4,
@@ -260,8 +260,8 @@ BEGIN
       C_USE_BYTE_WEB => 0,
       C_WEB_WIDTH => 1,
       C_WRITE_MODE_B => "WRITE_FIRST",
-      C_WRITE_WIDTH_B => 32,
-      C_READ_WIDTH_B => 32,
+      C_WRITE_WIDTH_B => 16,
+      C_READ_WIDTH_B => 16,
       C_WRITE_DEPTH_B => 16,
       C_READ_DEPTH_B => 16,
       C_ADDRB_WIDTH => 4,
@@ -289,7 +289,7 @@ BEGIN
       C_DISABLE_WARN_BHV_RANGE => 0,
       C_COUNT_36K_BRAM => "0",
       C_COUNT_18K_BRAM => "1",
-      C_EST_POWER_SUMMARY => "Estimated Power for IP     :     3.375199 mW"
+      C_EST_POWER_SUMMARY => "Estimated Power for IP     :     2.7096 mW"
     )
     PORT MAP (
       clka => clka,
@@ -298,7 +298,7 @@ BEGIN
       regcea => '0',
       wea => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       addra => addra,
-      dina => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      dina => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 16)),
       douta => douta,
       clkb => '0',
       rstb => '0',
@@ -306,7 +306,7 @@ BEGIN
       regceb => '0',
       web => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       addrb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
-      dinb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      dinb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 16)),
       injectsbiterr => '0',
       injectdbiterr => '0',
       eccpipece => '0',
@@ -321,7 +321,7 @@ BEGIN
       s_axi_awsize => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 3)),
       s_axi_awburst => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 2)),
       s_axi_awvalid => '0',
-      s_axi_wdata => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      s_axi_wdata => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 16)),
       s_axi_wstrb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       s_axi_wlast => '0',
       s_axi_wvalid => '0',

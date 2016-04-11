@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Mon Apr 11 17:26:34 2016
-| Host         : RODRIGOCUNH821E running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 11 21:41:30 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 | Command      : report_control_sets -verbose -file ex3_wrapper_control_sets_placed.rpt
 | Design       : ex3_wrapper
 | Device       : xc7a100t
@@ -22,8 +22,8 @@ Table of Contents
 +-------------------------------------------------------------------+-------+
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |     1 |
-| Minimum Number of register sites lost to control set restrictions |     7 |
+| Number of unique control sets                                     |     5 |
+| Minimum Number of register sites lost to control set restrictions |    16 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -35,20 +35,24 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              17 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              18 |            7 |
+| Yes          | No                    | No                     |              21 |            4 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              16 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+---------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |               |                  |                5 |             17 |
-+----------------+---------------+------------------+------------------+----------------+
++----------------+------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | ex3_i/BinToBCD16_0/U0/index_c[4]_i_1_n_0 |                  |                2 |              5 |
+|  clk_IBUF_BUFG | ex3_i/BinToBCD16_0/U0/BCD4[3]_i_1_n_0    | btnC_IBUF        |                5 |             16 |
+|  clk_IBUF_BUFG | ex3_i/BinToBCD16_0/U0/int_rg_c_0         |                  |                2 |             16 |
+|  clk_IBUF_BUFG |                                          |                  |                5 |             17 |
+|  clk_IBUF_BUFG |                                          | btnC_IBUF        |                7 |             18 |
++----------------+------------------------------------------+------------------+------------------+----------------+
 
 

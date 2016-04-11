@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2015.4" bd:top="ex3" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2015.4" bd:top="ex3" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -38,6 +38,16 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
+          <spirit:name>seg</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>6</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
           <spirit:name>an</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -48,13 +58,15 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>seg</spirit:name>
+          <spirit:name>btnC</spirit:name>
           <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>6</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>btnL</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -74,11 +86,12 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_blk_mem_gen_0_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Memory_Type">Single_Port_ROM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Enable_32bit_Address">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Write_Width_A">16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Write_Depth_A">16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Enable_A">Always_Enabled</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Register_PortA_Output_of_Memory_Primitives">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Load_Init_File">true</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="Coe_File">../../../../../../../Projects2016/coe_for_block.coe</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Coe_File">../../../../../../../Projects2016/coe_for_8words16len.coe</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Use_RSTA_Pin">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Port_A_Write_Rate">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="use_bram_block">Stand_Alone</spirit:configurableElementValue>
@@ -89,6 +102,76 @@
         <spirit:componentRef spirit:library="user" spirit:name="EightDisplayControl32inputs" spirit:vendor="ua.pt" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_EightDisplayControl32inputs_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>My_Conc_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="My_Conc" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_My_Conc_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconcat_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_xlconcat_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_PORTS">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN0_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN1_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN2_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN3_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN4_WIDTH">3</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>BinToBCD16_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="BinToBCD16" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_BinToBCD16_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconcat_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_xlconcat_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN0_WIDTH">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN1_WIDTH">16</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_xlconstant_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_xlconstant_1_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconcat_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_xlconcat_1_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN0_WIDTH">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN1_WIDTH">16</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex3_xlconstant_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -103,11 +186,7 @@
         <spirit:externalPortReference spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
         <spirit:internalPortReference spirit:componentRef="EightDisplayControl32inputs_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>blk_mem_gen_0_douta</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="douta"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl32inputs_0" spirit:portRef="data_in"/>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>EightDisplayControl32inputs_0_segments</spirit:name>
@@ -118,6 +197,77 @@
         <spirit:name>EightDisplayControl32inputs_0_select_display</spirit:name>
         <spirit:internalPortReference spirit:componentRef="EightDisplayControl32inputs_0" spirit:portRef="select_display"/>
         <spirit:externalPortReference spirit:portRef="an"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconcat_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_1" spirit:portRef="In0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_1" spirit:portRef="In1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconcat_1_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_1" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="My_Conc_0" spirit:portRef="in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>My_Conc_0_out32</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="My_Conc_0" spirit:portRef="out32"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl32inputs_0" spirit:portRef="data_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>btnC_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="btnC"/>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="reset"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_1_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_1" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="request"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>btnL_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="btnL"/>
+        <spirit:internalPortReference spirit:componentRef="My_Conc_0" spirit:portRef="sel"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BinToBCD16_0_BCD0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="BCD0"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BinToBCD16_0_BCD1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="BCD1"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BinToBCD16_0_BCD2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="BCD2"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BinToBCD16_0_BCD3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="BCD3"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>blk_mem_gen_0_douta</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="douta"/>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="binary"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_2" spirit:portRef="In0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconcat_2_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_2" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="My_Conc_0" spirit:portRef="in2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_2_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_2" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_2" spirit:portRef="In1"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

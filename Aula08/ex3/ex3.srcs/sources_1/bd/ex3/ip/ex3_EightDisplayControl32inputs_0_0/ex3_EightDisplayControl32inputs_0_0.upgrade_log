@@ -1,0 +1,37 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 11 19:15:52 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ex3_EightDisplayControl32inputs_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ex3_EightDisplayControl32inputs_0_0 (ua.pt:user:EightDisplayControl32inputs:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Apr 11 19:11:11 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ex3_EightDisplayControl32inputs_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of ex3_EightDisplayControl32inputs_0_0 (ua.pt:user:EightDisplayControl32inputs:1.0 (Rev. 2)) to current project options.
+

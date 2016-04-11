@@ -1,17 +1,41 @@
 {
-   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
-preplace port clk -pg 1 -y 40 -defaultsOSRD
-preplace portBus sw -pg 1 -y 160 -defaultsOSRD
-preplace portBus an -pg 1 -y 40 -defaultsOSRD
-preplace portBus seg -pg 1 -y 60 -defaultsOSRD
-preplace inst EightDisplayControl32inputs_0 -pg 1 -lvl 1 -y 50 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 1 -y 180 -defaultsOSRD
-preplace netloc EightDisplayControl32inputs_0_segments 1 1 1 NJ
-preplace netloc clk_1 1 0 1 20
-preplace netloc EightDisplayControl32inputs_0_select_display 1 1 1 NJ
-preplace netloc blk_mem_gen_0_douta 1 0 1 30
-preplace netloc sw_1 1 0 1 NJ
-levelinfo -pg 1 0 160 310 -top 0 -bot 270
+preplace port btnL -pg 1 -y 380 -defaultsOSRD
+preplace port btnC -pg 1 -y 90 -defaultsOSRD
+preplace port clk -pg 1 -y 70 -defaultsOSRD
+preplace portBus sw -pg 1 -y 270 -defaultsOSRD
+preplace portBus an -pg 1 -y 200 -defaultsOSRD
+preplace portBus seg -pg 1 -y 220 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 270 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y 140 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 3 -y 440 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst EightDisplayControl32inputs_0 -pg 1 -lvl 6 -y 210 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 4 -y 260 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 290 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 4 -y 430 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 2 -y 100 -defaultsOSRD
+preplace inst My_Conc_0 -pg 1 -lvl 5 -y 350 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 1 1 NJ
+preplace netloc xlconstant_2_dout 1 3 1 NJ
+preplace netloc BinToBCD16_0_BCD0 1 2 1 410
+preplace netloc BinToBCD16_0_BCD1 1 2 1 430
+preplace netloc My_Conc_0_out32 1 5 1 1010
+preplace netloc BinToBCD16_0_BCD2 1 2 1 420
+preplace netloc btnC_1 1 0 2 NJ 90 NJ
+preplace netloc EightDisplayControl32inputs_0_segments 1 6 1 NJ
+preplace netloc BinToBCD16_0_BCD3 1 2 1 400
+preplace netloc btnL_1 1 0 5 NJ 380 NJ 380 NJ 370 NJ 370 NJ
+preplace netloc xlconcat_1_dout 1 4 1 810
+preplace netloc xlconstant_0_dout 1 3 1 NJ
+preplace netloc xlconcat_0_dout 1 3 1 610
+preplace netloc clk_1 1 0 6 NJ 70 160 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc EightDisplayControl32inputs_0_select_display 1 6 1 NJ
+preplace netloc blk_mem_gen_0_douta 1 1 3 180 390 NJ 390 NJ
+preplace netloc sw_1 1 0 2 NJ 270 NJ
+preplace netloc xlconcat_2_dout 1 4 1 810
+levelinfo -pg 1 0 90 290 520 710 910 1150 1310 -top 0 -bot 490
 ",
 }
+0
