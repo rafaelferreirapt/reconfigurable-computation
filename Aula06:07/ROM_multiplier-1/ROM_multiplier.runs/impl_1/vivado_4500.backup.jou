@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Mar 20 21:22:18 2015
+# Process ID: 4580
+# Log file: I:/SDR_P/6/sort256/sort256.runs/impl_1/embedded_ROM.vdi
+# Journal file: I:/SDR_P/6/sort256/sort256.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source embedded_ROM.tcl -notrace

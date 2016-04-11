@@ -1,0 +1,17 @@
+Language File-Name                              IP                  Library         File-Path                                                                                                    
+VHDL,    segment_decoder.vhd,                   BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/ua.pt/dc32_v1_0/segment_decoder.vhd                                  
+VHDL,    disp.vhd,                              BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/ua.pt/dc32_v1_0/disp.vhd                                             
+VHDL,    BD_counter_display_DC32_0_1.vhd,       BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_DC32_0_1/sim/BD_counter_display_DC32_0_1.vhd            
+VHDL,    Binary_to_BCD16.vhd,                   BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/ua.pt/bintobcd16_v1_0/Binary_to_BCD16.vhd                            
+VHDL,    BD_counter_display_BinToBCD16_0_0.vhd, BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_BinToBCD16_0_0/sim/BD_counter_display_BinToBCD16_0_0.vhd
+VHDL,    xlconstant.vhd,                        BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd                            
+VHDL,    BD_counter_display_xlconstant_0_1.vhd, BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_xlconstant_0_1/sim/BD_counter_display_xlconstant_0_1.vhd
+VHDL,    xlconcat.vhd,                          BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd                                
+VHDL,    BD_counter_display_xlconcat_0_0.vhd,   BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_xlconcat_0_0/sim/BD_counter_display_xlconcat_0_0.vhd    
+VHDL,    BD_counter_display_xlconstant_1_0.vhd, BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_xlconstant_1_0/sim/BD_counter_display_xlconstant_1_0.vhd
+VHDL,    BD_counter_display.vhd,                BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/hdl/BD_counter_display.vhd                                                    
+VHDL,    My_Conc.vhd,                           BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/ua.pt/my_conc_v1_0/My_Conc.vhd                                       
+VHDL,    BD_counter_display_My_Conc_0_0.vhd,    BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_My_Conc_0_0/sim/BD_counter_display_My_Conc_0_0.vhd      
+VHDL,    Clock_divider.vhd,                     BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/ua.pt/myc_v1_0/imports/FirstTrivial/Clock_divider.vhd                
+VHDL,    TopCounter32.vhd,                      BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ipshared/ua.pt/myc_v1_0/new/TopCounter32.vhd                                  
+VHDL,    BD_counter_display_MyC_0_0.vhd,        BD_counter_display, xil_defaultlib, ../../../bd/BD_counter_display/ip/BD_counter_display_MyC_0_0/sim/BD_counter_display_MyC_0_0.vhd              

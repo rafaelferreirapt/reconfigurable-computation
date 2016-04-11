@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Apr 03 19:19:28 2016
+# Process ID: 1292
+# Current directory: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3364 K:\MostFrequentlyNeeded___2014\Education2011\2015_2016\SecondSemester\CR\AulasTeoricas\Aula7_4April2016\Exemplos2016\ROM_multiplier\ROM_multiplier.xpr
+# Log file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/vivado.log
+# Journal file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.xpr
+report_ip_status -name ip_status 
+upgrade_ip -srcset blk_mem_gen_0 [get_ips  {blk_mem_gen_0 blk_mem_gen_1 dist_mem_gen_0}]
+convert_ips [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+upgrade_ip -srcset blk_mem_gen_1 [get_ips  {blk_mem_gen_1 dist_mem_gen_0}]
+convert_ips [get_files  {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}]
+export_ip_user_files -of_objects  [get_files  {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}] -sync -force -quiet
+set_property coreContainer.enable 1 [current_project]
+generate_target all [get_files  {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}]
+export_ip_user_files -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -force -quiet
+export_ip_user_files -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+launch_run -jobs 4 {blk_mem_gen_1_synth_1 dist_mem_gen_0_synth_1}
+export_simulation -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.ip_user_files/sim_scripts -force -quiet
+export_simulation -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.ip_user_files/sim_scripts -force -quiet
+remove_files {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/5/embedded_memory/ROM_coe.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Java/coe_for_multiplication.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/coe_for_multiplication.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/5/embedded_memory/coe_from_java.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/coe_from_java.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/5/embedded_memory/coe_from_java1.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/coe_from_java2048.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/coe_from_java32.coe K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/coe_from_java64.coe}
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/coe_for_multiplication.coe}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+export_ip_user_files -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_run -jobs 4 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.ip_user_files/sim_scripts -force -quiet
+import_files -norecurse K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/new/use_display_control.vhd
+import_files -norecurse {{K:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/New_SDR_P/SDR_P/6/Binary_to_BCD16.vhd}}
+import_files -norecurse {{K:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/New_SDR_P/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.srcs/sources_1/imports/Binario_BCD/DidplayControl.vhd}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+import_files -norecurse {{K:/MostFrequentlyNeeded___2014/Education2011/2014_2015/SecondSemester/CR/AllProjectsThat were_Used_for_CR_in_2014_2015/New_SDR_P/SDR_P/1/UsingSegmentDisplays/UsingSegmentDisplays.srcs/sources_1/imports/Binario_BCD/SegmentDecoder.vhd}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+remove_files {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Binary_to_BCD16.vhd K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Binary_to_BCD8.vhd K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/1/UsingSegmentDisplays/UsingSegmentDisplays.srcs/sources_1/imports/Binario_BCD/Clock_divider.vhd K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/5/display_control/display_control.srcs/sources_1/new/disp.vhd K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/5/display_control/display_control.srcs/sources_1/new/segment_decoder.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/Multiplier_ROM.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/Multiplier_ROM.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/Multiplier_ROM.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property -dict [list CONFIG.Coe_File {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/coe_for_multiplication.coe}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+export_ip_user_files -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_run -jobs 4 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.ip_user_files/sim_scripts -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/Multiplier_ROM.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/Multiplier_ROM.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/ROM_multiplier/ROM_multiplier.runs/impl_1/Multiplier_ROM.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_project K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.xpr
+current_project ROM_multiplier
+close_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset blk_mem_gen_0 -vlnv xilinx.com:ip:blk_mem_gen:8.3 [get_ips  blk_mem_gen_0]
+convert_ips [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects  [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -sync -force -quiet
+set_property coreContainer.enable 1 [current_project]
+update_compile_order -fileset sources_1
+generate_target all [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_run -jobs 4 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula7_4April2016/Exemplos2016/Max_network/Max_network.ip_user_files/sim_scripts -force -quiet

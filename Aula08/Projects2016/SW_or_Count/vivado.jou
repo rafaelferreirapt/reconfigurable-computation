@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Apr 10 13:28:37 2016
+# Process ID: 1472
+# Current directory: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4600 K:\MostFrequentlyNeeded___2014\Education2011\2015_2016\SecondSemester\CR\AulasTeoricas\Aula8_11april2016\Projects2016\SW_or_Count\SW_or_Count.xpr
+# Log file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/vivado.log
+# Journal file: K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.xpr
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:My_Conc:1.0 My_Conc_0
+endgroup
+set_property location {3 93 -321} [get_bd_cells My_Conc_0]
+delete_bd_objs [get_bd_nets xlconcat_0_dout]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins My_Conc_0/in2]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:TopCounterN:1.0 TopCounterN_0
+endgroup
+set_property location {2 300 -95} [get_bd_cells TopCounterN_0]
+connect_bd_net [get_bd_pins TopCounterN_0/data_out] [get_bd_pins My_Conc_0/in1]
+connect_bd_net [get_bd_pins My_Conc_0/out32] [get_bd_pins DC32_0/data_in]
+ipx::edit_ip_in_project -upgrade true -name TopCounterN_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/TopCounterN_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_project SW_or_Count
+connect_bd_net [get_bd_ports clk] [get_bd_pins TopCounterN_0/clk]
+create_bd_port -dir I btnL
+connect_bd_net [get_bd_ports btnL] [get_bd_pins TopCounterN_0/btnC]
+set_property location {-85 -82} [get_bd_ports btnL]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets btnL_1]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins TopCounterN_0/btnC]
+connect_bd_net [get_bd_ports btnL] [get_bd_pins My_Conc_0/sel]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+ipx::edit_ip_in_project -upgrade true -name TopCounterN_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/TopCounterN_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+current_project TopCounterN_v1_0_project
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 -vendor ua.pt -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY} [current_project]
+update_ip_catalog
+current_project SW_or_Count
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+delete_bd_objs [get_bd_nets TopCounterN_0_data_out] [get_bd_cells TopCounterN_0]
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:MyC:1.0 MyC_0
+endgroup
+set_property location {3 534 426} [get_bd_cells MyC_0]
+connect_bd_net [get_bd_pins MyC_0/data_out] [get_bd_pins My_Conc_0/in1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins MyC_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins MyC_0/btnC]
+regenerate_bd_layout
+save_bd_design
+generate_target all [get_files  K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd]
+export_ip_user_files -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd] -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.ip_user_files/sim_scripts -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.runs/impl_1/BD_counter_display_wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.runs/impl_1/BD_counter_display_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+ipx::edit_ip_in_project -upgrade true -name MyC_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/MyC_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_project TopCounterN_v1_0_project
+current_project MyC_v1_0_project
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 -vendor ua.pt -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY} [current_project]
+update_ip_catalog
+current_project SW_or_Count
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_project MyC_v1_0_project
+close_project
+close_project
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.runs/impl_1/BD_counter_display_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+ipx::edit_ip_in_project -upgrade true -name MyC_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/MyC_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 -vendor ua.pt -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY} [current_project]
+update_ip_catalog
+close_project
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+reset_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.runs/impl_1/BD_counter_display_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+ipx::edit_ip_in_project -upgrade true -name MyC_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/MyC_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::package_project -root_dir k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 -vendor ua.pt -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY} [current_project]
+update_ip_catalog
+close_project
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.runs/impl_1/BD_counter_display_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+ipx::edit_ip_in_project -upgrade true -name MyC_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/MyC_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+update_compile_order -fileset sim_1
+current_project SW_or_Count
+ipx::edit_ip_in_project -upgrade true -name BinToBCD16_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.tmp/BinToBCD16_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/BCD16bit/BCD16bit.srcs/sources_1/imports/6/component.xml
+update_compile_order -fileset sim_1
+close_project
+current_project SW_or_Count
+delete_bd_objs [get_bd_nets MyC_0_data_out] [get_bd_cells MyC_0]
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:MyC:1.0 MyC_0
+endgroup
+regenerate_bd_layout
+set_property location {3 550 430} [get_bd_cells MyC_0]
+connect_bd_net [get_bd_pins MyC_0/data_out] [get_bd_pins My_Conc_0/in1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins MyC_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins MyC_0/btnC]
+current_project MyC_v1_0_project
+close_project
+ipx::edit_ip_in_project -upgrade true -name MyC_v1_0_project -directory K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/MyC_v1_0_project k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY/Counter32bit/Counter32bit.srcs/sources_1/component.xml
+update_compile_order -fileset sim_1
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {k:/mostfrequentlyneeded___2014/education2011/2015_2016/secondsemester/cr/aulasteoricas/aula8_11april2016/projects2016/repository/counter32bit/counter32bit.srcs/sources_1 k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY} [current_project]
+update_ip_catalog
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+delete_bd_objs [get_bd_nets MyC_0_data_out] [get_bd_cells MyC_0]
+set_property  ip_repo_paths  k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild -repo_path k:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/REPOSITORY
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:MyC:1.0 MyC_0
+endgroup
+set_property location {3 564 471} [get_bd_cells MyC_0]
+connect_bd_net [get_bd_pins MyC_0/data_out] [get_bd_pins My_Conc_0/in1]
+connect_bd_net [get_bd_ports clk] [get_bd_pins MyC_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins MyC_0/btnC]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/SW_or_Count/SW_or_Count.runs/impl_1/BD_counter_display_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+save_project_as BM K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM -force
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dist_mem_gen:8.0 dist_mem_gen_0
+endgroup
+set_property location {2 374 -121} [get_bd_cells dist_mem_gen_0]
+startgroup
+set_property -dict [list CONFIG.depth {16} CONFIG.data_width {32} CONFIG.coefficient_file {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/coe_for_block.coe} CONFIG.default_data {7}] [get_bd_cells dist_mem_gen_0]
+endgroup
+set_property -dict [list CONFIG.memory_type {rom}] [get_bd_cells dist_mem_gen_0]
+delete_bd_objs [get_bd_nets MyC_0_data_out] [get_bd_cells MyC_0]
+connect_bd_net [get_bd_pins My_Conc_0/in1] [get_bd_pins dist_mem_gen_0/spo]
+delete_bd_objs [get_bd_nets btnL_1] [get_bd_nets xlconcat_0_dout] [get_bd_nets My_Conc_0_out32] [get_bd_nets dist_mem_gen_0_spo] [get_bd_cells My_Conc_0]
+delete_bd_objs [get_bd_nets BinToBCD16_0_BCD0] [get_bd_nets BinToBCD16_0_BCD1] [get_bd_nets BinToBCD16_0_BCD2] [get_bd_nets BinToBCD16_0_BCD3] [get_bd_nets BinToBCD16_0_BCD4] [get_bd_nets xlconstant_1_dout] [get_bd_cells xlconcat_0]
+delete_bd_objs [get_bd_nets btnC_1] [get_bd_nets sw_1] [get_bd_nets xlconstant_0_dout] [get_bd_cells BinToBCD16_0]
+delete_bd_objs [get_bd_cells xlconstant_1]
+delete_bd_objs [get_bd_cells xlconstant_0]
+set_property location {2 357 141} [get_bd_cells dist_mem_gen_0]
+connect_bd_net [get_bd_pins dist_mem_gen_0/spo] [get_bd_pins DC32_0/data_in]
+delete_bd_objs [get_bd_ports sw]
+delete_bd_objs [get_bd_ports btnC]
+delete_bd_objs [get_bd_ports btnL]
+create_bd_port -dir I -from 3 -to 0 sw
+set_property location {54 174} [get_bd_ports sw]
+connect_bd_net [get_bd_ports sw] [get_bd_pins dist_mem_gen_0/a]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+make_wrapper -files [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd] -top
+remove_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/hdl/BD_counter_display_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+make_wrapper -files [get_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd] -top
+add_files -norecurse K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/hdl/BD_counter_display_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_bd_design {K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd}
+remove_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/BD_counter_display.bd
+file delete -force K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.ip_user_files/bd/BD_counter_display K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.ip_user_files/sim_scripts/BD_counter_display
+remove_files K:/MostFrequentlyNeeded___2014/Education2011/2015_2016/SecondSemester/CR/AulasTeoricas/Aula8_11april2016/Projects2016/BM/BM.srcs/sources_1/bd/BD_counter_display/hdl/BD_counter_display_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
