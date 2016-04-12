@@ -145,30 +145,14 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
-  set an [ create_bd_port -dir O -from 7 -to 0 an ]
   set btnC [ create_bd_port -dir I btnC ]
   set clk [ create_bd_port -dir I clk ]
-  set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
-
-  # Create instance: BinToBCD16_0, and set properties
-  set BinToBCD16_0 [ create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_0 ]
-  set_property -dict [ list \
-CONFIG.size_of_data_to_convert {8} \
- ] $BinToBCD16_0
-
-  # Create instance: EightDisplayControl_0, and set properties
-  set EightDisplayControl_0 [ create_bd_cell -type ip -vlnv ua.pt:user:EightDisplayControl:1.0 EightDisplayControl_0 ]
-
-  # Create instance: HW_0, and set properties
-  set HW_0 [ create_bd_cell -type ip -vlnv user.org:user:HW:2.0 HW_0 ]
-  set_property -dict [ list \
-CONFIG.data_width {255} \
-CONFIG.n {7} \
- ] $HW_0
+  set led [ create_bd_port -dir O -from 15 -to 0 led ]
 
   # Create instance: Unroll_ROM_last_0, and set properties
   set Unroll_ROM_last_0 [ create_bd_cell -type ip -vlnv ua.pt:user:Unroll_ROM_last:1.0 Unroll_ROM_last_0 ]
   set_property -dict [ list \
+CONFIG.address_bits {3} \
 CONFIG.data_width {16} \
  ] $Unroll_ROM_last_0
 
@@ -176,37 +160,102 @@ CONFIG.data_width {16} \
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0 ]
   set_property -dict [ list \
 CONFIG.Byte_Size {9} \
-CONFIG.Coe_File {../../../../../../../Projects2016/coe_for_8words16len.coe} \
+CONFIG.Coe_File {../../../../../../../Projects2016/8words_16bits.coe} \
 CONFIG.Enable_32bit_Address {false} \
 CONFIG.Enable_A {Always_Enabled} \
-CONFIG.Fill_Remaining_Memory_Locations {false} \
 CONFIG.Load_Init_File {true} \
 CONFIG.Memory_Type {Single_Port_ROM} \
 CONFIG.Port_A_Write_Rate {0} \
 CONFIG.Read_Width_A {16} \
 CONFIG.Read_Width_B {16} \
-CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
 CONFIG.Use_Byte_Write_Enable {false} \
 CONFIG.Use_RSTA_Pin {false} \
-CONFIG.Write_Depth_A {16} \
+CONFIG.Write_Depth_A {8} \
 CONFIG.Write_Width_A {16} \
 CONFIG.Write_Width_B {16} \
 CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_0
 
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {15} \
+CONFIG.DIN_TO {0} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_0
+
+  # Create instance: xlslice_1, and set properties
+  set xlslice_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {31} \
+CONFIG.DIN_TO {16} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_1
+
+  # Create instance: xlslice_2, and set properties
+  set xlslice_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {47} \
+CONFIG.DIN_TO {32} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_2
+
+  # Create instance: xlslice_3, and set properties
+  set xlslice_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_3 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {63} \
+CONFIG.DIN_TO {48} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_3
+
+  # Create instance: xlslice_4, and set properties
+  set xlslice_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_4 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {79} \
+CONFIG.DIN_TO {64} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_4
+
+  # Create instance: xlslice_5, and set properties
+  set xlslice_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_5 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {95} \
+CONFIG.DIN_TO {80} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_5
+
+  # Create instance: xlslice_6, and set properties
+  set xlslice_6 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_6 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {111} \
+CONFIG.DIN_TO {96} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_6
+
+  # Create instance: xlslice_7, and set properties
+  set xlslice_7 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_7 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {127} \
+CONFIG.DIN_TO {112} \
+CONFIG.DIN_WIDTH {128} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_7
+
   # Create port connections
-  connect_bd_net -net BinToBCD16_0_BCD0 [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDisplayControl_0/rightR]
-  connect_bd_net -net BinToBCD16_0_BCD1 [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins EightDisplayControl_0/near_rightR]
-  connect_bd_net -net BinToBCD16_0_BCD2 [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins EightDisplayControl_0/near_leftR]
-  connect_bd_net -net BinToBCD16_0_BCD3 [get_bd_pins BinToBCD16_0/BCD3] [get_bd_pins EightDisplayControl_0/leftR]
-  connect_bd_net -net EightDisplayControl_0_segments [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
-  connect_bd_net -net EightDisplayControl_0_select_display [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
-  connect_bd_net -net HW_0_out_n [get_bd_pins BinToBCD16_0/binary] [get_bd_pins HW_0/out_n]
   connect_bd_net -net Unroll_ROM_last_0_addr [get_bd_pins Unroll_ROM_last_0/addr] [get_bd_pins blk_mem_gen_0/addra]
-  connect_bd_net -net Unroll_ROM_last_0_data_out [get_bd_pins HW_0/in_vector] [get_bd_pins Unroll_ROM_last_0/data_out]
+  connect_bd_net -net Unroll_ROM_last_0_data_out [get_bd_pins Unroll_ROM_last_0/data_out] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din] [get_bd_pins xlslice_5/Din] [get_bd_pins xlslice_6/Din] [get_bd_pins xlslice_7/Din]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins Unroll_ROM_last_0/data_in] [get_bd_pins blk_mem_gen_0/douta]
-  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins BinToBCD16_0/reset] [get_bd_pins Unroll_ROM_last_0/rst]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins BinToBCD16_0/clk] [get_bd_pins EightDisplayControl_0/clk] [get_bd_pins Unroll_ROM_last_0/clk] [get_bd_pins blk_mem_gen_0/clka]
+  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins Unroll_ROM_last_0/rst]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins Unroll_ROM_last_0/clk] [get_bd_pins blk_mem_gen_0/clka]
+  connect_bd_net -net xlslice_1_Dout [get_bd_ports led] [get_bd_pins xlslice_1/Dout]
 
   # Create address segments
 
@@ -214,28 +263,26 @@ CONFIG.use_bram_block {Stand_Alone} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
-preplace port btnC -pg 1 -y 200 -defaultsOSRD
-preplace port clk -pg 1 -lvl 1:-100 -defaultsOSRD -bot
-preplace portBus an -pg 1 -y 220 -defaultsOSRD
-preplace portBus seg -pg 1 -y 240 -defaultsOSRD
-preplace inst EightDisplayControl_0 -pg 1 -lvl 4 -y 230 -defaultsOSRD
+preplace port btnC -pg 1 -y 110 -defaultsOSRD
+preplace port clk -pg 1 -y 20 -defaultsOSRD
+preplace portBus led -pg 1 -y 580 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 220 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -y 400 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -y 490 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 2 -y 670 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 2 -y 760 -defaultsOSRD
 preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
-preplace inst BinToBCD16_0 -pg 1 -lvl 3 -y 260 -defaultsOSRD
-preplace inst Unroll_ROM_last_0 -pg 1 -lvl 1 -y 180 -defaultsOSRD
-preplace inst HW_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
-preplace netloc Unroll_ROM_last_0_data_out 1 1 1 300
-preplace netloc BinToBCD16_0_BCD0 1 3 1 N
-preplace netloc BinToBCD16_0_BCD1 1 3 1 N
-preplace netloc BinToBCD16_0_BCD2 1 3 1 N
-preplace netloc btnC_1 1 0 3 20 250 NJ 250 NJ
-preplace netloc BinToBCD16_0_BCD3 1 3 1 N
-preplace netloc HW_0_out_n 1 2 1 NJ
-preplace netloc clk_1 1 0 4 30 100 310 180 550 150 NJ
-preplace netloc blk_mem_gen_0_douta 1 0 2 40 110 NJ
-preplace netloc EightDisplayControl_0_select_display 1 4 1 NJ
-preplace netloc Unroll_ROM_last_0_addr 1 1 1 300
-preplace netloc EightDisplayControl_0_segments 1 4 1 NJ
-levelinfo -pg 1 0 170 430 650 900 1060 -top 0 -bot 430
+preplace inst xlslice_6 -pg 1 -lvl 2 -y 850 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace inst Unroll_ROM_last_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace netloc Unroll_ROM_last_0_data_out 1 1 1 280
+preplace netloc xlslice_1_Dout 1 2 1 520
+preplace netloc btnC_1 1 0 1 NJ
+preplace netloc clk_1 1 0 2 10 20 NJ
+preplace netloc blk_mem_gen_0_douta 1 0 2 20 10 NJ
+preplace netloc Unroll_ROM_last_0_addr 1 1 1 N
+levelinfo -pg 1 -10 150 410 540 -top 0 -bot 900
 ",
 }
 

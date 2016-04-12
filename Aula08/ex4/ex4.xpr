@@ -34,6 +34,28 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_0_2/ex4_blk_mem_gen_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.v"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_2/ex4_xlslice_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_Unroll_ROM_last_0_0_2/ex4_Unroll_ROM_last_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ex4_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.hwdef"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hw_handoff/ex4.hwh"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hw_handoff/ex4_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_2_1/ex4_xlslice_2_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_2_2/ex4_xlslice_2_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_2_0_1/ex4_xlslice_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_1_1/ex4_xlslice_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_6_0_1/ex4_xlslice_6_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_5_0_1/ex4_xlslice_5_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_0_1/ex4_xlslice_0_0.xci"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/ex4/hdl/ex4_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <File Path="$PPRDIR/../Projects2016/coe_for_8words16len.coe">
         <FileInfo>
@@ -42,8 +64,15 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ex4/ip/ex4_TopCounter32_0_1/ex4_TopCounter32_0_1.upgrade_log"/>
+      <File Path="$PPRDIR/../Projects2016/8words_16bits.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="ex4_wrapper"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -65,6 +94,8 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="ex4_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
@@ -92,13 +123,14 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
         <Step Id="init_design"/>
@@ -111,6 +143,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
   </Runs>
 </Project>

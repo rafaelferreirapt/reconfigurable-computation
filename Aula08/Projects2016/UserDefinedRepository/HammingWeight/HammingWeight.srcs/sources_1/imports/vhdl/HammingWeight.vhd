@@ -2,8 +2,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all; 
 
 entity HW is
-    port (      sw 		   : in  std_logic_vector (15 downto 0);
-                led        : out  std_logic_vector (4 downto 0));
+    port (      completed  : in std_logic;
+                sw 		   : in  std_logic_vector (127 downto 0);
+                led        : out  std_logic_vector (6 downto 0));
 end HW;
 
 architecture Behavioral of HW is
@@ -14,7 +15,7 @@ begin
 --	variable HammingWeightCount : integer range 0 to 16;
 --begin
 --   HammingWeightCount := 0;
---   for i in sw'range loop	-- HW para sw(15), sw(14), … , sw(0)
+--   for i in sw'range loop	-- HW para sw(15), sw(14), ï¿½ , sw(0)
 --	if sw(i) = '1' then HammingWeightCount := HammingWeightCount+1;
 --   	end if;
 --   end loop;
@@ -26,7 +27,7 @@ begin
 --	variable par : std_logic;
 --begin
 --   par := '0';
---   for i in sw'range loop	-- HW para sw(15), sw(14), … , sw(0)
+--   for i in sw'range loop	-- HW para sw(15), sw(14), ï¿½ , sw(0)
 --	par := par xor sw(i);
 --   end loop;
 --   if (par = '1') then led <= (others => '1'); 
@@ -57,12 +58,12 @@ begin
 --   end if;
 --end process par;
 
-par: process(sw)
+par: process(completed)
 	variable par : std_logic;
-	variable i   : integer range 0 to 16;
+	variable i   : integer range 0 to 128;
 begin
    par := '0'; i := 0;
-   while i <= sw'left loop	-- HW para sw(15), sw(14), … , sw(0)
+   while i <= sw'left loop	-- HW para sw(15), sw(14), ï¿½ , sw(0)
 	   par := par xor sw(i); i := i+1;
    end loop;
    if (par = '1') then led <= (others => '1'); 

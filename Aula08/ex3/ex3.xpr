@@ -34,21 +34,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="hdl/ex3.v"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_xlconcat_0_0/ex3_xlconcat_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_BinToBCD16_0_1/ex3_BinToBCD16_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_My_Conc_0_0/ex3_My_Conc_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_EightDisplayControl32inputs_0_0/ex3_EightDisplayControl32inputs_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_blk_mem_gen_0_1/ex3_blk_mem_gen_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_xlconcat_1_0/ex3_xlconcat_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_xlconstant_0_0/ex3_xlconstant_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_xlconstant_1_1/ex3_xlconstant_1_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_xlconcat_1_1/ex3_xlconcat_1_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ip/ex3_xlconstant_0_1/ex3_xlconstant_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="ex3_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="hw_handoff/ex3.hwh"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="hw_handoff/ex3_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ex3.bd" FileRelPathName="hdl/ex3.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ex3/hdl/ex3_wrapper.v">
         <FileInfo>
