@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Apr 12 15:22:57 2016
+# Process ID: 2912
+# Current directory: X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula08/ex5/ex5.runs/impl_1
+# Command line: vivado.exe -log ex5.vdi -applog -messageDb vivado.pb -mode batch -source ex5.tcl -notrace
+# Log file: X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula08/ex5/ex5.runs/impl_1/ex5.vdi
+# Journal file: X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula08/ex5/ex5.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ex5.tcl -notrace
