@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="X:/Universidade/4Ano/2Semestre/CR/reconfigurable-computation.git/Aula08/ex4/ex4.xpr">
+<Project Version="7" Minor="10" Path="/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="26a9823d5dd94361bd4226590f8c6ee5"/>
@@ -89,9 +89,6 @@
     </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
-    </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
