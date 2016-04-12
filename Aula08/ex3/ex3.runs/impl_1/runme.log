@@ -512,3 +512,60 @@ INFO: [Common 17-186] '/media/psf/Home/Development/ect_ua/reconfigurable-computa
 INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2121.148 ; gain = 278.293 ; free physical = 4352 ; free virtual = 6363
 INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 21:42:28 2016...
+
+*** Running vivado
+    with args -log ex3_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source ex3_wrapper.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source ex3_wrapper.tcl -notrace
+Command: open_checkpoint ex3_wrapper_routed.dcp
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.runs/impl_1/.Xil/Vivado-32514-ubuntu/dcp/ex3_wrapper.xdc]
+Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex3/ex3.runs/impl_1/.Xil/Vivado-32514-ubuntu/dcp/ex3_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1129.492 ; gain = 0.000 ; free physical = 4771 ; free virtual = 7167
+Restored from archive | CPU: 0.050000 secs | Memory: 0.187706 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1129.492 ; gain = 0.000 ; free physical = 4771 ; free virtual = 7167
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2015.4 (64-bit) build 1412921
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1129.492 ; gain = 216.027 ; free physical = 4769 ; free virtual = 7167
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ex3_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1541.465 ; gain = 411.973 ; free physical = 4408 ; free virtual = 6817
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 12 14:20:16 2016...
