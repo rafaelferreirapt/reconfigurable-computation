@@ -1,9 +1,28 @@
 {
    guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
-preplace inst EightDisplayControl_0 -pg 1 -lvl 1 -y -120 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y -100 -defaultsOSRD
-preplace inst TopCounter32_0 -pg 1 -lvl 2 -y -250 -defaultsOSRD
-levelinfo -pg 1 -50 100 350 560 670 -top -420 -bot 10
+preplace port btnC -pg 1 -y 200 -defaultsOSRD
+preplace port clk -pg 1 -lvl 1:-100 -defaultsOSRD -bot
+preplace portBus an -pg 1 -y 220 -defaultsOSRD
+preplace portBus seg -pg 1 -y 240 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 4 -y 230 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 3 -y 260 -defaultsOSRD
+preplace inst Unroll_ROM_last_0 -pg 1 -lvl 1 -y 180 -defaultsOSRD
+preplace inst HW_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
+preplace netloc Unroll_ROM_last_0_data_out 1 1 1 300
+preplace netloc BinToBCD16_0_BCD0 1 3 1 N
+preplace netloc BinToBCD16_0_BCD1 1 3 1 N
+preplace netloc BinToBCD16_0_BCD2 1 3 1 N
+preplace netloc btnC_1 1 0 3 20 250 NJ 250 NJ
+preplace netloc BinToBCD16_0_BCD3 1 3 1 N
+preplace netloc HW_0_out_n 1 2 1 NJ
+preplace netloc clk_1 1 0 4 30 100 310 180 550 150 NJ
+preplace netloc blk_mem_gen_0_douta 1 0 2 40 110 NJ
+preplace netloc EightDisplayControl_0_select_display 1 4 1 NJ
+preplace netloc Unroll_ROM_last_0_addr 1 1 1 300
+preplace netloc EightDisplayControl_0_segments 1 4 1 NJ
+levelinfo -pg 1 0 170 430 650 900 1060 -top 0 -bot 430
 ",
 }
+0
