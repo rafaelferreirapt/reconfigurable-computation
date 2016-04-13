@@ -219,12 +219,25 @@ CONFIG.Latency {1} \
 CONFIG.Out_Width {6} \
  ] $c_addsub_2
 
+  # Create instance: xlconcat_0, and set properties
+  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
+  set_property -dict [ list \
+CONFIG.IN0_WIDTH {3} \
+CONFIG.IN1_WIDTH {1} \
+ ] $xlconcat_0
+
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
   set_property -dict [ list \
 CONFIG.CONST_VAL {0} \
 CONFIG.CONST_WIDTH {4} \
  ] $xlconstant_0
+
+  # Create instance: xlconstant_1, and set properties
+  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+  set_property -dict [ list \
+CONFIG.CONST_VAL {0} \
+ ] $xlconstant_1
 
   # Create instance: xlslice_0, and set properties
   set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
@@ -293,13 +306,15 @@ CONFIG.DOUT_WIDTH {3} \
   connect_bd_net -net c_addsub_2_S [get_bd_pins c_addsub_0/B] [get_bd_pins c_addsub_2/S]
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins EightDisplayControl_0/clk] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins c_addsub_0/CLK] [get_bd_pins c_addsub_1/CLK] [get_bd_pins c_addsub_2/CLK]
   connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins blk_mem_gen_1/addra]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins EightDisplayControl_0/near_rightR] [get_bd_pins xlconcat_0/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins EightDisplayControl_0/leftL] [get_bd_pins EightDisplayControl_0/leftR] [get_bd_pins EightDisplayControl_0/near_leftL] [get_bd_pins EightDisplayControl_0/near_leftR] [get_bd_pins EightDisplayControl_0/near_rightL] [get_bd_pins EightDisplayControl_0/rightL] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins HammingWeight_0/sw] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins HammingWeight_1/sw] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net xlslice_2_Dout [get_bd_pins HammingWeight_2/sw] [get_bd_pins xlslice_2/Dout]
   connect_bd_net -net xlslice_3_Dout [get_bd_pins HammingWeight_3/sw] [get_bd_pins xlslice_3/Dout]
   connect_bd_net -net xlslice_4_Dout [get_bd_pins EightDisplayControl_0/rightR] [get_bd_pins xlslice_4/Dout]
-  connect_bd_net -net xlslice_5_Dout [get_bd_pins EightDisplayControl_0/near_rightR] [get_bd_pins xlslice_5/Dout]
+  connect_bd_net -net xlslice_5_Dout [get_bd_pins xlconcat_0/In0] [get_bd_pins xlslice_5/Dout]
 
   # Create address segments
 
@@ -307,46 +322,50 @@ CONFIG.DOUT_WIDTH {3} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port clk -pg 1 -y -140 -defaultsOSRD
-preplace portBus sw -pg 1 -y -180 -defaultsOSRD
-preplace portBus an -pg 1 -y 40 -defaultsOSRD
-preplace portBus seg -pg 1 -y 90 -defaultsOSRD
-preplace inst EightDisplayControl_0 -pg 1 -lvl 6 -y 100 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 1 -y 10 -defaultsOSRD
-preplace inst HammingWeight_0 -pg 1 -lvl 2 -y 0 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 5 -y -70 -defaultsOSRD
-preplace inst HammingWeight_1 -pg 1 -lvl 2 -y 90 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 1 -y 90 -defaultsOSRD
-preplace inst HammingWeight_2 -pg 1 -lvl 2 -y 180 -defaultsOSRD
-preplace inst xlslice_2 -pg 1 -lvl 1 -y 180 -defaultsOSRD
-preplace inst HammingWeight_3 -pg 1 -lvl 2 -y 260 -defaultsOSRD
-preplace inst xlslice_3 -pg 1 -lvl 1 -y 260 -defaultsOSRD
-preplace inst xlslice_4 -pg 1 -lvl 5 -y 180 -defaultsOSRD
-preplace inst c_addsub_0 -pg 1 -lvl 4 -y 120 -defaultsOSRD
-preplace inst xlslice_5 -pg 1 -lvl 5 -y 100 -defaultsOSRD
-preplace inst c_addsub_1 -pg 1 -lvl 3 -y 40 -defaultsOSRD
-preplace inst c_addsub_2 -pg 1 -lvl 3 -y 210 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 1 -y -150 -defaultsOSRD
-preplace netloc xlslice_4_Dout 1 5 1 N
-preplace netloc HammingWeight_2_led 1 2 1 170
-preplace netloc xlslice_3_Dout 1 1 1 N
-preplace netloc xlslice_1_Dout 1 1 1 N
-preplace netloc blk_mem_gen_1_douta 1 0 1 -240
-preplace netloc xlslice_5_Dout 1 5 1 720
-preplace netloc c_addsub_1_S 1 3 1 350
-preplace netloc HammingWeight_1_led 1 2 1 170
-preplace netloc xlconstant_0_dout 1 5 1 730
-preplace netloc HammingWeight_3_led 1 2 1 190
-preplace netloc clk_1 1 0 6 -230 -240 NJ -240 180 -30 360 20 NJ 20 N
-preplace netloc xlslice_2_Dout 1 1 1 N
-preplace netloc HammingWeight_0_led 1 2 1 190
-preplace netloc EightDisplayControl_0_select_display 1 6 1 1000
-preplace netloc sw_1 1 0 1 -240
-preplace netloc EightDisplayControl_0_segments 1 6 1 1010
-preplace netloc c_addsub_0_S 1 4 1 530
-preplace netloc c_addsub_2_S 1 3 1 370
-preplace netloc xlslice_0_Dout 1 1 1 -30
-levelinfo -pg 1 -260 -130 70 270 450 630 870 1030 -top -250 -bot 430
+preplace port clk -pg 1 -y 340 -defaultsOSRD
+preplace portBus sw -pg 1 -y 360 -defaultsOSRD
+preplace portBus an -pg 1 -y 250 -defaultsOSRD
+preplace portBus seg -pg 1 -y 270 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 7 -y 260 -defaultsOSRD
+preplace inst HammingWeight_0 -pg 1 -lvl 2 -y 50 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -y 50 -defaultsOSRD
+preplace inst HammingWeight_1 -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -y 40 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -y 130 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 5 -y 520 -defaultsOSRD
+preplace inst HammingWeight_2 -pg 1 -lvl 2 -y 210 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -y 210 -defaultsOSRD
+preplace inst HammingWeight_3 -pg 1 -lvl 2 -y 290 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -y 290 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -y 460 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 5 -y 270 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 4 -y 220 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 5 -y 410 -defaultsOSRD
+preplace inst c_addsub_1 -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace inst c_addsub_2 -pg 1 -lvl 3 -y 220 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 3 -y 380 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 5 1 1000
+preplace netloc HammingWeight_2_led 1 2 1 410
+preplace netloc xlslice_4_Dout 1 5 2 NJ 270 1210
+preplace netloc xlslice_3_Dout 1 1 1 NJ
+preplace netloc xlslice_1_Dout 1 1 1 NJ
+preplace netloc blk_mem_gen_1_douta 1 0 3 0 400 NJ 400 NJ
+preplace netloc xlslice_5_Dout 1 5 1 1000
+preplace netloc HammingWeight_1_led 1 2 1 410
+preplace netloc c_addsub_1_S 1 3 1 630
+preplace netloc xlconcat_0_dout 1 6 1 1220
+preplace netloc HammingWeight_3_led 1 2 1 430
+preplace netloc xlconstant_0_dout 1 5 2 N 40 1220
+preplace netloc clk_1 1 0 7 NJ 340 NJ 340 420 150 640 150 NJ 150 NJ 150 NJ
+preplace netloc xlslice_2_Dout 1 1 1 NJ
+preplace netloc HammingWeight_0_led 1 2 1 410
+preplace netloc EightDisplayControl_0_select_display 1 7 1 N
+preplace netloc sw_1 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc EightDisplayControl_0_segments 1 7 1 N
+preplace netloc c_addsub_0_S 1 4 1 810
+preplace netloc c_addsub_2_S 1 3 1 N
+preplace netloc xlslice_0_Dout 1 1 1 NJ
+levelinfo -pg 1 -20 110 310 530 730 910 1120 1380 1530 -top 0 -bot 600
 ",
 }
 
