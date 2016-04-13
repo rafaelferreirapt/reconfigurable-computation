@@ -52,6 +52,10 @@ case C_S is
             N_S  <= copiar;
     end if;
 
+   when final_dummy =>
+        --data_out(data_width*(addr_in+1)-1 downto data_width*addr_in) <= data_in;
+        N_S <= final;
+
    when final => N_S <= final; 	comp_N <= '1';
    when others => N_S <= init;
 end case;
