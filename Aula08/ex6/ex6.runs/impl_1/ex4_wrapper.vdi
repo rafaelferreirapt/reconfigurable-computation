@@ -2,346 +2,28 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Wed Apr 13 21:15:56 2016
-# Process ID: 30670
-# Current directory: /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.runs/impl_1
+# Start of session at: Wed Apr 13 21:46:00 2016
+# Process ID: 6804
+# Current directory: /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.runs/impl_1
 # Command line: vivado -log ex4_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source ex4_wrapper.tcl -notrace
-# Log file: /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.runs/impl_1/ex4_wrapper.vdi
-# Journal file: /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.runs/impl_1/vivado.jou
+# Log file: /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.runs/impl_1/ex4_wrapper.vdi
+# Journal file: /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source ex4_wrapper.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2015.4
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_0/U0'
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:36]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:42]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:44]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:47]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:48]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:51]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:53]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:57]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:66]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:67]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:69]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:70]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:72]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:73]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:75]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:76]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:78]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:79]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnC'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnC'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_0/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_1/U0'
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:36]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:42]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:44]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:47]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:48]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:51]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:53]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:57]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:66]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:67]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:69]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:70]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:72]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:73]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:75]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:76]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:78]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:79]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnC'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:194]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnC'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc:195]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_1/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_2/U0'
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:29]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc:30]
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_2/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_4/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_3/U0'
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_4/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_3/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_5/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_4/U0'
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_5/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_4/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_6/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_5/U0'
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_0_6/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_5/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_4_0/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_6/U0'
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_4_0/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_6/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_4_1/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_7/U0'
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/sources_1/bd/ex4/ip/ex4_hw_4_1/constrs_1/imports/xdc/Nexys4_Master.xdc] for cell 'ex4_i/hw_7/U0'
-Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
-Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
+Finished Parsing XDC File [/media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1157.508 ; gain = 242.020 ; free physical = 3408 ; free virtual = 6305
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.508 ; gain = 244.020 ; free physical = 3350 ; free virtual = 6249
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -352,45 +34,45 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1201.527 ; gain = 36.016 ; free physical = 3403 ; free virtual = 6300
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1203.527 ; gain = 36.016 ; free physical = 3346 ; free virtual = 6244
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 13a4ee3ef
+Implement Debug Cores | Checksum: 18414094b
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 16559f738
+Phase 1 Retarget | Checksum: 1f6888602
 
-Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1629.957 ; gain = 0.000 ; free physical = 3051 ; free virtual = 5948
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1632.957 ; gain = 0.000 ; free physical = 2995 ; free virtual = 5893
 
 Phase 2 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 0 cells.
-Phase 2 Constant Propagation | Checksum: a1aa23f4
+Phase 2 Constant Propagation | Checksum: 1f6888602
 
-Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1629.957 ; gain = 0.000 ; free physical = 3051 ; free virtual = 5948
+Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.32 . Memory (MB): peak = 1632.957 ; gain = 0.000 ; free physical = 2995 ; free virtual = 5893
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 151 unconnected nets.
-INFO: [Opt 31-11] Eliminated 43 unconnected cells.
-Phase 3 Sweep | Checksum: 21d0b74a2
+INFO: [Opt 31-12] Eliminated 409 unconnected nets.
+INFO: [Opt 31-11] Eliminated 4 unconnected cells.
+Phase 3 Sweep | Checksum: 20fc11f27
 
-Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.32 . Memory (MB): peak = 1629.957 ; gain = 0.000 ; free physical = 3050 ; free virtual = 5947
+Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1632.957 ; gain = 0.000 ; free physical = 2995 ; free virtual = 5893
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1629.957 ; gain = 0.000 ; free physical = 3050 ; free virtual = 5947
-Ending Logic Optimization Task | Checksum: 21d0b74a2
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1632.957 ; gain = 0.000 ; free physical = 2995 ; free virtual = 5893
+Ending Logic Optimization Task | Checksum: 20fc11f27
 
-Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 1629.957 ; gain = 0.000 ; free physical = 3050 ; free virtual = 5947
+Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.88 . Memory (MB): peak = 1632.957 ; gain = 0.000 ; free physical = 2995 ; free virtual = 5893
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -400,23 +82,23 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
-Ending PowerOpt Patch Enables Task | Checksum: 21d0b74a2
+Ending PowerOpt Patch Enables Task | Checksum: 20fc11f27
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2988 ; free virtual = 5884
-Ending Power Optimization Task | Checksum: 21d0b74a2
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2906 ; free virtual = 5804
+Ending Power Optimization Task | Checksum: 20fc11f27
 
-Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.68 . Memory (MB): peak = 1761.055 ; gain = 131.098 ; free physical = 2988 ; free virtual = 5884
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1827.051 ; gain = 194.094 ; free physical = 2906 ; free virtual = 5804
 INFO: [Common 17-83] Releasing license: Implementation
-27 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1761.055 ; gain = 603.547 ; free physical = 2988 ; free virtual = 5884
+opt_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1827.051 ; gain = 667.543 ; free physical = 2905 ; free virtual = 5803
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2987 ; free virtual = 5884
+Write XDEF Complete: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.43 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2905 ; free virtual = 5803
 INFO: [DRC 23-27] Running DRC with 4 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.runs/impl_1/ex4_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.runs/impl_1/ex4_wrapper_drc_opted.rpt.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -432,228 +114,228 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5798
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5798
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 
 Phase 1.1.1 Pre-Place Cells
-Phase 1.1.1 Pre-Place Cells | Checksum: 660b5b9c
+Phase 1.1.1 Pre-Place Cells | Checksum: a45d4066
 
-Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5798
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 1.1.2 IO and Clk Clean Up
-Phase 1.1.2 IO and Clk Clean Up | Checksum: 660b5b9c
+Phase 1.1.2 IO and Clk Clean Up | Checksum: a45d4066
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5799
 
 Phase 1.1.3 Implementation Feasibility check On IDelay
-Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 660b5b9c
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: a45d4066
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5799
 
 Phase 1.1.4 Commit IO Placement
-Phase 1.1.4 Commit IO Placement | Checksum: fa835c95
+Phase 1.1.4 Commit IO Placement | Checksum: b1a88f1f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1344792a6
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5799
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: eabc505a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5799
 
 Phase 1.2 Build Placer Netlist Model
 
 Phase 1.2.1 Place Init Design
 
 Phase 1.2.1.1 Init Lut Pin Assignment
-Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1d4e569e9
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 14c0793e6
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2983 ; free virtual = 5879
-Phase 1.2.1 Place Init Design | Checksum: 218a74d80
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2900 ; free virtual = 5799
+Phase 1.2.1 Place Init Design | Checksum: 15e9453ef
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2982 ; free virtual = 5879
-Phase 1.2 Build Placer Netlist Model | Checksum: 218a74d80
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2893 ; free virtual = 5791
+Phase 1.2 Build Placer Netlist Model | Checksum: 15e9453ef
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2982 ; free virtual = 5879
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2893 ; free virtual = 5791
 
 Phase 1.3 Constrain Clocks/Macros
 
 Phase 1.3.1 Constrain Global/Regional Clocks
-Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 218a74d80
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 15e9453ef
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2982 ; free virtual = 5879
-Phase 1.3 Constrain Clocks/Macros | Checksum: 218a74d80
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2893 ; free virtual = 5791
+Phase 1.3 Constrain Clocks/Macros | Checksum: 15e9453ef
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2982 ; free virtual = 5879
-Phase 1 Placer Initialization | Checksum: 218a74d80
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2893 ; free virtual = 5791
+Phase 1 Placer Initialization | Checksum: 15e9453ef
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2982 ; free virtual = 5879
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2893 ; free virtual = 5791
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 1c059e60d
+Phase 2 Global Placement | Checksum: 1669def22
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2890 ; free virtual = 5788
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1c059e60d
+Phase 3.1 Commit Multi Column Macros | Checksum: 1669def22
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2890 ; free virtual = 5788
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17dcf26fc
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1b63a718e
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1c8e23345
+Phase 3.3 Area Swap Optimization | Checksum: 126ff3984
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 3.4 updateClock Trees: DP
-Phase 3.4 updateClock Trees: DP | Checksum: 1c8e23345
+Phase 3.4 updateClock Trees: DP | Checksum: 126ff3984
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1b7f7b871
+Phase 3.5 Timing Path Optimizer | Checksum: 180f3e8e0
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 14cbe887a
+Phase 3.6 Fast Optimization | Checksum: 180f3e8e0
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 3.7 Small Shape Detail Placement
 
 Phase 3.7.1 Commit Small Macros and Core Logic
 
 Phase 3.7.1.1 Commit Slice Clusters
-Phase 3.7.1.1 Commit Slice Clusters | Checksum: 10e380d4b
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: 1905227e7
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
-Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 10e380d4b
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5786
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 1905227e7
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5786
 
 Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
-Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 10e380d4b
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1905227e7
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
 
 Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
-Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 10e380d4b
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1905227e7
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
-Phase 3.7 Small Shape Detail Placement | Checksum: 10e380d4b
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
+Phase 3.7 Small Shape Detail Placement | Checksum: 1905227e7
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: f7403e4f
+Phase 3.8 Re-assign LUT pins | Checksum: 13a1f9053
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
-Phase 3 Detail Placement | Checksum: f7403e4f
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
+Phase 3 Detail Placement | Checksum: 13a1f9053
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
 
 Phase 4.1.1 callUpdateTimingBeforePCO
-Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 163d4a6e8
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 103a933c3
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
 
 Phase 4.1.2 updateClock Trees: PCOPT
-Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 163d4a6e8
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 103a933c3
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
 
 Phase 4.1.3 Post Placement Optimization
 
 Phase 4.1.3.1 PCOPT Shape updates
 
 Phase 4.1.3.1.1 removeOptionalFFsFromShapes
-Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 163d4a6e8
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 103a933c3
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5787
 
 Phase 4.1.3.1.2 deleteLutnmShapes
 
 Phase 4.1.3.1.2.1 deleteShapes
-Phase 4.1.3.1.2.1 deleteShapes | Checksum: 108ef2db9
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 13247fa8c
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
-Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 108ef2db9
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 13247fa8c
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
-Phase 4.1.3.1 PCOPT Shape updates | Checksum: 108ef2db9
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 13247fa8c
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2979 ; free virtual = 5876
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 4.1.3.2 Post Placement Timing Optimization
 
 Phase 4.1.3.2.1 Restore Best Placement
-Phase 4.1.3.2.1 Restore Best Placement | Checksum: a8f22b78
+Phase 4.1.3.2.1 Restore Best Placement | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.268. For the most accurate timing information please run report_timing.
-Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: a8f22b78
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.502. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-Phase 4.1.3 Post Placement Optimization | Checksum: a8f22b78
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Phase 4.1.3 Post Placement Optimization | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-Phase 4.1 Post Commit Optimization | Checksum: a8f22b78
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Phase 4.1 Post Commit Optimization | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 4.2 Sweep Clock Roots: Post-Placement
-Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: a8f22b78
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: a8f22b78
+Phase 4.3 Post Placement Cleanup | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 4.4 Placer Reporting
 
 Phase 4.4.1 Restore STA
-Phase 4.4.1 Restore STA | Checksum: a8f22b78
+Phase 4.4.1 Restore STA | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-Phase 4.4 Placer Reporting | Checksum: a8f22b78
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Phase 4.4 Placer Reporting | Checksum: 29da2324f
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 
 Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: b9ad45c9
+Phase 4.5 Final Placement Cleanup | Checksum: 1c7b4af0c
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: b9ad45c9
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c7b4af0c
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-Ending Placer Task | Checksum: 5936f62e
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+Ending Placer Task | Checksum: 10146840b
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 INFO: [Common 17-83] Releasing license: Implementation
-40 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+38 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+place_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:42 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.45 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
-report_io: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2977 ; free virtual = 5874
-report_utilization: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.35 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2977 ; free virtual = 5874
-report_control_sets: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1761.055 ; gain = 0.000 ; free physical = 2978 ; free virtual = 5875
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2889 ; free virtual = 5787
+report_io: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5786
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5786
+report_control_sets: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2888 ; free virtual = 5786
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -665,107 +347,99 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: 953d3a4 ConstDB: 0 ShapeSum: 4fe3228a RouteDB: 0
+Checksum: PlaceDB: e216a786 ConstDB: 0 ShapeSum: 1f2fdc85 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: d3d84ed4
+Phase 1 Build RT Design | Checksum: 14596dec9
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 1771.715 ; gain = 10.660 ; free physical = 2878 ; free virtual = 5775
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:48 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2797 ; free virtual = 5695
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: d3d84ed4
+Phase 2.1 Create Timer | Checksum: 14596dec9
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 1775.715 ; gain = 14.660 ; free physical = 2876 ; free virtual = 5773
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:49 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2797 ; free virtual = 5695
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: d3d84ed4
+Phase 2.2 Pre Route Cleanup | Checksum: 14596dec9
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 1789.715 ; gain = 28.660 ; free physical = 2862 ; free virtual = 5759
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:49 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2791 ; free virtual = 5690
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 13bb15839
+Phase 2.3 Update Timing | Checksum: 12547b188
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2855 ; free virtual = 5751
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.254  | TNS=0.000  | WHS=-0.104 | THS=-7.220 |
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:50 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2769 ; free virtual = 5667
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.494  | TNS=0.000  | WHS=-0.147 | THS=-25.220|
 
-Phase 2 Router Initialization | Checksum: 199cd9e58
+Phase 2 Router Initialization | Checksum: 1ec98d718
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:31 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2855 ; free virtual = 5751
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2769 ; free virtual = 5667
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 23ecf98f3
+Phase 3 Initial Routing | Checksum: 7de65314
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2855 ; free virtual = 5751
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:51 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2769 ; free virtual = 5667
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 173
- Number of Nodes with overlaps = 59
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 12
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 445
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: e040ee50
+Phase 4.1.1 Update Timing | Checksum: 113e8b123
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.058  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.379  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1d57cdb4c
+Phase 4.1 Global Iteration 0 | Checksum: 15e9d627e
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
-Phase 4 Rip-up And Reroute | Checksum: 1d57cdb4c
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
+Phase 4 Rip-up And Reroute | Checksum: 15e9d627e
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 23ec1270b
+Phase 5.1.1 Update Timing | Checksum: 12015309e
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.137  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.458  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 23ec1270b
+Phase 5.1 Delay CleanUp | Checksum: 12015309e
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 23ec1270b
+Phase 5.2 Clock Skew Optimization | Checksum: 12015309e
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
-Phase 5 Delay and Skew Optimization | Checksum: 23ec1270b
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
+Phase 5 Delay and Skew Optimization | Checksum: 12015309e
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Update Timing
-Phase 6.1 Update Timing | Checksum: 1d32c69ff
+Phase 6.1 Update Timing | Checksum: 1e69b6b57
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.137  | TNS=0.000  | WHS=0.172  | THS=0.000  |
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.458  | TNS=0.000  | WHS=0.171  | THS=0.000  |
 
-Phase 6 Post Hold Fix | Checksum: 2633e0b2a
+Phase 6 Post Hold Fix | Checksum: 1e69b6b57
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.100971 %
-  Global Horizontal Routing Utilization  = 0.0907218 %
+  Global Vertical Routing Utilization    = 0.582974 %
+  Global Horizontal Routing Utilization  = 0.593421 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -774,45 +448,45 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1de5d0184
+Phase 7 Route finalize | Checksum: 113ec853f
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2854 ; free virtual = 5751
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1de5d0184
+Phase 8 Verifying routed nets | Checksum: 113ec853f
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2852 ; free virtual = 5749
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 210e0ca57
+Phase 9 Depositing Routes | Checksum: 1c67ad82b
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2852 ; free virtual = 5749
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:54 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.137  | TNS=0.000  | WHS=0.172  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.458  | TNS=0.000  | WHS=0.171  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 210e0ca57
+Phase 10 Post Router Timing | Checksum: 1c67ad82b
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2852 ; free virtual = 5749
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:54 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 1797.980 ; gain = 36.926 ; free physical = 2852 ; free virtual = 5749
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:54 . Memory (MB): peak = 1827.051 ; gain = 0.000 ; free physical = 2768 ; free virtual = 5666
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-53 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+51 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:35 . Memory (MB): peak = 1809.902 ; gain = 48.848 ; free physical = 2851 ; free virtual = 5748
+route_design: Time (s): cpu = 00:01:14 ; elapsed = 00:00:55 . Memory (MB): peak = 1833.238 ; gain = 6.188 ; free physical = 2767 ; free virtual = 5665
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.27 . Memory (MB): peak = 1825.828 ; gain = 0.000 ; free physical = 2851 ; free virtual = 5748
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1849.164 ; gain = 0.000 ; free physical = 2767 ; free virtual = 5665
 INFO: [DRC 23-27] Running DRC with 4 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4_completed/ex4_completed.runs/impl_1/ex4_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex6/ex6.runs/impl_1/ex4_wrapper_drc_routed.rpt.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
 Running Vector-less Activity Propagation...
@@ -843,5 +517,5 @@ Writing bitstream ./ex4_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2136.145 ; gain = 286.293 ; free physical = 2537 ; free virtual = 5434
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 13 21:18:08 2016...
+write_bitstream: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2155.480 ; gain = 282.293 ; free physical = 2459 ; free virtual = 5358
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 13 21:49:22 2016...

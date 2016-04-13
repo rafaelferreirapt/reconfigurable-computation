@@ -56,10 +56,10 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 ex4_ROM_Reader1_0_0 your_instance_name (
   .clk(clk),              // input wire clk
-  .addr(addr),            // output wire [2 : 0] addr
+  .addr(addr),            // output wire [4 : 0] addr
   .data_in(data_in),      // input wire [15 : 0] data_in
   .rst(rst),              // input wire rst
-  .data_out(data_out),    // output wire [127 : 0] data_out
+  .data_out(data_out),    // output wire [511 : 0] data_out
   .completed(completed)  // output wire completed
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

@@ -55,7 +55,7 @@
 COMPONENT ex4_blk_mem_gen_0_1
   PORT (
     clka : IN STD_LOGIC;
-    addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
     douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;

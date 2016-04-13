@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Wed Apr 13 21:16:57 2016
+| Date         : Wed Apr 13 21:47:42 2016
 | Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 | Command      : report_control_sets -verbose -file ex4_wrapper_control_sets_placed.rpt
 | Design       : ex4_wrapper
@@ -22,8 +22,8 @@ Table of Contents
 +-------------------------------------------------------------------+-------+
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |     5 |
-| Minimum Number of register sites lost to control set restrictions |    10 |
+| Number of unique control sets                                     |     3 |
+| Minimum Number of register sites lost to control set restrictions |    13 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,26 +33,24 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              86 |           28 |
+| No           | No                    | No                     |              17 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             130 |           62 |
-| Yes          | No                    | No                     |              32 |            8 |
+| No           | Yes                   | No                     |             514 |          218 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               6 |            1 |
+| Yes          | Yes                   | No                     |              24 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+--------------------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |                Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+--------------------------------------------+------------------+------------------+----------------+
-| ~clk_IBUF_BUFG | ex4_i/ROM_Reader1_0/U0/E[0]                | btnC_IBUF        |                1 |              6 |
-|  clk_IBUF_BUFG | ex4_i/BinToBCD16_0/U0/get_outputs          |                  |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0 |                  |                3 |             16 |
-|  clk_IBUF_BUFG |                                            |                  |               28 |             86 |
-| ~clk_IBUF_BUFG |                                            | btnC_IBUF        |               62 |            130 |
-+----------------+--------------------------------------------+------------------+------------------+----------------+
++----------------+-------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                           |                  |                5 |             17 |
+| ~clk_IBUF_BUFG | ex4_i/ROM_Reader1_0/U0/addr_in[4]_i_1_n_0 | btnC_IBUF        |               10 |             24 |
+| ~clk_IBUF_BUFG |                                           | btnC_IBUF        |              218 |            514 |
++----------------+-------------------------------------------+------------------+------------------+----------------+
 
 

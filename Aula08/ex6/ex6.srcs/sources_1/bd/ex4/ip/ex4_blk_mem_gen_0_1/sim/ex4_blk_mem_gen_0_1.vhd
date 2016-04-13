@@ -59,7 +59,7 @@ USE blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1;
 ENTITY ex4_blk_mem_gen_0_1 IS
   PORT (
     clka : IN STD_LOGIC;
-    addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
     douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END ex4_blk_mem_gen_0_1;
@@ -150,7 +150,7 @@ ARCHITECTURE ex4_blk_mem_gen_0_1_arch OF ex4_blk_mem_gen_0_1 IS
       ena : IN STD_LOGIC;
       regcea : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      addra : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
       dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       douta : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       clkb : IN STD_LOGIC;
@@ -158,7 +158,7 @@ ARCHITECTURE ex4_blk_mem_gen_0_1_arch OF ex4_blk_mem_gen_0_1 IS
       enb : IN STD_LOGIC;
       regceb : IN STD_LOGIC;
       web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addrb : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      addrb : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
       dinb : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       doutb : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       injectsbiterr : IN STD_LOGIC;
@@ -166,7 +166,7 @@ ARCHITECTURE ex4_blk_mem_gen_0_1_arch OF ex4_blk_mem_gen_0_1 IS
       eccpipece : IN STD_LOGIC;
       sbiterr : OUT STD_LOGIC;
       dbiterr : OUT STD_LOGIC;
-      rdaddrecc : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      rdaddrecc : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
       sleep : IN STD_LOGIC;
       deepsleep : IN STD_LOGIC;
       shutdown : IN STD_LOGIC;
@@ -207,7 +207,7 @@ ARCHITECTURE ex4_blk_mem_gen_0_1_arch OF ex4_blk_mem_gen_0_1 IS
       s_axi_injectdbiterr : IN STD_LOGIC;
       s_axi_sbiterr : OUT STD_LOGIC;
       s_axi_dbiterr : OUT STD_LOGIC;
-      s_axi_rdaddrecc : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+      s_axi_rdaddrecc : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
     );
   END COMPONENT blk_mem_gen_v8_3_1;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -248,9 +248,9 @@ BEGIN
       C_WRITE_MODE_A => "WRITE_FIRST",
       C_WRITE_WIDTH_A => 16,
       C_READ_WIDTH_A => 16,
-      C_WRITE_DEPTH_A => 8,
-      C_READ_DEPTH_A => 8,
-      C_ADDRA_WIDTH => 3,
+      C_WRITE_DEPTH_A => 32,
+      C_READ_DEPTH_A => 32,
+      C_ADDRA_WIDTH => 5,
       C_HAS_RSTB => 0,
       C_RST_PRIORITY_B => "CE",
       C_RSTRAM_B => 0,
@@ -262,9 +262,9 @@ BEGIN
       C_WRITE_MODE_B => "WRITE_FIRST",
       C_WRITE_WIDTH_B => 16,
       C_READ_WIDTH_B => 16,
-      C_WRITE_DEPTH_B => 8,
-      C_READ_DEPTH_B => 8,
-      C_ADDRB_WIDTH => 3,
+      C_WRITE_DEPTH_B => 32,
+      C_READ_DEPTH_B => 32,
+      C_ADDRB_WIDTH => 5,
       C_HAS_MEM_OUTPUT_REGS_A => 0,
       C_HAS_MEM_OUTPUT_REGS_B => 0,
       C_HAS_MUX_OUTPUT_REGS_A => 0,
@@ -305,7 +305,7 @@ BEGIN
       enb => '0',
       regceb => '0',
       web => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
-      addrb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 3)),
+      addrb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 5)),
       dinb => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 16)),
       injectsbiterr => '0',
       injectdbiterr => '0',

@@ -59,10 +59,10 @@ USE work.ROM_Reader1;
 ENTITY ex4_ROM_Reader1_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
-    addr : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    addr : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
     data_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     rst : IN STD_LOGIC;
-    data_out : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
+    data_out : OUT STD_LOGIC_VECTOR(511 DOWNTO 0);
     completed : OUT STD_LOGIC
   );
 END ex4_ROM_Reader1_0_0;
@@ -78,10 +78,10 @@ ARCHITECTURE ex4_ROM_Reader1_0_0_arch OF ex4_ROM_Reader1_0_0 IS
     );
     PORT (
       clk : IN STD_LOGIC;
-      addr : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      addr : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
       data_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       rst : IN STD_LOGIC;
-      data_out : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
+      data_out : OUT STD_LOGIC_VECTOR(511 DOWNTO 0);
       completed : OUT STD_LOGIC
     );
   END COMPONENT ROM_Reader1;
@@ -92,7 +92,7 @@ BEGIN
   U0 : ROM_Reader1
     GENERIC MAP (
       data_width => 16,
-      address_bits => 3
+      address_bits => 5
     )
     PORT MAP (
       clk => clk,
