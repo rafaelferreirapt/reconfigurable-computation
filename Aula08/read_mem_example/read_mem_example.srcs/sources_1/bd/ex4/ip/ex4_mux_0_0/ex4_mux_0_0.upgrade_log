@@ -1,0 +1,26 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Apr 13 20:58:37 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ex4_mux_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of ex4_mux_0_0 (user.org:user:mux:1.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'ex4_mux_0_0'. These changes may impact your design.
+
+
+-upgraded port 'select_port' width 3 differs from original width 4
+

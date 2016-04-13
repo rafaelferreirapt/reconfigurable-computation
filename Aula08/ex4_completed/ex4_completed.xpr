@@ -36,6 +36,41 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.v"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_1/ex4_blk_mem_gen_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_7/ex4_xlslice_4_7.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_3/ex4_xlslice_4_3.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_0/ex4_xlslice_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_2_0_1/ex4_xlslice_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_4/ex4_xlslice_4_4.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_6/ex4_xlslice_4_6.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_5/ex4_xlslice_4_5.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_2/ex4_xlslice_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_3/ex4_xlslice_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_1/ex4_xlslice_4_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_2/ex4_xlslice_4_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_1_2/ex4_xlslice_1_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_0_1/ex4_c_addsub_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_1_0/ex4_c_addsub_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_2_0/ex4_c_addsub_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_ROM_Reader1_0_0/ex4_ROM_Reader1_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_0_2_1/ex4_c_addsub_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_4_0_1/ex4_c_addsub_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_5_0_1/ex4_c_addsub_5_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconcat_0_0/ex4_xlconcat_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_BinToBCD16_0_0_2/ex4_BinToBCD16_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_8_0/ex4_xlconstant_8_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_EightDisplayControl_0_1/ex4_EightDisplayControl_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_9_0/ex4_xlconstant_9_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_0_1_1/ex4_hw_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_0_2/ex4_hw_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_0_3/ex4_hw_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_0_4/ex4_hw_0_4.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_0_5/ex4_hw_0_5.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_0_6/ex4_hw_0_6.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_4_0/ex4_hw_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_hw_4_1/ex4_hw_4_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_c_addsub_0_0_1/ex4_c_addsub_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ex4/hdl/ex4_wrapper.v">
         <FileInfo>
@@ -52,6 +87,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/ex4/ip/ex4_ROM_Reader1_0_0/ex4_ROM_Reader1_0_0.upgrade_log"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="ex4_wrapper"/>
