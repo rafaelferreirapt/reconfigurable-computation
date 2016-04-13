@@ -36,20 +36,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.v"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_1/ex4_blk_mem_gen_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_ROM_Reader1_0_0/ex4_ROM_Reader1_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_EightDisplayControl_0_1/ex4_EightDisplayControl_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_1/ex4_xlslice_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_0/ex4_xlslice_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_Min_circuit_0_0/ex4_Min_circuit_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_3_0/ex4_xlslice_3_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_5/ex4_xlslice_0_5.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_4/ex4_xlslice_0_4.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_5_1/ex4_xlslice_5_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_5_0/ex4_xlslice_5_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_4_8/ex4_xlslice_4_8.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_Max_circuit_0_0/ex4_Max_circuit_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ex4/hdl/ex4_wrapper.v">
         <FileInfo>
