@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -58,6 +59,22 @@ set rc [catch {
 } [current_project]
   set_property ip_output_repo /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.cache/ip [current_project]
   add_files -quiet /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.runs/synth_1/ex4_wrapper.dcp
+  read_xdc -ref ex4_hw_0_1 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_1_1/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_0_2 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_2/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_0_3 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_3/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_0_4 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_4/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_4/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_0_5 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_5/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_5/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_0_6 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_6/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_0_6/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_4_0 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_4_0/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_4_0/constrs_1/imports/xdc/Nexys4_Master.xdc]
+  read_xdc -ref ex4_hw_4_1 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_4_1/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_hw_4_1/constrs_1/imports/xdc/Nexys4_Master.xdc]
   read_xdc /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex4/ex4.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc
   link_design -top ex4_wrapper -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

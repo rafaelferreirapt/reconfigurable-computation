@@ -54,8 +54,8 @@
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT ex4_xlslice_0_2
   PORT (
-    Din : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
-    Dout : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    Din : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    Dout : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------

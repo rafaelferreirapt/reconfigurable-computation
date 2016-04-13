@@ -52,20 +52,20 @@
 
 (* X_CORE_INFO = "xlslice,Vivado 2015.4" *)
 (* CHECK_LICENSE_TYPE = "ex4_xlslice_0_2,xlslice,{}" *)
-(* CORE_GENERATION_INFO = "ex4_xlslice_0_2,xlslice,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DIN_WIDTH=128,DIN_FROM=47,DIN_TO=32}" *)
+(* CORE_GENERATION_INFO = "ex4_xlslice_0_2,xlslice,{x_ipProduct=Vivado 2015.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=0,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DIN_WIDTH=16,DIN_FROM=3,DIN_TO=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module ex4_xlslice_0_2 (
   Din,
   Dout
 );
 
-input wire [127 : 0] Din;
-output wire [15 : 0] Dout;
+input wire [15 : 0] Din;
+output wire [3 : 0] Dout;
 
   xlslice #(
-    .DIN_WIDTH(128),
-    .DIN_FROM(47),
-    .DIN_TO(32)
+    .DIN_WIDTH(16),
+    .DIN_FROM(3),
+    .DIN_TO(0)
   ) inst (
     .Din(Din),
     .Dout(Dout)

@@ -58,13 +58,13 @@ module ex4_xlslice_0_2 (
   Dout
 );
 
-input wire [127 : 0] Din;
-output wire [15 : 0] Dout;
+input wire [15 : 0] Din;
+output wire [3 : 0] Dout;
 
   xlslice #(
-    .DIN_WIDTH(128),
-    .DIN_FROM(47),
-    .DIN_TO(32)
+    .DIN_WIDTH(16),
+    .DIN_FROM(3),
+    .DIN_TO(0)
   ) inst (
     .Din(Din),
     .Dout(Dout)

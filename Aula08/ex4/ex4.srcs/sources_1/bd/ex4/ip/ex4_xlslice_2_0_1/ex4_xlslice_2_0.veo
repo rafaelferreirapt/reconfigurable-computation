@@ -55,8 +55,8 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 ex4_xlslice_2_0 your_instance_name (
-  .Din(Din),    // input wire [127 : 0] Din
-  .Dout(Dout)  // output wire [15 : 0] Dout
+  .Din(Din),    // input wire [15 : 0] Din
+  .Dout(Dout)  // output wire [3 : 0] Dout
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 
