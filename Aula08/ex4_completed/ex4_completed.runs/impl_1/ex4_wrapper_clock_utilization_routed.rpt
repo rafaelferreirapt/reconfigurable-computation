@@ -1,0 +1,1165 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date              : Wed Apr 13 17:14:52 2016
+| Host              : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command           : report_clock_utilization -file ex4_wrapper_clock_utilization_routed.rpt
+| Design            : ex4_wrapper
+| Device            : 7a100t-csg324
+| Speed File        : -1  PRODUCTION 1.14 2014-09-11
+| Temperature Grade : C
+----------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X1Y1
+9. Net wise resources used in clock region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    1 |        32 |         0 |
+| BUFH  |    0 |        96 |         0 |
+| BUFIO |    0 |        24 |         0 |
+| MMCM  |    0 |         6 |         0 |
+| PLL   |    0 |         6 |         0 |
+| BUFR  |    0 |        24 |         0 |
+| BUFMR |    0 |        12 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+--------------------+---------------+--------------+-------+
+|       |                    |               |   Num Loads  |       |
++-------+--------------------+---------------+------+-------+-------+
+| Index | BUFG Cell          | Net Name      | BELs | Sites | Fixed |
++-------+--------------------+---------------+------+-------+-------+
+|     1 | clk_IBUF_BUFG_inst | clk_IBUF_BUFG |  137 |    41 |    no |
++-------+--------------------+---------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+----------------------------------------------+--------------------------------------------------+--------------+-------+
+|       |                                              |                                                  |   Num Loads  |       |
++-------+----------------------------------------------+--------------------------------------------------+------+-------+-------+
+| Index | Local Clk Src                                | Net Name                                         | BELs | Sites | Fixed |
++-------+----------------------------------------------+--------------------------------------------------+------+-------+-------+
+|     1 | ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0   |    1 |     1 |    no |
+|     2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0 |    1 |     1 |    no |
+|     3 | ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0 |    1 |     1 |    no |
+|     4 | ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0 |    1 |     1 |    no |
+|     5 | ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0 |    1 |     1 |    no |
+|     6 | ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0 |    1 |     1 |    no |
+|     7 | ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0 |    1 |     1 |    no |
+|     8 | ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0 |    1 |     1 |    no |
+|     9 | ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0 |    1 |     1 |    no |
+|    10 | ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0 |    1 |     1 |    no |
+|    11 | ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0 |    1 |     1 |    no |
+|    12 | ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0  |    1 |     1 |    no |
+|    13 | ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0 |    1 |     1 |    no |
+|    14 | ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0 |    1 |     1 |    no |
+|    15 | ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0 |    1 |     1 |    no |
+|    16 | ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0 |    1 |     1 |    no |
+|    17 | ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0 |    1 |     1 |    no |
+|    18 | ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0 |    1 |     1 |    no |
+|    19 | ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0 |    1 |     1 |    no |
+|    20 | ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0 |    1 |     1 |    no |
+|    21 | ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0 |    1 |     1 |    no |
+|    22 | ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0 |    1 |     1 |    no |
+|    23 | ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0  |    1 |     1 |    no |
+|    24 | ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0 |    1 |     1 |    no |
+|    25 | ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0 |    1 |     1 |    no |
+|    26 | ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0 |    1 |     1 |    no |
+|    27 | ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0 |    1 |     1 |    no |
+|    28 | ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0 |    1 |     1 |    no |
+|    29 | ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0 |    1 |     1 |    no |
+|    30 | ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0 |    1 |     1 |    no |
+|    31 | ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2 | ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0 |    1 |     1 |    no |
+|    32 | ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0  |    1 |     1 |    no |
+|    33 | ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0  |    1 |     1 |    no |
+|    34 | ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0  |    1 |     1 |    no |
+|    35 | ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0  |    1 |     1 |    no |
+|    36 | ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0  |    1 |     1 |    no |
+|    37 | ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0  |    1 |     1 |    no |
+|    38 | ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0  |    1 |     1 |    no |
+|    39 | ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0  |    1 |     1 |    no |
+|    40 | ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0   |    1 |     1 |    no |
+|    41 | ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0  |    1 |     1 |    no |
+|    42 | ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0  |    1 |     1 |    no |
+|    43 | ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0  |    1 |     1 |    no |
+|    44 | ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0  |    1 |     1 |    no |
+|    45 | ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0  |    1 |     1 |    no |
+|    46 | ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0  |    1 |     1 |    no |
+|    47 | ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0  |    1 |     1 |    no |
+|    48 | ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0  |    1 |     1 |    no |
+|    49 | ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0  |    1 |     1 |    no |
+|    50 | ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0  |    1 |     1 |    no |
+|    51 | ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0   |    1 |     1 |    no |
+|    52 | ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0  |    1 |     1 |    no |
+|    53 | ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0  |    1 |     1 |    no |
+|    54 | ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0  |    1 |     1 |    no |
+|    55 | ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0  |    1 |     1 |    no |
+|    56 | ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0  |    1 |     1 |    no |
+|    57 | ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0  |    1 |     1 |    no |
+|    58 | ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0  |    1 |     1 |    no |
+|    59 | ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0  |    1 |     1 |    no |
+|    60 | ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0  |    1 |     1 |    no |
+|    61 | ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0  |    1 |     1 |    no |
+|    62 | ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0   |    1 |     1 |    no |
+|    63 | ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0  |    1 |     1 |    no |
+|    64 | ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0  |    1 |     1 |    no |
+|    65 | ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0  |    1 |     1 |    no |
+|    66 | ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0  |    1 |     1 |    no |
+|    67 | ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0  |    1 |     1 |    no |
+|    68 | ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0  |    1 |     1 |    no |
+|    69 | ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0  |    1 |     1 |    no |
+|    70 | ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0  |    1 |     1 |    no |
+|    71 | ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0  |    1 |     1 |    no |
+|    72 | ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0  |    1 |     1 |    no |
+|    73 | ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0   |    1 |     1 |    no |
+|    74 | ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0  |    1 |     1 |    no |
+|    75 | ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0  |    1 |     1 |    no |
+|    76 | ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0  |    1 |     1 |    no |
+|    77 | ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0  |    1 |     1 |    no |
+|    78 | ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0  |    1 |     1 |    no |
+|    79 | ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0  |    1 |     1 |    no |
+|    80 | ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0  |    1 |     1 |    no |
+|    81 | ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0  |    1 |     1 |    no |
+|    82 | ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0  |    1 |     1 |    no |
+|    83 | ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0  |    1 |     1 |    no |
+|    84 | ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0   |    1 |     1 |    no |
+|    85 | ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0  |    1 |     1 |    no |
+|    86 | ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0  |    1 |     1 |    no |
+|    87 | ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0  |    1 |     1 |    no |
+|    88 | ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0  |    1 |     1 |    no |
+|    89 | ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0  |    1 |     1 |    no |
+|    90 | ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0  |    1 |     1 |    no |
+|    91 | ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0  |    1 |     1 |    no |
+|    92 | ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0  |    1 |     1 |    no |
+|    93 | ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0  |    1 |     1 |    no |
+|    94 | ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0  |    1 |     1 |    no |
+|    95 | ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0   |    1 |     1 |    no |
+|    96 | ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0  |    1 |     1 |    no |
+|    97 | ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0  |    1 |     1 |    no |
+|    98 | ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0  |    1 |     1 |    no |
+|    99 | ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0  |    1 |     1 |    no |
+|   100 | ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0  |    1 |     1 |    no |
+|   101 | ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0  |    1 |     1 |    no |
+|   102 | ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0  |    1 |     1 |    no |
+|   103 | ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0  |    1 |     1 |    no |
+|   104 | ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0  |    1 |     1 |    no |
+|   105 | ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0  |    1 |     1 |    no |
+|   106 | ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0   |    1 |     1 |    no |
+|   107 | ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0  |    1 |     1 |    no |
+|   108 | ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0  |    1 |     1 |    no |
+|   109 | ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0  |    1 |     1 |    no |
+|   110 | ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0  |    1 |     1 |    no |
+|   111 | ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0  |    1 |     1 |    no |
+|   112 | ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0  |    1 |     1 |    no |
+|   113 | ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0  |    1 |     1 |    no |
+|   114 | ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0  |    1 |     1 |    no |
+|   115 | ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0  |    1 |     1 |    no |
+|   116 | ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0  |    1 |     1 |    no |
+|   117 | ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0   |    1 |     1 |    no |
+|   118 | ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0  |    1 |     1 |    no |
+|   119 | ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0  |    1 |     1 |    no |
+|   120 | ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0  |    1 |     1 |    no |
+|   121 | ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0  |    1 |     1 |    no |
+|   122 | ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0  |    1 |     1 |    no |
+|   123 | ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0  |    1 |     1 |    no |
+|   124 | ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0  |    1 |     1 |    no |
+|   125 | ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0  |    1 |     1 |    no |
+|   126 | ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0  |    1 |     1 |    no |
+|   127 | ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2  | ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0  |    1 |     1 |    no |
+|   128 | ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2   | ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0   |    1 |     1 |    no |
++-------+----------------------------------------------+--------------------------------------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 12000 |    0 |  2200 |    0 |    40 |    0 |    20 |    0 |    40 |
+| X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 16000 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   14 | 15200 |    0 |  2600 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 16000 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  250 | 15200 |    0 |  2600 |    1 |    60 |    0 |    30 |    0 |    40 |
+| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 | 10800 |    0 |  2000 |    0 |    30 |    0 |    15 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X1Y1
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  12 |     0 |        0 | clk_IBUF_BUFG  |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+9. Net wise resources used in clock region X1Y2
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         2 |       0 |       0 | 124 |     0 |        0 | clk_IBUF_BUFG  |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y16 [get_cells clk_IBUF_BUFG_inst]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X1Y126 [get_ports clk]
+
+# Clock net "clk_IBUF_BUFG" driven by instance "clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_clk_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_clk_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_clk_IBUF_BUFG}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2" located at site "SLICE_X84Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2" located at site "SLICE_X80Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2" located at site "SLICE_X82Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2" located at site "SLICE_X82Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2" located at site "SLICE_X83Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2" located at site "SLICE_X83Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2" located at site "SLICE_X80Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2" located at site "SLICE_X80Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2" located at site "SLICE_X80Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2" located at site "SLICE_X78Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2" located at site "SLICE_X79Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2" located at site "SLICE_X83Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2" located at site "SLICE_X82Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2" located at site "SLICE_X79Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2" located at site "SLICE_X79Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2" located at site "SLICE_X80Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2" located at site "SLICE_X78Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2" located at site "SLICE_X79Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2" located at site "SLICE_X80Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2" located at site "SLICE_X78Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2" located at site "SLICE_X80Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2" located at site "SLICE_X78Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2" located at site "SLICE_X87Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2" located at site "SLICE_X78Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2" located at site "SLICE_X79Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2" located at site "SLICE_X79Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2" located at site "SLICE_X79Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2" located at site "SLICE_X81Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2" located at site "SLICE_X78Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2" located at site "SLICE_X79Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2" located at site "SLICE_X78Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2" located at site "SLICE_X88Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2" located at site "SLICE_X82Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2" located at site "SLICE_X84Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2" located at site "SLICE_X84Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2" located at site "SLICE_X82Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2" located at site "SLICE_X85Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2" located at site "SLICE_X83Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2" located at site "SLICE_X85Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2" located at site "SLICE_X86Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2" located at site "SLICE_X82Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2" located at site "SLICE_X83Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2" located at site "SLICE_X84Y105"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2" located at site "SLICE_X87Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2" located at site "SLICE_X85Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2" located at site "SLICE_X83Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2" located at site "SLICE_X83Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2" located at site "SLICE_X82Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2" located at site "SLICE_X87Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2" located at site "SLICE_X84Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2" located at site "SLICE_X89Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2" located at site "SLICE_X83Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2" located at site "SLICE_X84Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2" located at site "SLICE_X84Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2" located at site "SLICE_X82Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2" located at site "SLICE_X84Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2" located at site "SLICE_X85Y107"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2" located at site "SLICE_X86Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2" located at site "SLICE_X84Y107"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2" located at site "SLICE_X86Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2" located at site "SLICE_X85Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2" located at site "SLICE_X85Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2" located at site "SLICE_X86Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2" located at site "SLICE_X84Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2" located at site "SLICE_X84Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2" located at site "SLICE_X84Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2" located at site "SLICE_X86Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2" located at site "SLICE_X86Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2" located at site "SLICE_X85Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2" located at site "SLICE_X83Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2" located at site "SLICE_X87Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2" located at site "SLICE_X83Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2" located at site "SLICE_X85Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2" located at site "SLICE_X84Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2" located at site "SLICE_X85Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2" located at site "SLICE_X84Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2" located at site "SLICE_X87Y108"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2" located at site "SLICE_X88Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2" located at site "SLICE_X89Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2" located at site "SLICE_X89Y109"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2" located at site "SLICE_X85Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2" located at site "SLICE_X83Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2" located at site "SLICE_X87Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2" located at site "SLICE_X86Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2" located at site "SLICE_X86Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2" located at site "SLICE_X87Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2" located at site "SLICE_X86Y112"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2" located at site "SLICE_X88Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2" located at site "SLICE_X80Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2" located at site "SLICE_X79Y105"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2" located at site "SLICE_X78Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2" located at site "SLICE_X77Y105"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2" located at site "SLICE_X77Y105"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2" located at site "SLICE_X77Y105"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2" located at site "SLICE_X88Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2" located at site "SLICE_X79Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2" located at site "SLICE_X79Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2" located at site "SLICE_X80Y107"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2" located at site "SLICE_X78Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2" located at site "SLICE_X80Y106"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2" located at site "SLICE_X81Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2" located at site "SLICE_X78Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2" located at site "SLICE_X80Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2" located at site "SLICE_X83Y106"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2" located at site "SLICE_X79Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2" located at site "SLICE_X87Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2" located at site "SLICE_X81Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2" located at site "SLICE_X80Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2" located at site "SLICE_X78Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2" located at site "SLICE_X79Y107"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2" located at site "SLICE_X80Y101"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2" located at site "SLICE_X78Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2" located at site "SLICE_X82Y105"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2" located at site "SLICE_X82Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2" located at site "SLICE_X80Y107"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2" located at site "SLICE_X81Y103"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2" located at site "SLICE_X86Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2" located at site "SLICE_X77Y106"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2" located at site "SLICE_X81Y107"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2" located at site "SLICE_X80Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2" located at site "SLICE_X81Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2" located at site "SLICE_X81Y104"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2" located at site "SLICE_X78Y102"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2" located at site "SLICE_X81Y113"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2" located at site "SLICE_X81Y114"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2" located at site "SLICE_X80Y110"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2" located at site "SLICE_X81Y111"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0" driven by instance "ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2" located at site "SLICE_X82Y100"
+#startgroup
+create_pblock {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup

@@ -15,7 +15,7 @@ entity ROM_Reader1 is
 end ROM_Reader1;
 
 architecture Behavioral of ROM_Reader1 is
-type state_type is (init, copiar, final); 	
+type state_type is (init, copiar, dummy_1, final_dummy, final); 	
 signal C_S, N_S 	       : state_type;
 constant    depth          : integer := 2**address_bits;
 signal addr_in, addr_in_N  : integer range 0 to depth-1;
@@ -39,13 +39,23 @@ N_S <= C_S; addr_in_N <= addr_in; comp_N <= '0';
 case C_S is
    when init =>  
     addr_in_N <= 0;
-	N_S <= copiar;
+	N_S <= dummy_1;
+	
+   when dummy_1 =>
+    --addr_in_N <= addr_in+1;
+    N_S <= copiar;
+        
    when copiar => 
-    data_out(data_width*(addr_in+1)-1 downto data_width*addr_in) <= data_in; 
-	if(addr_in = depth-1) then N_S <= final;  
+    data_out(data_width*(addr_in+1)-1 downto data_width*(addr_in)) <= data_in; 
+	if(conv_integer(addr_in) = depth-1) then N_S <= final;  
     else    addr_in_N <= addr_in+1;
             N_S  <= copiar;  
     end if; 
+   
+   when final_dummy =>
+        --data_out(data_width*(addr_in+1)-1 downto data_width*addr_in) <= data_in;
+        N_S <= final;
+    
    when final => N_S <= final; 	comp_N <= '1';
    when others => N_S <= init;
 end case;

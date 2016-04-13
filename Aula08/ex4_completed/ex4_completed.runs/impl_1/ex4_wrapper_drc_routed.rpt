@@ -1,0 +1,835 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Apr 13 17:14:51 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 160
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#126 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#127 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#128 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#129 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#130 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#131 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#132 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#133 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#134 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#135 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#136 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#137 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#138 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#139 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#140 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#141 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#142 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#143 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#144 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#145 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#146 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#147 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#148 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#149 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#150 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#151 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#152 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#153 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#154 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#155 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#156 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#157 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#158 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#159 Warning
+Gated clock check  
+Net ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0 is a gated clock net sourced by a combinational pin ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2/O, cell ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

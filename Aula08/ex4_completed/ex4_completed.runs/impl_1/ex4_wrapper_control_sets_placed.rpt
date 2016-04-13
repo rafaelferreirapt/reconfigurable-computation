@@ -1,0 +1,186 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Apr 13 17:14:06 2016
+| Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
+| Command      : report_control_sets -verbose -file ex4_wrapper_control_sets_placed.rpt
+| Design       : ex4_wrapper
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   133 |
+| Minimum Number of register sites lost to control set restrictions |   904 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             214 |          153 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               3 |            2 |
+| Yes          | No                    | No                     |              32 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              15 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------+--------------------------------------------+------------------+------------------+----------------+
+|                    Clock Signal                   |                Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++---------------------------------------------------+--------------------------------------------+------------------+------------------+----------------+
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[74]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[67]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[68]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[69]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[6]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[70]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[71]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[72]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[73]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[66]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[75]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[76]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[77]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[78]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[79]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[7]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[80]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[59]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[51]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[52]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[53]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[54]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[55]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[56]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[57]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[58]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[81]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[5]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[60]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[61]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[62]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[63]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[64]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[65]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[102]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[97]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[98]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[99]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[9]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[11]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[0]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[100]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[101]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[96]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[103]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[104]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[105]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[106]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[107]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[108]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[109]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[50]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[95]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[94]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[93]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[92]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[91]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[90]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[8]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[89]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[88]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[87]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[86]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[85]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[84]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[83]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[82]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[123]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[21]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[20]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[1]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[19]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[18]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[17]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[16]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[15]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[14]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[13]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[12]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[127]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[126]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[125]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[124]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[22]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[122]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[121]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[120]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[119]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[118]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[117]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[116]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[115]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[114]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[113]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[112]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[111]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[110]_i_2_n_0 |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[10]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[36]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[4]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[49]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[48]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[47]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[46]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[45]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[44]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[43]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[42]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[41]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[40]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[3]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[39]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[38]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[37]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[35]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[34]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[33]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[32]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[31]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[30]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[2]_i_2_n_0   |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[29]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[28]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[27]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[26]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[25]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[24]_i_2_n_0  |                                            |                  |                1 |              1 |
+|  ex4_i/ROM_Reader1_0/U0/data_out_reg[23]_i_2_n_0  |                                            |                  |                1 |              1 |
+| ~clk_IBUF_BUFG                                    |                                            | btnC_IBUF        |                2 |              3 |
+| ~clk_IBUF_BUFG                                    | ex4_i/ROM_Reader1_0/U0/addr_in_reg[0]_0    | btnC_IBUF        |                3 |             15 |
+|  clk_IBUF_BUFG                                    | ex4_i/BinToBCD16_0/U0/get_outputs          |                  |                5 |             16 |
+|  clk_IBUF_BUFG                                    | ex4_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0 |                  |                4 |             16 |
+|  clk_IBUF_BUFG                                    |                                            |                  |               25 |             86 |
++---------------------------------------------------+--------------------------------------------+------------------+------------------+----------------+
+
+
