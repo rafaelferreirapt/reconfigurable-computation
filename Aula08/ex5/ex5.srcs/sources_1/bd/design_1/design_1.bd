@@ -32,13 +32,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>an</spirit:name>
+          <spirit:name>clk</spirit:name>
           <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>7</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
+            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -52,9 +48,13 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>clk</spirit:name>
+          <spirit:name>an</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -83,13 +83,6 @@
           <spirit:configurableElementValue spirit:referenceId="Use_RSTA_Pin">false</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Port_A_Write_Rate">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="use_bram_block">Stand_Alone</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>HammingWeight_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_2</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -134,27 +127,6 @@
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">15</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">64</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>HammingWeight_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_3</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>HammingWeight_2</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_4</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>HammingWeight_3</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_5</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -234,6 +206,51 @@
           <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>HammingWeight_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_2</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>HammingWeight_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_3</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>HammingWeight_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_4</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>HammingWeight_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="HammingWeight" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_HammingWeight_0_5</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconcat_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconcat_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN0_WIDTH">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IN1_WIDTH">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -279,21 +296,6 @@
         <spirit:internalPortReference spirit:componentRef="HammingWeight_3" spirit:portRef="sw"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>HammingWeight_1_led</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="HammingWeight_1" spirit:portRef="led"/>
-        <spirit:internalPortReference spirit:componentRef="c_addsub_1" spirit:portRef="B"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>HammingWeight_2_led</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="HammingWeight_2" spirit:portRef="led"/>
-        <spirit:internalPortReference spirit:componentRef="c_addsub_2" spirit:portRef="A"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>HammingWeight_3_led</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="HammingWeight_3" spirit:portRef="led"/>
-        <spirit:internalPortReference spirit:componentRef="c_addsub_2" spirit:portRef="B"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>c_addsub_1_S</spirit:name>
         <spirit:internalPortReference spirit:componentRef="c_addsub_1" spirit:portRef="S"/>
         <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="A"/>
@@ -304,20 +306,10 @@
         <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="B"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>HammingWeight_0_led</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="HammingWeight_0" spirit:portRef="led"/>
-        <spirit:internalPortReference spirit:componentRef="c_addsub_1" spirit:portRef="A"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>c_addsub_0_S</spirit:name>
         <spirit:internalPortReference spirit:componentRef="c_addsub_0" spirit:portRef="S"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_4" spirit:portRef="Din"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Din"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>xlslice_5_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Dout"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_rightR"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>EightDisplayControl_0_segments</spirit:name>
@@ -330,19 +322,54 @@
         <spirit:externalPortReference spirit:portRef="an"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlconstant_0_dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="leftL"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_leftR"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="leftR"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="rightL"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_rightL"/>
-        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_leftL"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>xlslice_4_Dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlslice_4" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="rightR"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="leftR"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_leftR"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="rightL"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_rightL"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_leftL"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="leftL"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>HammingWeight_0_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="HammingWeight_0" spirit:portRef="led"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_1" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>HammingWeight_3_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="HammingWeight_3" spirit:portRef="led"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_2" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>HammingWeight_2_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="HammingWeight_2" spirit:portRef="led"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_2" spirit:portRef="A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>HammingWeight_1_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="HammingWeight_1" spirit:portRef="led"/>
+        <spirit:internalPortReference spirit:componentRef="c_addsub_1" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_5_Dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_1_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_1" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconcat_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="EightDisplayControl_0" spirit:portRef="near_rightR"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

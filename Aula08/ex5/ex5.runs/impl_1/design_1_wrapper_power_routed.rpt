@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date             : Tue Apr 12 15:54:18 2016
+| Date             : Wed Apr 13 14:18:37 2016
 | Host             : DESKTOP-87HGRSN running 64-bit major release  (build 9200)
 | Command          : 
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.116 |
-| Dynamic (W)              | 0.019 |
+| Total On-Chip Power (W)  | 0.117 |
+| Dynamic (W)              | 0.020 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.5  |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      130 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       51 |     63400 |            0.08 |
+| Slice Logic    |     0.001 |      214 |       --- |             --- |
+|   LUT as Logic |     0.001 |      115 |     63400 |            0.18 |
 |   CARRY4       |    <0.001 |       14 |     15850 |            0.09 |
 |   Register     |    <0.001 |       36 |    126800 |            0.03 |
 |   Others       |     0.000 |       22 |       --- |             --- |
-| Signals        |    <0.001 |      147 |       --- |             --- |
+| Signals        |     0.001 |      231 |       --- |             --- |
 | Block RAM      |     0.004 |        1 |       135 |            0.74 |
 | I/O            |     0.012 |       20 |       210 |            9.52 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.116 |          |           |                 |
+| Total          |     0.117 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,7 +69,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.006 |      0.015 |
+| Vccint    |       1.000 |     0.022 |       0.007 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,8 +138,8 @@ Table of Contents
 +-----------------------------------------+-----------+
 | Name                                    | Power (W) |
 +-----------------------------------------+-----------+
-| design_1_wrapper                        |     0.019 |
-|   design_1_i                            |     0.006 |
+| design_1_wrapper                        |     0.020 |
+|   design_1_i                            |     0.007 |
 |     EightDisplayControl_0               |    <0.001 |
 |       U0                                |    <0.001 |
 |     HammingWeight_0                     |    <0.001 |
@@ -174,6 +174,7 @@ Table of Contents
 |             no_pipelining.the_addsub    |    <0.001 |
 |               i_lut6.i_lut6_addsub      |    <0.001 |
 |                 i_q.i_simple.qreg       |    <0.001 |
+|     xlconcat_0                          |     0.000 |
 |     xlslice_0                           |     0.000 |
 |     xlslice_1                           |     0.000 |
 |     xlslice_2                           |     0.000 |
