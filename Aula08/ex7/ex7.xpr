@@ -19,6 +19,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../Projects2016/UserDefinedRepository"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../home/cr_user_repository"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/ex7.ip_user_files"/>
@@ -36,16 +37,18 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_EightDisplayControl_0_1/ex4_EightDisplayControl_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_1/ex4_blk_mem_gen_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_IterativeSorterFSM_0_0/ex4_IterativeSorterFSM_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_ROM_Reader1_0_0/ex4_ROM_Reader1_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_0/ex4_xlslice_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_smart_mux_0_0/ex4_smart_mux_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_0_1/ex4_blk_mem_gen_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.v"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_2_0/ex4_xlslice_2_0.xci"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_1_0/ex4_xlslice_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_1/ex4_xlslice_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlslice_0_0/ex4_xlslice_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_smart_mux_0_0/ex4_smart_mux_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_ROM_Reader1_0_0/ex4_ROM_Reader1_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_EightDisplayControl_0_1/ex4_EightDisplayControl_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_1/ex4_blk_mem_gen_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_iterative_sorter_0_0/ex4_iterative_sorter_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_0_0_1/ex4_xlconstant_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ex4/hdl/ex4_wrapper.v">
         <FileInfo>

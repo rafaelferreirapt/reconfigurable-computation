@@ -61,31 +61,31 @@ set_property PACKAGE_PIN R5 [get_ports {sw[4]}]
  
 
 
-## LEDs
-#Bank = 34, Pin name = IO_L24N_T3_34,						Sch name = LED0
-set_property PACKAGE_PIN T8 [get_ports {led[0]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
-#Bank = 34, Pin name = IO_L21N_T3_DQS_34,					Sch name = LED1
-set_property PACKAGE_PIN V9 [get_ports {led[1]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
-#Bank = 34, Pin name = IO_L24P_T3_34,						Sch name = LED2
-set_property PACKAGE_PIN R8 [get_ports {led[2]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
-#Bank = 34, Pin name = IO_L23N_T3_34,						Sch name = LED3
-set_property PACKAGE_PIN T6 [get_ports {led[3]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]
-#Bank = 34, Pin name = IO_L12P_T1_MRCC_34,					Sch name = LED4
-set_property PACKAGE_PIN T5 [get_ports {led[4]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[4]}]
-#Bank = 34, Pin name = IO_L12N_T1_MRCC_34,					Sch	name = LED5
-set_property PACKAGE_PIN T4 [get_ports {led[5]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[5]}]
-#Bank = 34, Pin name = IO_L22P_T3_34,						Sch name = LED6
-set_property PACKAGE_PIN U7 [get_ports {led[6]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[6]}]
-#Bank = 34, Pin name = IO_L22N_T3_34,						Sch name = LED7
-set_property PACKAGE_PIN U6 [get_ports {led[7]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[7]}]
+### LEDs
+##Bank = 34, Pin name = IO_L24N_T3_34,						Sch name = LED0
+#set_property PACKAGE_PIN T8 [get_ports {led[0]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
+##Bank = 34, Pin name = IO_L21N_T3_DQS_34,					Sch name = LED1
+#set_property PACKAGE_PIN V9 [get_ports {led[1]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
+##Bank = 34, Pin name = IO_L24P_T3_34,						Sch name = LED2
+#set_property PACKAGE_PIN R8 [get_ports {led[2]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
+##Bank = 34, Pin name = IO_L23N_T3_34,						Sch name = LED3
+#set_property PACKAGE_PIN T6 [get_ports {led[3]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]
+##Bank = 34, Pin name = IO_L12P_T1_MRCC_34,					Sch name = LED4
+#set_property PACKAGE_PIN T5 [get_ports {led[4]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[4]}]
+##Bank = 34, Pin name = IO_L12N_T1_MRCC_34,					Sch	name = LED5
+#set_property PACKAGE_PIN T4 [get_ports {led[5]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[5]}]
+##Bank = 34, Pin name = IO_L22P_T3_34,						Sch name = LED6
+#set_property PACKAGE_PIN U7 [get_ports {led[6]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[6]}]
+##Bank = 34, Pin name = IO_L22N_T3_34,						Sch name = LED7
+#set_property PACKAGE_PIN U6 [get_ports {led[7]}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {led[7]}]
 ##Bank = 34, Pin name = IO_L10N_T1_34,			name = LED8
 #set_property PACKAGE_PIN V4 [get_ports {led[8]}]					
 #	set_property IOSTANDARD LVCMOS33 [get_ports {led[8]}]
@@ -196,12 +196,12 @@ set_property PACKAGE_PIN E16 [get_ports btnC]
 ##Bank = 15, Pin name = IO_L14P_T2_SRCC_15,					Sch name = BTNU
 #set_property PACKAGE_PIN F15 [get_ports btnU]						
 #	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
-##Bank = CONFIG, Pin name = IO_L15N_T2_DQS_DOUT_CSO_B_14,	Sch name = BTNL
-#set_property PACKAGE_PIN T16 [get_ports btnL]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnL]
-##Bank = 14, Pin name = IO_25_14,							Sch name = BTNR
-#set_property PACKAGE_PIN R10 [get_ports btnR]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnR]
+#Bank = CONFIG, Pin name = IO_L15N_T2_DQS_DOUT_CSO_B_14,	Sch name = BTNL
+set_property PACKAGE_PIN T16 [get_ports btnL]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnL]
+#Bank = 14, Pin name = IO_25_14,							Sch name = BTNR
+set_property PACKAGE_PIN R10 [get_ports btnR]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnR]
 ##Bank = 14, Pin name = IO_L21P_T3_DQS_14,					Sch name = BTND
 #set_property PACKAGE_PIN V10 [get_ports btnD]						
 #	set_property IOSTANDARD LVCMOS33 [get_ports btnD]

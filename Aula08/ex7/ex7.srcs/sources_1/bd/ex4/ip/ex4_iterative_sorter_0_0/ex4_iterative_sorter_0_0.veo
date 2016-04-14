@@ -46,7 +46,7 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: ua.pt:user:IterativeSorterFSM:1.0
+// IP VLNV: user.org:user:iterative_sorter:1.0
 // IP Revision: 2
 
 // The following must be inserted into your Verilog file for this
@@ -54,11 +54,9 @@
 // (in parentheses) to your own signal names.
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
-ex4_IterativeSorterFSM_0_0 your_instance_name (
+ex4_iterative_sorter_0_0 your_instance_name (
   .clk(clk),            // input wire clk
   .reset(reset),        // input wire reset
-  .finished(finished),  // output wire finished
-  .led(led),            // output wire [7 : 0] led
   .data_in(data_in),    // input wire [511 : 0] data_in
   .data_out(data_out)  // output wire [511 : 0] data_out
 );

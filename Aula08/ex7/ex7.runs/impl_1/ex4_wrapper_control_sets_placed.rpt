@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Thu Apr 14 12:12:09 2016
+| Date         : Thu Apr 14 22:48:49 2016
 | Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 | Command      : report_control_sets -verbose -file ex4_wrapper_control_sets_placed.rpt
 | Design       : ex4_wrapper
@@ -22,8 +22,8 @@ Table of Contents
 +-------------------------------------------------------------------+-------+
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |    36 |
-| Minimum Number of register sites lost to control set restrictions |     9 |
+| Number of unique control sets                                     |     5 |
+| Minimum Number of register sites lost to control set restrictions |    22 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,57 +33,26 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              31 |           12 |
+| No           | No                    | No                     |              17 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             514 |          184 |
+| No           | Yes                   | No                     |            1036 |          496 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             542 |          170 |
+| Yes          | Yes                   | No                     |              21 |            7 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+----------------------------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |                    Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+----------------------------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/counter[5]_i_1_n_0   | btnC_IBUF        |                2 |              6 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[25][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[14][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[15][15]_i_1_n_0 | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[16][15]_i_1_n_0 | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[17][15]_i_1_n_0 | btnC_IBUF        |                6 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[18][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[19][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[23][15]_i_1_n_0 | btnC_IBUF        |                6 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[24][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[13][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[26][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[27][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[1][15]_i_1_n_0  | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[20][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[21][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[22][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[0][15]_i_1_n_0  | btnC_IBUF        |                2 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[12][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[11][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[10][15]_i_1_n_0 | btnC_IBUF        |                6 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[9][15]_i_1_n_0  | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[8][15]_i_1_n_0  | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[7][15]_i_1_n_0  | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[6][15]_i_1_n_0  | btnC_IBUF        |                6 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[5][15]_i_1_n_0  | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[4][15]_i_1_n_0  | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[3][15]_i_1_n_0  | btnC_IBUF        |                6 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[31][15]_i_1_n_0 | btnC_IBUF        |                4 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[30][15]_i_1_n_0 | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[2][15]_i_1_n_0  | btnC_IBUF        |                5 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[29][15]_i_1_n_0 | btnC_IBUF        |                7 |             16 |
-|  clk_IBUF_BUFG | ex4_i/IterativeSorterFSM_0/U0/MyAr[28][15]_i_1_n_0 | btnC_IBUF        |                6 |             16 |
-| ~clk_IBUF_BUFG | ex4_i/ROM_Reader1_0/U0/addr_in[4]_i_1_n_0          | btnC_IBUF        |               10 |             24 |
-|  clk_IBUF_BUFG |                                                    |                  |               12 |             31 |
-| ~clk_IBUF_BUFG |                                                    | btnC_IBUF        |              184 |            514 |
-+----------------+----------------------------------------------------+------------------+------------------+----------------+
++----------------+----------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                 Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | ex4_i/iterative_sorter_0/U0/cycle[4]_i_1_n_0 | btnL_IBUF        |                2 |              5 |
+| ~clk_IBUF_BUFG | ex4_i/ROM_Reader1_0/U0/addr_in[4]_i_1_n_0    | btnC_IBUF        |                5 |             16 |
+|  clk_IBUF_BUFG |                                              |                  |                5 |             17 |
+| ~clk_IBUF_BUFG |                                              | btnC_IBUF        |              261 |            514 |
+|  clk_IBUF_BUFG |                                              | btnL_IBUF        |              235 |            522 |
++----------------+----------------------------------------------+------------------+------------------+----------------+
 
 

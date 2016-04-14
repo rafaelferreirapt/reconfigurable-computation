@@ -46,36 +46,51 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: ua.pt:user:IterativeSorterFSM:1.0
+-- IP VLNV: user.org:user:iterative_sorter:1.0
 -- IP Revision: 2
 
--- The following code must appear in the VHDL architecture header.
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
 
-------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
-COMPONENT ex4_IterativeSorterFSM_0_0
+ENTITY ex4_iterative_sorter_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
     reset : IN STD_LOGIC;
-    finished : OUT STD_LOGIC;
-    led : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     data_in : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
     data_out : OUT STD_LOGIC_VECTOR(511 DOWNTO 0)
   );
-END COMPONENT;
--- COMP_TAG_END ------ End COMPONENT Declaration ------------
+END ex4_iterative_sorter_0_0;
 
--- The following code must appear in the VHDL architecture
--- body. Substitute your own instance name and net names.
+ARCHITECTURE ex4_iterative_sorter_0_0_arch OF ex4_iterative_sorter_0_0 IS
+  ATTRIBUTE DowngradeIPIdentifiedWarnings : string;
+  ATTRIBUTE DowngradeIPIdentifiedWarnings OF ex4_iterative_sorter_0_0_arch: ARCHITECTURE IS "yes";
 
-------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
-your_instance_name : ex4_IterativeSorterFSM_0_0
-  PORT MAP (
-    clk => clk,
-    reset => reset,
-    finished => finished,
-    led => led,
-    data_in => data_in,
-    data_out => data_out
-  );
--- INST_TAG_END ------ End INSTANTIATION Template ---------
-
+  COMPONENT iterative_sorter IS
+    GENERIC (
+      how_many_words : INTEGER;
+      word_length : INTEGER
+    );
+    PORT (
+      clk : IN STD_LOGIC;
+      reset : IN STD_LOGIC;
+      data_in : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
+      data_out : OUT STD_LOGIC_VECTOR(511 DOWNTO 0)
+    );
+  END COMPONENT iterative_sorter;
+  ATTRIBUTE X_INTERFACE_INFO : STRING;
+  ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
+  ATTRIBUTE X_INTERFACE_INFO OF reset: SIGNAL IS "xilinx.com:signal:reset:1.0 reset RST";
+BEGIN
+  U0 : iterative_sorter
+    GENERIC MAP (
+      how_many_words => 32,
+      word_length => 16
+    )
+    PORT MAP (
+      clk => clk,
+      reset => reset,
+      data_in => data_in,
+      data_out => data_out
+    );
+END ex4_iterative_sorter_0_0_arch;

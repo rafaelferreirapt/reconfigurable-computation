@@ -147,20 +147,14 @@ proc create_root_design { parentCell } {
   # Create ports
   set an [ create_bd_port -dir O -from 7 -to 0 an ]
   set btnC [ create_bd_port -dir I btnC ]
+  set btnL [ create_bd_port -dir I btnL ]
+  set btnR [ create_bd_port -dir I btnR ]
   set clk [ create_bd_port -dir I clk ]
-  set led [ create_bd_port -dir O -from 7 -to 0 led ]
   set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
   set sw [ create_bd_port -dir I -from 4 -to 0 sw ]
 
   # Create instance: EightDisplayControl_0, and set properties
   set EightDisplayControl_0 [ create_bd_cell -type ip -vlnv ua.pt:user:EightDisplayControl:1.0 EightDisplayControl_0 ]
-
-  # Create instance: IterativeSorterFSM_0, and set properties
-  set IterativeSorterFSM_0 [ create_bd_cell -type ip -vlnv ua.pt:user:IterativeSorterFSM:1.0 IterativeSorterFSM_0 ]
-  set_property -dict [ list \
-CONFIG.L {32} \
-CONFIG.M {16} \
- ] $IterativeSorterFSM_0
 
   # Create instance: ROM_Reader1_0, and set properties
   set ROM_Reader1_0 [ create_bd_cell -type ip -vlnv user.org:user:ROM_Reader1:1.0 ROM_Reader1_0 ]
@@ -168,6 +162,29 @@ CONFIG.M {16} \
 CONFIG.address_bits {5} \
 CONFIG.data_width {16} \
  ] $ROM_Reader1_0
+
+  # Create instance: blk_mem_gen_0, and set properties
+  set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0 ]
+  set_property -dict [ list \
+CONFIG.Byte_Size {9} \
+CONFIG.Enable_32bit_Address {false} \
+CONFIG.Enable_A {Always_Enabled} \
+CONFIG.Enable_B {Use_ENB_Pin} \
+CONFIG.Fill_Remaining_Memory_Locations {true} \
+CONFIG.Memory_Type {True_Dual_Port_RAM} \
+CONFIG.Port_B_Clock {100} \
+CONFIG.Port_B_Enable_Rate {100} \
+CONFIG.Port_B_Write_Rate {50} \
+CONFIG.Read_Width_A {512} \
+CONFIG.Read_Width_B {512} \
+CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+CONFIG.Use_Byte_Write_Enable {false} \
+CONFIG.Use_RSTA_Pin {false} \
+CONFIG.Write_Width_A {512} \
+CONFIG.Write_Width_B {512} \
+CONFIG.use_bram_block {Stand_Alone} \
+ ] $blk_mem_gen_0
 
   # Create instance: blk_mem_gen_1, and set properties
   set blk_mem_gen_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1 ]
@@ -190,11 +207,24 @@ CONFIG.Write_Width_B {16} \
 CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_1
 
+  # Create instance: iterative_sorter_0, and set properties
+  set iterative_sorter_0 [ create_bd_cell -type ip -vlnv user.org:user:iterative_sorter:1.0 iterative_sorter_0 ]
+  set_property -dict [ list \
+CONFIG.word_length {16} \
+ ] $iterative_sorter_0
+
   # Create instance: smart_mux_0, and set properties
   set smart_mux_0 [ create_bd_cell -type ip -vlnv user.org:user:smart_mux:1.0 smart_mux_0 ]
   set_property -dict [ list \
 CONFIG.addres_bits {5} \
  ] $smart_mux_0
+
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+  set_property -dict [ list \
+CONFIG.CONST_VAL {0} \
+CONFIG.CONST_WIDTH {13} \
+ ] $xlconstant_0
 
   # Create instance: xlslice_0, and set properties
   set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
@@ -235,14 +265,18 @@ CONFIG.DOUT_WIDTH {4} \
   # Create port connections
   connect_bd_net -net EightDisplayControl_0_segments [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
   connect_bd_net -net EightDisplayControl_0_select_display [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
-  connect_bd_net -net IterativeSorterFSM_0_led [get_bd_ports led] [get_bd_pins IterativeSorterFSM_0/led]
   connect_bd_net -net ROM_Reader1_0_addr [get_bd_pins ROM_Reader1_0/addr] [get_bd_pins blk_mem_gen_1/addra]
-  connect_bd_net -net ROM_Reader1_0_data_out [get_bd_pins IterativeSorterFSM_0/data_in] [get_bd_pins ROM_Reader1_0/data_out] [get_bd_pins smart_mux_0/port_in]
+  connect_bd_net -net ROM_Reader1_0_data_out [get_bd_pins ROM_Reader1_0/data_out] [get_bd_pins iterative_sorter_0/data_in]
+  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins smart_mux_0/port_in]
   connect_bd_net -net blk_mem_gen_1_douta [get_bd_pins ROM_Reader1_0/data_in] [get_bd_pins blk_mem_gen_1/douta]
-  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins IterativeSorterFSM_0/reset] [get_bd_pins ROM_Reader1_0/rst]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins EightDisplayControl_0/clk] [get_bd_pins IterativeSorterFSM_0/clk] [get_bd_pins ROM_Reader1_0/clk] [get_bd_pins blk_mem_gen_1/clka]
+  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins ROM_Reader1_0/rst]
+  connect_bd_net -net btnL_1 [get_bd_ports btnL] [get_bd_pins iterative_sorter_0/reset]
+  connect_bd_net -net btnR_1 [get_bd_ports btnR] [get_bd_pins blk_mem_gen_0/wea]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins EightDisplayControl_0/clk] [get_bd_pins ROM_Reader1_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins iterative_sorter_0/clk]
+  connect_bd_net -net iterative_sorter_0_data_out [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins iterative_sorter_0/data_out]
   connect_bd_net -net smart_mux_0_port_out [get_bd_pins smart_mux_0/port_out] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din]
   connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins smart_mux_0/select_port]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins EightDisplayControl_0/rightR] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins EightDisplayControl_0/near_rightR] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net xlslice_2_Dout [get_bd_pins EightDisplayControl_0/near_leftR] [get_bd_pins xlslice_2/Dout]
@@ -254,36 +288,43 @@ CONFIG.DOUT_WIDTH {4} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
-preplace port btnC -pg 1 -y 200 -defaultsOSRD
-preplace port clk -pg 1 -y 160 -defaultsOSRD
-preplace portBus sw -pg 1 -y 400 -defaultsOSRD
-preplace portBus an -pg 1 -y 450 -defaultsOSRD
-preplace portBus led -pg 1 -y 260 -defaultsOSRD
-preplace portBus seg -pg 1 -y 470 -defaultsOSRD
-preplace inst ROM_Reader1_0 -pg 1 -lvl 2 -y 180 -defaultsOSRD
-preplace inst EightDisplayControl_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 2 -y 380 -defaultsOSRD
-preplace inst smart_mux_0 -pg 1 -lvl 1 -y 390 -defaultsOSRD
-preplace inst IterativeSorterFSM_0 -pg 1 -lvl 3 -y 260 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 2 -y 470 -defaultsOSRD
-preplace inst xlslice_2 -pg 1 -lvl 2 -y 560 -defaultsOSRD
-preplace inst xlslice_3 -pg 1 -lvl 2 -y 650 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 3 -y 90 -defaultsOSRD
-preplace netloc xlslice_3_Dout 1 2 1 580
-preplace netloc xlslice_1_Dout 1 2 1 560
-preplace netloc blk_mem_gen_1_douta 1 1 2 290 110 NJ
-preplace netloc smart_mux_0_port_out 1 1 1 290
-preplace netloc btnC_1 1 0 3 NJ 200 280 250 NJ
-preplace netloc clk_1 1 0 3 NJ 160 280 90 590
-preplace netloc xlslice_2_Dout 1 2 1 590
-preplace netloc ROM_Reader1_0_addr 1 2 1 570
+preplace port btnL -pg 1 -y 450 -defaultsOSRD
+preplace port btnC -pg 1 -y 110 -defaultsOSRD
+preplace port btnR -pg 1 -y 660 -defaultsOSRD
+preplace port clk -pg 1 -y 20 -defaultsOSRD
+preplace portBus sw -pg 1 -y 600 -defaultsOSRD
+preplace portBus an -pg 1 -y 120 -defaultsOSRD
+preplace portBus seg -pg 1 -y 140 -defaultsOSRD
+preplace inst ROM_Reader1_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 340 -defaultsOSRD
+preplace inst smart_mux_0 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -y 250 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -y 70 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 630 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 3 -y 430 -defaultsOSRD
+preplace inst iterative_sorter_0 -pg 1 -lvl 2 -y 450 -defaultsOSRD
+preplace netloc xlslice_3_Dout 1 2 1 NJ
+preplace netloc xlslice_1_Dout 1 2 1 NJ
+preplace netloc blk_mem_gen_1_douta 1 0 3 20 520 NJ 520 NJ
+preplace netloc smart_mux_0_port_out 1 1 1 300
+preplace netloc btnC_1 1 0 1 NJ
+preplace netloc btnL_1 1 0 2 NJ 450 NJ
+preplace netloc iterative_sorter_0_data_out 1 2 1 560
+preplace netloc xlconstant_0_dout 1 2 1 NJ
+preplace netloc clk_1 1 0 3 10 430 290 530 580
+preplace netloc xlslice_2_Dout 1 2 1 NJ
+preplace netloc ROM_Reader1_0_addr 1 1 2 NJ 20 590
+preplace netloc blk_mem_gen_0_douta 1 0 3 20 650 NJ 650 N
+preplace netloc ROM_Reader1_0_data_out 1 1 1 280
 preplace netloc sw_1 1 0 1 NJ
-preplace netloc ROM_Reader1_0_data_out 1 0 3 20 280 NJ 280 570
 preplace netloc EightDisplayControl_0_select_display 1 3 1 NJ
+preplace netloc btnR_1 1 0 3 NJ 660 NJ 660 NJ
 preplace netloc EightDisplayControl_0_segments 1 3 1 NJ
-preplace netloc xlslice_0_Dout 1 2 1 570
-preplace netloc IterativeSorterFSM_0_led 1 3 1 NJ
-levelinfo -pg 1 0 150 430 730 890 -top 0 -bot 700
+preplace netloc xlslice_0_Dout 1 2 1 NJ
+levelinfo -pg 1 -10 150 430 760 920 -top 0 -bot 740
 ",
 }
 

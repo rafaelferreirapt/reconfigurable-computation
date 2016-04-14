@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date             : Thu Apr 14 12:12:59 2016
+| Date             : Thu Apr 14 22:50:08 2016
 | Host             : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 | Command          : 
 | Design           : ex4_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.128 |
-| Dynamic (W)              | 0.031 |
-| Device Static (W)        | 0.097 |
+| Total On-Chip Power (W)  | 0.261 |
+| Dynamic (W)              | 0.161 |
+| Device Static (W)        | 0.100 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 84.4  |
-| Junction Temperature (C) | 25.6  |
+| Max Ambient (C)          | 83.8  |
+| Junction Temperature (C) | 26.2  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,18 +49,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.006 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |     3026 |       --- |             --- |
-|   LUT as Logic |     0.004 |     1498 |     63400 |            2.36 |
+| Clocks         |     0.012 |        3 |       --- |             --- |
+| Slice Logic    |     0.018 |     3679 |       --- |             --- |
+|   LUT as Logic |     0.017 |     2011 |     63400 |            3.17 |
+|   Register     |    <0.001 |     1074 |    126800 |            0.85 |
 |   CARRY4       |    <0.001 |       67 |     15850 |            0.42 |
-|   Register     |    <0.001 |     1087 |    126800 |            0.86 |
 |   F7/F8 Muxes  |    <0.001 |       68 |     63400 |            0.11 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     0.005 |     1365 |       --- |             --- |
-| Block RAM      |     0.002 |      0.5 |       135 |            0.37 |
-| I/O            |     0.015 |       30 |       210 |           14.29 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.128 |          |           |                 |
+|   Others       |     0.000 |      180 |       --- |             --- |
+| Signals        |     0.027 |     2879 |       --- |             --- |
+| Block RAM      |     0.089 |     57.5 |       135 |           42.59 |
+| I/O            |     0.015 |       24 |       210 |           11.43 |
+| Static Power   |     0.100 |          |           |                 |
+| Total          |     0.261 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.032 |       0.017 |      0.015 |
+| Vccint    |       1.000 |     0.156 |       0.139 |      0.017 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
 | Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -79,7 +79,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.008 |       0.007 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -139,14 +139,245 @@ Table of Contents
 +-----------------------------------------+-----------+
 | Name                                    | Power (W) |
 +-----------------------------------------+-----------+
-| ex4_wrapper                             |     0.031 |
-|   ex4_i                                 |     0.016 |
+| ex4_wrapper                             |     0.161 |
+|   ex4_i                                 |     0.145 |
 |     EightDisplayControl_0               |    <0.001 |
 |       U0                                |    <0.001 |
-|     IterativeSorterFSM_0                |     0.005 |
-|       U0                                |     0.005 |
-|     ROM_Reader1_0                       |     0.007 |
-|       U0                                |     0.007 |
+|     ROM_Reader1_0                       |     0.009 |
+|       U0                                |     0.009 |
+|     blk_mem_gen_0                       |     0.090 |
+|       U0                                |     0.090 |
+|         inst_blk_mem_gen                |     0.090 |
+|           gnativebmg.native_blk_mem_gen |     0.090 |
+|             valid.cstr                  |     0.090 |
+|               ramloop[0].ram.r          |     0.001 |
+|                 prim_init.ram           |     0.001 |
+|               ramloop[100].ram.r        |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[101].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[102].ram.r        |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[103].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[104].ram.r        |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[105].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[106].ram.r        |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[107].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[108].ram.r        |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[109].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[10].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[110].ram.r        |     0.001 |
+|                 prim_init.ram           |     0.001 |
+|               ramloop[111].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[112].ram.r        |     0.001 |
+|                 prim_init.ram           |     0.001 |
+|               ramloop[113].ram.r        |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[11].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[12].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[13].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[14].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[15].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[16].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[17].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[18].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[19].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[1].ram.r          |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[20].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[21].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[22].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[23].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[24].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[25].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[26].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[27].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[28].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[29].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[2].ram.r          |     0.001 |
+|                 prim_init.ram           |     0.001 |
+|               ramloop[30].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[31].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[32].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[33].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[34].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[35].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[36].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[37].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[38].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[39].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[3].ram.r          |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[40].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[41].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[42].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[43].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[44].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[45].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[46].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[47].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[48].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[49].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[4].ram.r          |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[50].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[51].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[52].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[53].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[54].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[55].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[56].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[57].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[58].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[59].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[5].ram.r          |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[60].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[61].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[62].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[63].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[64].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[65].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[66].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[67].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[68].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[69].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[6].ram.r          |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[70].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[71].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[72].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[73].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[74].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[75].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[76].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[77].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[78].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[79].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[7].ram.r          |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[80].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[81].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[82].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[83].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[84].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[85].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[86].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[87].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[88].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[89].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[8].ram.r          |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[90].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[91].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[92].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[93].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[94].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[95].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[96].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[97].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[98].ram.r         |     0.002 |
+|                 prim_init.ram           |     0.002 |
+|               ramloop[99].ram.r         |     0.000 |
+|                 prim_init.ram           |     0.000 |
+|               ramloop[9].ram.r          |     0.000 |
+|                 prim_init.ram           |     0.000 |
 |     blk_mem_gen_1                       |     0.004 |
 |       U0                                |     0.004 |
 |         inst_blk_mem_gen                |     0.004 |
@@ -154,8 +385,11 @@ Table of Contents
 |             valid.cstr                  |     0.004 |
 |               ramloop[0].ram.r          |     0.004 |
 |                 prim_init.ram           |     0.004 |
-|     smart_mux_0                         |    <0.001 |
-|       U0                                |    <0.001 |
+|     iterative_sorter_0                  |     0.040 |
+|       U0                                |     0.040 |
+|     smart_mux_0                         |     0.001 |
+|       U0                                |     0.001 |
+|     xlconstant_0                        |     0.000 |
 |     xlslice_0                           |     0.000 |
 |     xlslice_1                           |     0.000 |
 |     xlslice_2                           |     0.000 |

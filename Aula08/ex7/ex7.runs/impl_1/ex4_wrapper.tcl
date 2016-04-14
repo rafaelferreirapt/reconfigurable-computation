@@ -55,6 +55,7 @@ set rc [catch {
   set_property ip_repo_paths {
   /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.cache/ip
   /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/Projects2016/UserDefinedRepository
+  /home/cr_user_repository
 } [current_project]
   set_property ip_output_repo /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.cache/ip [current_project]
   add_files -quiet /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.runs/synth_1/ex4_wrapper.dcp
