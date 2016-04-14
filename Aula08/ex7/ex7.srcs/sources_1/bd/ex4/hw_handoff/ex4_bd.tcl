@@ -150,6 +150,7 @@ proc create_root_design { parentCell } {
   set clk [ create_bd_port -dir I clk ]
   set led [ create_bd_port -dir O -from 7 -to 0 led ]
   set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
+  set sw [ create_bd_port -dir I -from 4 -to 0 sw ]
 
   # Create instance: EightDisplayControl_0, and set properties
   set EightDisplayControl_0 [ create_bd_cell -type ip -vlnv ua.pt:user:EightDisplayControl:1.0 EightDisplayControl_0 ]
@@ -189,15 +190,63 @@ CONFIG.Write_Width_B {16} \
 CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_1
 
+  # Create instance: smart_mux_0, and set properties
+  set smart_mux_0 [ create_bd_cell -type ip -vlnv user.org:user:smart_mux:1.0 smart_mux_0 ]
+  set_property -dict [ list \
+CONFIG.addres_bits {5} \
+ ] $smart_mux_0
+
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {3} \
+CONFIG.DIN_TO {0} \
+CONFIG.DIN_WIDTH {16} \
+CONFIG.DOUT_WIDTH {4} \
+ ] $xlslice_0
+
+  # Create instance: xlslice_1, and set properties
+  set xlslice_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {7} \
+CONFIG.DIN_TO {4} \
+CONFIG.DIN_WIDTH {16} \
+CONFIG.DOUT_WIDTH {4} \
+ ] $xlslice_1
+
+  # Create instance: xlslice_2, and set properties
+  set xlslice_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {11} \
+CONFIG.DIN_TO {8} \
+CONFIG.DIN_WIDTH {16} \
+CONFIG.DOUT_WIDTH {4} \
+ ] $xlslice_2
+
+  # Create instance: xlslice_3, and set properties
+  set xlslice_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_3 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {15} \
+CONFIG.DIN_TO {12} \
+CONFIG.DIN_WIDTH {16} \
+CONFIG.DOUT_WIDTH {4} \
+ ] $xlslice_3
+
   # Create port connections
   connect_bd_net -net EightDisplayControl_0_segments [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
   connect_bd_net -net EightDisplayControl_0_select_display [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
   connect_bd_net -net IterativeSorterFSM_0_led [get_bd_ports led] [get_bd_pins IterativeSorterFSM_0/led]
   connect_bd_net -net ROM_Reader1_0_addr [get_bd_pins ROM_Reader1_0/addr] [get_bd_pins blk_mem_gen_1/addra]
-  connect_bd_net -net ROM_Reader1_0_data_out [get_bd_pins IterativeSorterFSM_0/data_in] [get_bd_pins ROM_Reader1_0/data_out]
+  connect_bd_net -net ROM_Reader1_0_data_out [get_bd_pins IterativeSorterFSM_0/data_in] [get_bd_pins ROM_Reader1_0/data_out] [get_bd_pins smart_mux_0/port_in]
   connect_bd_net -net blk_mem_gen_1_douta [get_bd_pins ROM_Reader1_0/data_in] [get_bd_pins blk_mem_gen_1/douta]
   connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins IterativeSorterFSM_0/reset] [get_bd_pins ROM_Reader1_0/rst]
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins EightDisplayControl_0/clk] [get_bd_pins IterativeSorterFSM_0/clk] [get_bd_pins ROM_Reader1_0/clk] [get_bd_pins blk_mem_gen_1/clka]
+  connect_bd_net -net smart_mux_0_port_out [get_bd_pins smart_mux_0/port_out] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din]
+  connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins smart_mux_0/select_port]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins EightDisplayControl_0/rightR] [get_bd_pins xlslice_0/Dout]
+  connect_bd_net -net xlslice_1_Dout [get_bd_pins EightDisplayControl_0/near_rightR] [get_bd_pins xlslice_1/Dout]
+  connect_bd_net -net xlslice_2_Dout [get_bd_pins EightDisplayControl_0/near_leftR] [get_bd_pins xlslice_2/Dout]
+  connect_bd_net -net xlslice_3_Dout [get_bd_pins EightDisplayControl_0/leftR] [get_bd_pins xlslice_3/Dout]
 
   # Create address segments
 
@@ -206,23 +255,35 @@ CONFIG.use_bram_block {Stand_Alone} \
    guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
 preplace port btnC -pg 1 -y 200 -defaultsOSRD
-preplace port clk -pg 1 -y 100 -defaultsOSRD
-preplace portBus an -pg 1 -y 430 -defaultsOSRD
-preplace portBus led -pg 1 -y 250 -defaultsOSRD
-preplace portBus seg -pg 1 -y 450 -defaultsOSRD
-preplace inst ROM_Reader1_0 -pg 1 -lvl 1 -y 180 -defaultsOSRD
-preplace inst EightDisplayControl_0 -pg 1 -lvl 2 -y 440 -defaultsOSRD
-preplace inst IterativeSorterFSM_0 -pg 1 -lvl 2 -y 250 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 2 -y 90 -defaultsOSRD
-preplace netloc blk_mem_gen_1_douta 1 0 2 30 110 NJ
-preplace netloc btnC_1 1 0 2 20 250 NJ
-preplace netloc clk_1 1 0 2 20 100 300
-preplace netloc ROM_Reader1_0_addr 1 1 1 290
-preplace netloc ROM_Reader1_0_data_out 1 1 1 290
-preplace netloc EightDisplayControl_0_select_display 1 2 1 NJ
-preplace netloc EightDisplayControl_0_segments 1 2 1 NJ
-preplace netloc IterativeSorterFSM_0_led 1 2 1 NJ
-levelinfo -pg 1 0 160 440 600 -top 0 -bot 570
+preplace port clk -pg 1 -y 160 -defaultsOSRD
+preplace portBus sw -pg 1 -y 400 -defaultsOSRD
+preplace portBus an -pg 1 -y 450 -defaultsOSRD
+preplace portBus led -pg 1 -y 260 -defaultsOSRD
+preplace portBus seg -pg 1 -y 470 -defaultsOSRD
+preplace inst ROM_Reader1_0 -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst EightDisplayControl_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 380 -defaultsOSRD
+preplace inst smart_mux_0 -pg 1 -lvl 1 -y 390 -defaultsOSRD
+preplace inst IterativeSorterFSM_0 -pg 1 -lvl 3 -y 260 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -y 470 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -y 560 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -y 650 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace netloc xlslice_3_Dout 1 2 1 580
+preplace netloc xlslice_1_Dout 1 2 1 560
+preplace netloc blk_mem_gen_1_douta 1 1 2 290 110 NJ
+preplace netloc smart_mux_0_port_out 1 1 1 290
+preplace netloc btnC_1 1 0 3 NJ 200 280 250 NJ
+preplace netloc clk_1 1 0 3 NJ 160 280 90 590
+preplace netloc xlslice_2_Dout 1 2 1 590
+preplace netloc ROM_Reader1_0_addr 1 2 1 570
+preplace netloc sw_1 1 0 1 NJ
+preplace netloc ROM_Reader1_0_data_out 1 0 3 20 280 NJ 280 570
+preplace netloc EightDisplayControl_0_select_display 1 3 1 NJ
+preplace netloc EightDisplayControl_0_segments 1 3 1 NJ
+preplace netloc xlslice_0_Dout 1 2 1 570
+preplace netloc IterativeSorterFSM_0_led 1 3 1 NJ
+levelinfo -pg 1 0 150 430 730 890 -top 0 -bot 700
 ",
 }
 

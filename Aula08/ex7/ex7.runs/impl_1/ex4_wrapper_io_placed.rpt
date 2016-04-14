@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Wed Apr 13 23:12:15 2016
+| Date         : Thu Apr 14 12:12:09 2016
 | Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 | Command      : report_io -file ex4_wrapper_io_placed.rpt
 | Design       : ex4_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            25 |
+|            30 |
 +---------------+
 
 
@@ -289,9 +289,9 @@ Table of Contents
 | R2         |             | High Range | IO_L15N_T2_DQS_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | R3         |             | High Range | IO_L11P_T1_SRCC_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | R4         |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
-| R5         |             | High Range | IO_L19N_T3_VREF_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| R6         |             | High Range | IO_L19P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| R7         |             | High Range | IO_L23P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| R5         | sw[4]       | High Range | IO_L19N_T3_VREF_34           | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| R6         | sw[3]       | High Range | IO_L19P_T3_34                | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| R7         | sw[2]       | High Range | IO_L23P_T3_34                | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | R8         | led[2]      | High Range | IO_L24P_T3_34                | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | R9         |             | Dedicated  | VCCO_0                       | VCCO        |             |       0 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | R10        |             | High Range | IO_25_14                     | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -328,8 +328,8 @@ Table of Contents
 | U5         |             | High Range | VCCO_34                      | VCCO        |             |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
 | U6         | led[7]      | High Range | IO_L22N_T3_34                | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | U7         | led[6]      | High Range | IO_L22P_T3_34                | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
-| U8         |             | High Range | IO_25_34                     | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| U9         |             | High Range | IO_L21P_T3_DQS_34            | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| U8         | sw[1]       | High Range | IO_25_34                     | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| U9         | sw[0]       | High Range | IO_L21P_T3_DQS_34            | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | U10        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | U11        |             | High Range | IO_L19N_T3_A09_D25_VREF_14   | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | U12        |             | High Range | IO_L20P_T3_A08_D24_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |

@@ -48,6 +48,7 @@ set_msg_config -id {HDL 9-1654} -limit 100000
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_property webtalk.parent_dir /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.cache/wt [current_project]
   set_property parent.project_path /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.xpr [current_project]
@@ -57,6 +58,8 @@ set rc [catch {
 } [current_project]
   set_property ip_output_repo /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.cache/ip [current_project]
   add_files -quiet /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.runs/synth_1/ex4_wrapper.dcp
+  read_xdc -ref ex4_smart_mux_0_0 -cells U0 /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.srcs/sources_1/bd/ex4/ip/ex4_smart_mux_0_0/constrs_1/imports/xdc/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.srcs/sources_1/bd/ex4/ip/ex4_smart_mux_0_0/constrs_1/imports/xdc/Nexys4_Master.xdc]
   read_xdc /media/psf/Home/Development/ect_ua/reconfigurable-computation/Aula08/ex7/ex7.srcs/constrs_1/imports/xdc/Nexys4_Master.xdc
   link_design -top ex4_wrapper -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

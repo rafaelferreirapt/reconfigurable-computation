@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Wed Apr 13 23:12:50 2016
+| Date         : Thu Apr 14 12:12:58 2016
 | Host         : ubuntu running 64-bit Ubuntu 14.04.1 LTS
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ex4_wrapper_timing_summary_routed.rpt -rpx ex4_wrapper_timing_summary_routed.rpx
 | Design       : ex4_wrapper
@@ -81,7 +81,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 14 ports with no output delay specified. (HIGH)
+ There are 21 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -126,7 +126,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.578        0.000                      0                 1623        0.130        0.000                      0                 1623        4.500        0.000                       0                  1082  
+      0.431        0.000                      0                 1639        0.121        0.000                      0                 1639        4.500        0.000                       0                  1090  
 
 
 All user specified timing constraints are met.
@@ -149,7 +149,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         0.578        0.000                      0                 1623        0.130        0.000                      0                 1623        4.500        0.000                       0                  1082  
+sys_clk_pin         0.431        0.000                      0                 1639        0.121        0.000                      0                 1639        4.500        0.000                       0                  1090  
 
 
 ------------------------------------------------------------------------------------------------
@@ -180,27 +180,27 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.578ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.130ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.431ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.121ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.578ns  (required time - arrival time)
+Slack (MET) :             0.431ns  (required time - arrival time)
   Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[500]/D
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[4]/D
                             (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.312ns  (logic 2.578ns (59.780%)  route 1.734ns (40.220%))
+  Data Path Delay:        4.496ns  (logic 2.578ns (57.344%)  route 1.918ns (42.656%))
   Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.158ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.698ns = ( 9.698 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.108ns
+  Clock Path Skew:        -0.071ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.775ns = ( 9.775 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.099ns
     Clock Pessimism Removal (CPR):    0.252ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -217,15 +217,15 @@ Slack (MET) :             0.578ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.750     5.108    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
+                         net (fo=1089, routed)        1.740     5.099    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[8])
-                                                      2.454     7.562 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOADO[8]
-                         net (fo=32, routed)          1.734     9.297    ex4_i/ROM_Reader1_0/U0/data_in[4]
-    SLICE_X62Y97         LUT6 (Prop_lut6_I3_O)        0.124     9.421 r  ex4_i/ROM_Reader1_0/U0/data_tmp[500]_i_1/O
-                         net (fo=1, routed)           0.000     9.421    ex4_i/ROM_Reader1_0/U0/data_tmp[500]_i_1_n_0
-    SLICE_X62Y97         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[500]/D
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[8])
+                                                      2.454     7.553 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOADO[8]
+                         net (fo=32, routed)          1.918     9.470    ex4_i/ROM_Reader1_0/U0/data_in[4]
+    SLICE_X86Y115        LUT6 (Prop_lut6_I3_O)        0.124     9.594 r  ex4_i/ROM_Reader1_0/U0/data_tmp[4]_i_1/O
+                         net (fo=1, routed)           0.000     9.594    ex4_i/ROM_Reader1_0/U0/data_tmp[4]_i_1_n_0
+    SLICE_X86Y115        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin fall edge)
@@ -235,30 +235,30 @@ Slack (MET) :             0.578ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683     8.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.512     9.698    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X62Y97         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[500]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.950    
-                         clock uncertainty           -0.035     9.914    
-    SLICE_X62Y97         FDRE (Setup_fdre_C_D)        0.084     9.998    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[500]
+                         net (fo=1089, routed)        1.590     9.775    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X86Y115        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[4]/C  (IS_INVERTED)
+                         clock pessimism              0.252    10.027    
+                         clock uncertainty           -0.035     9.992    
+    SLICE_X86Y115        FDRE (Setup_fdre_C_D)        0.034    10.026    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[4]
   -------------------------------------------------------------------
-                         required time                          9.998    
-                         arrival time                          -9.421    
+                         required time                         10.026    
+                         arrival time                          -9.594    
   -------------------------------------------------------------------
-                         slack                                  0.578    
+                         slack                                  0.431    
 
-Slack (MET) :             0.586ns  (required time - arrival time)
+Slack (MET) :             0.478ns  (required time - arrival time)
   Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[447]/D
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[76]/D
                             (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.304ns  (logic 2.578ns (59.904%)  route 1.726ns (40.096%))
+  Data Path Delay:        4.439ns  (logic 2.578ns (58.083%)  route 1.861ns (41.917%))
   Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.159ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.694ns = ( 9.694 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
+  Clock Path Skew:        -0.082ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.765ns = ( 9.765 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
     Clock Pessimism Removal (CPR):    0.252ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -275,15 +275,15 @@ Slack (MET) :             0.586ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[11])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[11]
-                         net (fo=32, routed)          1.726     9.285    ex4_i/ROM_Reader1_0/U0/data_in[15]
-    SLICE_X58Y92         LUT6 (Prop_lut6_I3_O)        0.124     9.409 r  ex4_i/ROM_Reader1_0/U0/data_tmp[447]_i_1/O
-                         net (fo=1, routed)           0.000     9.409    ex4_i/ROM_Reader1_0/U0/data_tmp[447]_i_1_n_0
-    SLICE_X58Y92         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[447]/D
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[8])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[8]
+                         net (fo=32, routed)          1.861     9.414    ex4_i/ROM_Reader1_0/U0/data_in[12]
+    SLICE_X82Y122        LUT6 (Prop_lut6_I3_O)        0.124     9.538 r  ex4_i/ROM_Reader1_0/U0/data_tmp[76]_i_1/O
+                         net (fo=1, routed)           0.000     9.538    ex4_i/ROM_Reader1_0/U0/data_tmp[76]_i_1_n_0
+    SLICE_X82Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[76]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin fall edge)
@@ -293,30 +293,204 @@ Slack (MET) :             0.586ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683     8.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.508     9.694    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X58Y92         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[447]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.946    
-                         clock uncertainty           -0.035     9.910    
-    SLICE_X58Y92         FDRE (Setup_fdre_C_D)        0.084     9.994    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[447]
+                         net (fo=1089, routed)        1.580     9.765    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X82Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[76]/C  (IS_INVERTED)
+                         clock pessimism              0.252    10.017    
+                         clock uncertainty           -0.035     9.982    
+    SLICE_X82Y122        FDRE (Setup_fdre_C_D)        0.034    10.016    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[76]
   -------------------------------------------------------------------
-                         required time                          9.994    
-                         arrival time                          -9.409    
+                         required time                         10.016    
+                         arrival time                          -9.538    
   -------------------------------------------------------------------
-                         slack                                  0.586    
+                         slack                                  0.478    
 
-Slack (MET) :             0.593ns  (required time - arrival time)
+Slack (MET) :             0.480ns  (required time - arrival time)
+  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[44]/D
+                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.435ns  (logic 2.578ns (58.135%)  route 1.857ns (41.865%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.082ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.765ns = ( 9.765 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
+    Clock Pessimism Removal (CPR):    0.252ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.780     3.262    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[8])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[8]
+                         net (fo=32, routed)          1.857     9.410    ex4_i/ROM_Reader1_0/U0/data_in[12]
+    SLICE_X82Y122        LUT6 (Prop_lut6_I3_O)        0.124     9.534 r  ex4_i/ROM_Reader1_0/U0/data_tmp[44]_i_1/O
+                         net (fo=1, routed)           0.000     9.534    ex4_i/ROM_Reader1_0/U0/data_tmp[44]_i_1_n_0
+    SLICE_X82Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[44]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  clk (IN)
+                         net (fo=0)                   0.000     5.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.683     8.094    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.580     9.765    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X82Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[44]/C  (IS_INVERTED)
+                         clock pessimism              0.252    10.017    
+                         clock uncertainty           -0.035     9.982    
+    SLICE_X82Y122        FDRE (Setup_fdre_C_D)        0.032    10.014    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[44]
+  -------------------------------------------------------------------
+                         required time                         10.014    
+                         arrival time                          -9.534    
+  -------------------------------------------------------------------
+                         slack                                  0.480    
+
+Slack (MET) :             0.492ns  (required time - arrival time)
+  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[475]/D
+                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.328ns  (logic 2.578ns (59.571%)  route 1.750ns (40.429%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.180ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.667ns = ( 9.667 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
+    Clock Pessimism Removal (CPR):    0.252ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.780     3.262    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[3]
+                         net (fo=32, routed)          1.750     9.303    ex4_i/ROM_Reader1_0/U0/data_in[11]
+    SLICE_X69Y122        LUT6 (Prop_lut6_I3_O)        0.124     9.427 r  ex4_i/ROM_Reader1_0/U0/data_tmp[475]_i_1/O
+                         net (fo=1, routed)           0.000     9.427    ex4_i/ROM_Reader1_0/U0/data_tmp[475]_i_1_n_0
+    SLICE_X69Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[475]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  clk (IN)
+                         net (fo=0)                   0.000     5.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.683     8.094    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.482     9.667    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X69Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[475]/C  (IS_INVERTED)
+                         clock pessimism              0.252     9.919    
+                         clock uncertainty           -0.035     9.884    
+    SLICE_X69Y122        FDRE (Setup_fdre_C_D)        0.035     9.919    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[475]
+  -------------------------------------------------------------------
+                         required time                          9.919    
+                         arrival time                          -9.427    
+  -------------------------------------------------------------------
+                         slack                                  0.492    
+
+Slack (MET) :             0.492ns  (required time - arrival time)
+  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[60]/D
+                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.427ns  (logic 2.578ns (58.227%)  route 1.849ns (41.773%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.079ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.768ns = ( 9.768 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
+    Clock Pessimism Removal (CPR):    0.252ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.780     3.262    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[8])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[8]
+                         net (fo=32, routed)          1.849     9.403    ex4_i/ROM_Reader1_0/U0/data_in[12]
+    SLICE_X82Y120        LUT6 (Prop_lut6_I3_O)        0.124     9.527 r  ex4_i/ROM_Reader1_0/U0/data_tmp[60]_i_1/O
+                         net (fo=1, routed)           0.000     9.527    ex4_i/ROM_Reader1_0/U0/data_tmp[60]_i_1_n_0
+    SLICE_X82Y120        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[60]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  clk (IN)
+                         net (fo=0)                   0.000     5.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.683     8.094    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.583     9.768    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X82Y120        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[60]/C  (IS_INVERTED)
+                         clock pessimism              0.252    10.020    
+                         clock uncertainty           -0.035     9.985    
+    SLICE_X82Y120        FDRE (Setup_fdre_C_D)        0.034    10.019    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[60]
+  -------------------------------------------------------------------
+                         required time                         10.019    
+                         arrival time                          -9.527    
+  -------------------------------------------------------------------
+                         slack                                  0.492    
+
+Slack (MET) :             0.502ns  (required time - arrival time)
   Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[480]/D
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[485]/D
                             (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.295ns  (logic 2.578ns (60.022%)  route 1.717ns (39.978%))
+  Data Path Delay:        4.316ns  (logic 2.578ns (59.735%)  route 1.738ns (40.265%))
   Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.158ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.698ns = ( 9.698 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.108ns
+  Clock Path Skew:        -0.180ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.666ns = ( 9.666 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.099ns
     Clock Pessimism Removal (CPR):    0.252ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -333,15 +507,15 @@ Slack (MET) :             0.593ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.750     5.108    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
+                         net (fo=1089, routed)        1.740     5.099    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
-                                                      2.454     7.562 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOADO[0]
-                         net (fo=32, routed)          1.717     9.279    ex4_i/ROM_Reader1_0/U0/data_in[0]
-    SLICE_X62Y97         LUT6 (Prop_lut6_I3_O)        0.124     9.403 r  ex4_i/ROM_Reader1_0/U0/data_tmp[480]_i_1/O
-                         net (fo=1, routed)           0.000     9.403    ex4_i/ROM_Reader1_0/U0/data_tmp[480]_i_1_n_0
-    SLICE_X62Y97         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[480]/D
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[9])
+                                                      2.454     7.553 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOADO[9]
+                         net (fo=32, routed)          1.738     9.290    ex4_i/ROM_Reader1_0/U0/data_in[5]
+    SLICE_X68Y123        LUT6 (Prop_lut6_I3_O)        0.124     9.414 r  ex4_i/ROM_Reader1_0/U0/data_tmp[485]_i_1/O
+                         net (fo=1, routed)           0.000     9.414    ex4_i/ROM_Reader1_0/U0/data_tmp[485]_i_1_n_0
+    SLICE_X68Y123        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[485]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin fall edge)
@@ -351,30 +525,30 @@ Slack (MET) :             0.593ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683     8.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.512     9.698    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X62Y97         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[480]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.950    
-                         clock uncertainty           -0.035     9.914    
-    SLICE_X62Y97         FDRE (Setup_fdre_C_D)        0.082     9.996    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[480]
+                         net (fo=1089, routed)        1.481     9.666    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X68Y123        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[485]/C  (IS_INVERTED)
+                         clock pessimism              0.252     9.918    
+                         clock uncertainty           -0.035     9.883    
+    SLICE_X68Y123        FDRE (Setup_fdre_C_D)        0.034     9.917    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[485]
   -------------------------------------------------------------------
-                         required time                          9.996    
-                         arrival time                          -9.403    
+                         required time                          9.917    
+                         arrival time                          -9.414    
   -------------------------------------------------------------------
-                         slack                                  0.593    
+                         slack                                  0.502    
 
-Slack (MET) :             0.606ns  (required time - arrival time)
+Slack (MET) :             0.511ns  (required time - arrival time)
   Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[253]/D
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[430]/D
                             (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.238ns  (logic 2.578ns (60.833%)  route 1.660ns (39.167%))
+  Data Path Delay:        4.306ns  (logic 2.578ns (59.867%)  route 1.728ns (40.133%))
   Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.155ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.698ns = ( 9.698 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
+  Clock Path Skew:        -0.181ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.666ns = ( 9.666 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
     Clock Pessimism Removal (CPR):    0.252ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -391,15 +565,15 @@ Slack (MET) :             0.606ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[9])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[9]
-                         net (fo=32, routed)          1.660     9.219    ex4_i/ROM_Reader1_0/U0/data_in[13]
-    SLICE_X69Y96         LUT6 (Prop_lut6_I3_O)        0.124     9.343 r  ex4_i/ROM_Reader1_0/U0/data_tmp[253]_i_1/O
-                         net (fo=1, routed)           0.000     9.343    ex4_i/ROM_Reader1_0/U0/data_tmp[253]_i_1_n_0
-    SLICE_X69Y96         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[253]/D
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[10])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[10]
+                         net (fo=32, routed)          1.728     9.282    ex4_i/ROM_Reader1_0/U0/data_in[14]
+    SLICE_X69Y123        LUT6 (Prop_lut6_I3_O)        0.124     9.406 r  ex4_i/ROM_Reader1_0/U0/data_tmp[430]_i_1/O
+                         net (fo=1, routed)           0.000     9.406    ex4_i/ROM_Reader1_0/U0/data_tmp[430]_i_1_n_0
+    SLICE_X69Y123        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[430]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin fall edge)
@@ -409,30 +583,88 @@ Slack (MET) :             0.606ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683     8.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.512     9.698    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X69Y96         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[253]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.950    
-                         clock uncertainty           -0.035     9.914    
-    SLICE_X69Y96         FDRE (Setup_fdre_C_D)        0.035     9.949    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[253]
+                         net (fo=1089, routed)        1.481     9.666    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X69Y123        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[430]/C  (IS_INVERTED)
+                         clock pessimism              0.252     9.918    
+                         clock uncertainty           -0.035     9.883    
+    SLICE_X69Y123        FDRE (Setup_fdre_C_D)        0.034     9.917    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[430]
   -------------------------------------------------------------------
-                         required time                          9.949    
-                         arrival time                          -9.343    
+                         required time                          9.917    
+                         arrival time                          -9.406    
   -------------------------------------------------------------------
-                         slack                                  0.606    
+                         slack                                  0.511    
 
-Slack (MET) :             0.613ns  (required time - arrival time)
+Slack (MET) :             0.512ns  (required time - arrival time)
+  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[25]/D
+                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.402ns  (logic 2.578ns (58.560%)  route 1.824ns (41.440%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.082ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.765ns = ( 9.765 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
+    Clock Pessimism Removal (CPR):    0.252ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.780     3.262    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[1])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[1]
+                         net (fo=32, routed)          1.824     9.378    ex4_i/ROM_Reader1_0/U0/data_in[9]
+    SLICE_X83Y122        LUT6 (Prop_lut6_I3_O)        0.124     9.502 r  ex4_i/ROM_Reader1_0/U0/data_tmp[25]_i_1/O
+                         net (fo=1, routed)           0.000     9.502    ex4_i/ROM_Reader1_0/U0/data_tmp[25]_i_1_n_0
+    SLICE_X83Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  clk (IN)
+                         net (fo=0)                   0.000     5.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.683     8.094    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        1.580     9.765    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X83Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[25]/C  (IS_INVERTED)
+                         clock pessimism              0.252    10.017    
+                         clock uncertainty           -0.035     9.982    
+    SLICE_X83Y122        FDRE (Setup_fdre_C_D)        0.032    10.014    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[25]
+  -------------------------------------------------------------------
+                         required time                         10.014    
+                         arrival time                          -9.502    
+  -------------------------------------------------------------------
+                         slack                                  0.512    
+
+Slack (MET) :             0.516ns  (required time - arrival time)
   Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[496]/D
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[439]/D
                             (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.228ns  (logic 2.578ns (60.981%)  route 1.650ns (39.019%))
+  Data Path Delay:        4.305ns  (logic 2.578ns (59.888%)  route 1.727ns (40.112%))
   Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.158ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.698ns = ( 9.698 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.108ns
+  Clock Path Skew:        -0.177ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.669ns = ( 9.669 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.099ns
     Clock Pessimism Removal (CPR):    0.252ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -449,15 +681,15 @@ Slack (MET) :             0.613ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.750     5.108    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
+                         net (fo=1089, routed)        1.740     5.099    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
-                                                      2.454     7.562 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOADO[0]
-                         net (fo=32, routed)          1.650     9.212    ex4_i/ROM_Reader1_0/U0/data_in[0]
-    SLICE_X67Y96         LUT6 (Prop_lut6_I3_O)        0.124     9.336 r  ex4_i/ROM_Reader1_0/U0/data_tmp[496]_i_1/O
-                         net (fo=1, routed)           0.000     9.336    ex4_i/ROM_Reader1_0/U0/data_tmp[496]_i_1_n_0
-    SLICE_X67Y96         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[496]/D
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[11])
+                                                      2.454     7.553 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOADO[11]
+                         net (fo=32, routed)          1.727     9.280    ex4_i/ROM_Reader1_0/U0/data_in[7]
+    SLICE_X71Y121        LUT6 (Prop_lut6_I3_O)        0.124     9.404 r  ex4_i/ROM_Reader1_0/U0/data_tmp[439]_i_1/O
+                         net (fo=1, routed)           0.000     9.404    ex4_i/ROM_Reader1_0/U0/data_tmp[439]_i_1_n_0
+    SLICE_X71Y121        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[439]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin fall edge)
@@ -467,30 +699,30 @@ Slack (MET) :             0.613ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683     8.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.512     9.698    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X67Y96         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[496]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.950    
-                         clock uncertainty           -0.035     9.914    
-    SLICE_X67Y96         FDRE (Setup_fdre_C_D)        0.034     9.948    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[496]
+                         net (fo=1089, routed)        1.484     9.669    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X71Y121        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[439]/C  (IS_INVERTED)
+                         clock pessimism              0.252     9.921    
+                         clock uncertainty           -0.035     9.886    
+    SLICE_X71Y121        FDRE (Setup_fdre_C_D)        0.034     9.920    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[439]
   -------------------------------------------------------------------
-                         required time                          9.948    
-                         arrival time                          -9.336    
+                         required time                          9.920    
+                         arrival time                          -9.404    
   -------------------------------------------------------------------
-                         slack                                  0.613    
+                         slack                                  0.516    
 
-Slack (MET) :             0.628ns  (required time - arrival time)
+Slack (MET) :             0.572ns  (required time - arrival time)
   Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
                             (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[186]/D
+  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[88]/D
                             (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.307ns  (logic 2.578ns (59.851%)  route 1.729ns (40.149%))
+  Data Path Delay:        4.343ns  (logic 2.578ns (59.365%)  route 1.765ns (40.635%))
   Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.790ns = ( 9.790 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
+  Clock Path Skew:        -0.082ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.765ns = ( 9.765 - 5.000 ) 
+    Source Clock Delay      (SCD):    5.100ns
     Clock Pessimism Removal (CPR):    0.252ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -507,73 +739,15 @@ Slack (MET) :             0.628ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.780     3.262    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+                         net (fo=1089, routed)        1.741     5.100    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y42         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[2])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[2]
-                         net (fo=32, routed)          1.729     9.289    ex4_i/ROM_Reader1_0/U0/data_in[10]
-    SLICE_X81Y97         LUT6 (Prop_lut6_I3_O)        0.124     9.413 r  ex4_i/ROM_Reader1_0/U0/data_tmp[186]_i_1/O
-                         net (fo=1, routed)           0.000     9.413    ex4_i/ROM_Reader1_0/U0/data_tmp[186]_i_1_n_0
-    SLICE_X81Y97         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[186]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin fall edge)
-                                                      5.000     5.000 f  
-    E3                                                0.000     5.000 f  clk (IN)
-                         net (fo=0)                   0.000     5.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.683     8.094    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.604     9.790    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X81Y97         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[186]/C  (IS_INVERTED)
-                         clock pessimism              0.252    10.042    
-                         clock uncertainty           -0.035    10.006    
-    SLICE_X81Y97         FDRE (Setup_fdre_C_D)        0.034    10.040    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[186]
-  -------------------------------------------------------------------
-                         required time                         10.040    
-                         arrival time                          -9.413    
-  -------------------------------------------------------------------
-                         slack                                  0.628    
-
-Slack (MET) :             0.633ns  (required time - arrival time)
-  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[265]/D
-                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.210ns  (logic 2.578ns (61.240%)  route 1.632ns (38.760%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.155ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.698ns = ( 9.698 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
-    Clock Pessimism Removal (CPR):    0.252ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.780     3.262    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-  -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[1])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[1]
-                         net (fo=32, routed)          1.632     9.191    ex4_i/ROM_Reader1_0/U0/data_in[9]
-    SLICE_X68Y94         LUT6 (Prop_lut6_I3_O)        0.124     9.315 r  ex4_i/ROM_Reader1_0/U0/data_tmp[265]_i_1/O
-                         net (fo=1, routed)           0.000     9.315    ex4_i/ROM_Reader1_0/U0/data_tmp[265]_i_1_n_0
-    SLICE_X68Y94         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[265]/D
+    RAMB18_X2Y42         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[0])
+                                                      2.454     7.554 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[0]
+                         net (fo=32, routed)          1.765     9.318    ex4_i/ROM_Reader1_0/U0/data_in[8]
+    SLICE_X85Y122        LUT6 (Prop_lut6_I3_O)        0.124     9.442 r  ex4_i/ROM_Reader1_0/U0/data_tmp[88]_i_1/O
+                         net (fo=1, routed)           0.000     9.442    ex4_i/ROM_Reader1_0/U0/data_tmp[88]_i_1_n_0
+    SLICE_X85Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[88]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin fall edge)
@@ -583,190 +757,16 @@ Slack (MET) :             0.633ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
                          net (fo=1, routed)           1.683     8.094    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.512     9.698    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X68Y94         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[265]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.950    
-                         clock uncertainty           -0.035     9.914    
-    SLICE_X68Y94         FDRE (Setup_fdre_C_D)        0.034     9.948    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[265]
+                         net (fo=1089, routed)        1.580     9.765    ex4_i/ROM_Reader1_0/U0/clk
+    SLICE_X85Y122        FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[88]/C  (IS_INVERTED)
+                         clock pessimism              0.252    10.017    
+                         clock uncertainty           -0.035     9.982    
+    SLICE_X85Y122        FDRE (Setup_fdre_C_D)        0.032    10.014    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[88]
   -------------------------------------------------------------------
-                         required time                          9.948    
-                         arrival time                          -9.315    
+                         required time                         10.014    
+                         arrival time                          -9.442    
   -------------------------------------------------------------------
-                         slack                                  0.633    
-
-Slack (MET) :             0.636ns  (required time - arrival time)
-  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[269]/D
-                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.205ns  (logic 2.578ns (61.309%)  route 1.627ns (38.691%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.155ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.698ns = ( 9.698 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
-    Clock Pessimism Removal (CPR):    0.252ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.780     3.262    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-  -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[9])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[9]
-                         net (fo=32, routed)          1.627     9.186    ex4_i/ROM_Reader1_0/U0/data_in[13]
-    SLICE_X69Y95         LUT6 (Prop_lut6_I3_O)        0.124     9.310 r  ex4_i/ROM_Reader1_0/U0/data_tmp[269]_i_1/O
-                         net (fo=1, routed)           0.000     9.310    ex4_i/ROM_Reader1_0/U0/data_tmp[269]_i_1_n_0
-    SLICE_X69Y95         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[269]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin fall edge)
-                                                      5.000     5.000 f  
-    E3                                                0.000     5.000 f  clk (IN)
-                         net (fo=0)                   0.000     5.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.683     8.094    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.512     9.698    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X69Y95         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[269]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.950    
-                         clock uncertainty           -0.035     9.914    
-    SLICE_X69Y95         FDRE (Setup_fdre_C_D)        0.032     9.946    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[269]
-  -------------------------------------------------------------------
-                         required time                          9.946    
-                         arrival time                          -9.310    
-  -------------------------------------------------------------------
-                         slack                                  0.636    
-
-Slack (MET) :             0.645ns  (required time - arrival time)
-  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[491]/D
-                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.247ns  (logic 2.578ns (60.699%)  route 1.669ns (39.301%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.158ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.695ns = ( 9.695 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
-    Clock Pessimism Removal (CPR):    0.252ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.780     3.262    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-  -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[3])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[3]
-                         net (fo=32, routed)          1.669     9.228    ex4_i/ROM_Reader1_0/U0/data_in[11]
-    SLICE_X60Y96         LUT6 (Prop_lut6_I3_O)        0.124     9.352 r  ex4_i/ROM_Reader1_0/U0/data_tmp[491]_i_1/O
-                         net (fo=1, routed)           0.000     9.352    ex4_i/ROM_Reader1_0/U0/data_tmp[491]_i_1_n_0
-    SLICE_X60Y96         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[491]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin fall edge)
-                                                      5.000     5.000 f  
-    E3                                                0.000     5.000 f  clk (IN)
-                         net (fo=0)                   0.000     5.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.683     8.094    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.509     9.695    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X60Y96         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[491]/C  (IS_INVERTED)
-                         clock pessimism              0.252     9.947    
-                         clock uncertainty           -0.035     9.911    
-    SLICE_X60Y96         FDRE (Setup_fdre_C_D)        0.086     9.997    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[491]
-  -------------------------------------------------------------------
-                         required time                          9.997    
-                         arrival time                          -9.352    
-  -------------------------------------------------------------------
-                         slack                                  0.645    
-
-Slack (MET) :             0.647ns  (required time - arrival time)
-  Source:                 ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/ROM_Reader1_0/U0/data_tmp_reg[170]/D
-                            (falling edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            5.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.287ns  (logic 2.578ns (60.133%)  route 1.709ns (39.867%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.789ns = ( 9.789 - 5.000 ) 
-    Source Clock Delay      (SCD):    5.105ns
-    Clock Pessimism Removal (CPR):    0.252ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.780     3.262    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.358 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.747     5.105    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
-    RAMB18_X2Y32         RAMB18E1                                     r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
-  -------------------------------------------------------------------    -------------------
-    RAMB18_X2Y32         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[2])
-                                                      2.454     7.559 r  ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/DOBDO[2]
-                         net (fo=32, routed)          1.709     9.268    ex4_i/ROM_Reader1_0/U0/data_in[10]
-    SLICE_X81Y95         LUT6 (Prop_lut6_I3_O)        0.124     9.392 r  ex4_i/ROM_Reader1_0/U0/data_tmp[170]_i_1/O
-                         net (fo=1, routed)           0.000     9.392    ex4_i/ROM_Reader1_0/U0/data_tmp[170]_i_1_n_0
-    SLICE_X81Y95         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[170]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin fall edge)
-                                                      5.000     5.000 f  
-    E3                                                0.000     5.000 f  clk (IN)
-                         net (fo=0)                   0.000     5.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         1.411     6.411 f  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.683     8.094    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     8.185 f  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        1.603     9.789    ex4_i/ROM_Reader1_0/U0/clk
-    SLICE_X81Y95         FDRE                                         r  ex4_i/ROM_Reader1_0/U0/data_tmp_reg[170]/C  (IS_INVERTED)
-                         clock pessimism              0.252    10.041    
-                         clock uncertainty           -0.035    10.005    
-    SLICE_X81Y95         FDRE (Setup_fdre_C_D)        0.034    10.039    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[170]
-  -------------------------------------------------------------------
-                         required time                         10.039    
-                         arrival time                          -9.392    
-  -------------------------------------------------------------------
-                         slack                                  0.647    
+                         slack                                  0.572    
 
 
 
@@ -774,10 +774,61 @@ Slack (MET) :             0.647ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.130ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][0]/C
+Slack (MET) :             0.121ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][2]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][0]/D
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.254ns  (logic 0.186ns (73.160%)  route 0.068ns (26.840%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.900ns
+    Source Clock Delay      (SCD):    1.393ns
+    Clock Pessimism Removal (CPR):    0.493ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.560     1.393    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X63Y111        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y111        FDRE (Prop_fdre_C_Q)         0.141     1.534 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][2]/Q
+                         net (fo=6, routed)           0.068     1.603    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][15]_0[2]
+    SLICE_X62Y111        LUT5 (Prop_lut5_I0_O)        0.045     1.648 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[18][2]_i_1/O
+                         net (fo=1, routed)           0.000     1.648    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[18]_13[2]
+    SLICE_X62Y111        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.831     1.900    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X62Y111        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][2]/C
+                         clock pessimism             -0.493     1.406    
+    SLICE_X62Y111        FDRE (Hold_fdre_C_D)         0.120     1.526    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][2]
+  -------------------------------------------------------------------
+                         required time                         -1.526    
+                         arrival time                           1.648    
+  -------------------------------------------------------------------
+                         slack                                  0.121    
+
+Slack (MET) :             0.130ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[26][4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[25][4]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -785,365 +836,8 @@ Slack (MET) :             0.130ns  (arrival time - required time)
   Data Path Delay:        0.264ns  (logic 0.186ns (70.355%)  route 0.078ns (29.645%))
   Logic Levels:           1  (LUT5=1)
   Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.939ns
-    Source Clock Delay      (SCD):    1.430ns
-    Clock Pessimism Removal (CPR):    0.495ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.597     1.430    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X75Y93         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][0]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X75Y93         FDRE (Prop_fdre_C_Q)         0.141     1.571 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][0]/Q
-                         net (fo=6, routed)           0.078     1.650    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][15]_0[0]
-    SLICE_X74Y93         LUT5 (Prop_lut5_I0_O)        0.045     1.695 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[14][0]_i_1/O
-                         net (fo=1, routed)           0.000     1.695    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[14]_17[0]
-    SLICE_X74Y93         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][0]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.870     1.939    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X74Y93         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][0]/C
-                         clock pessimism             -0.495     1.443    
-    SLICE_X74Y93         FDRE (Hold_fdre_C_D)         0.121     1.564    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][0]
-  -------------------------------------------------------------------
-                         required time                         -1.564    
-                         arrival time                           1.695    
-  -------------------------------------------------------------------
-                         slack                                  0.130    
-
-Slack (MET) :             0.152ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][11]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][11]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.285ns  (logic 0.186ns (65.209%)  route 0.099ns (34.791%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.939ns
-    Source Clock Delay      (SCD):    1.430ns
-    Clock Pessimism Removal (CPR):    0.495ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.597     1.430    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X75Y95         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][11]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X75Y95         FDRE (Prop_fdre_C_Q)         0.141     1.571 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][11]/Q
-                         net (fo=6, routed)           0.099     1.671    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[15][15]_0[11]
-    SLICE_X74Y95         LUT5 (Prop_lut5_I0_O)        0.045     1.716 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[13][11]_i_1/O
-                         net (fo=1, routed)           0.000     1.716    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[13]_18[11]
-    SLICE_X74Y95         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][11]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.870     1.939    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X74Y95         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][11]/C
-                         clock pessimism             -0.495     1.443    
-    SLICE_X74Y95         FDRE (Hold_fdre_C_D)         0.120     1.563    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][11]
-  -------------------------------------------------------------------
-                         required time                         -1.563    
-                         arrival time                           1.716    
-  -------------------------------------------------------------------
-                         slack                                  0.152    
-
-Slack (MET) :             0.153ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[22][8]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][8]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.287ns  (logic 0.186ns (64.740%)  route 0.101ns (35.260%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.902ns
-    Source Clock Delay      (SCD):    1.397ns
-    Clock Pessimism Removal (CPR):    0.491ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.564     1.397    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X63Y84         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[22][8]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X63Y84         FDRE (Prop_fdre_C_Q)         0.141     1.538 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[22][8]/Q
-                         net (fo=6, routed)           0.101     1.640    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][15]_0[8]
-    SLICE_X62Y84         LUT5 (Prop_lut5_I2_O)        0.045     1.685 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[23][8]_i_1/O
-                         net (fo=1, routed)           0.000     1.685    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[23]_8[8]
-    SLICE_X62Y84         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][8]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.833     1.902    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X62Y84         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][8]/C
-                         clock pessimism             -0.491     1.410    
-    SLICE_X62Y84         FDRE (Hold_fdre_C_D)         0.121     1.531    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][8]
-  -------------------------------------------------------------------
-                         required time                         -1.531    
-                         arrival time                           1.685    
-  -------------------------------------------------------------------
-                         slack                                  0.153    
-
-Slack (MET) :             0.155ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[1][11]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[2][11]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.289ns  (logic 0.186ns (64.307%)  route 0.103ns (35.693%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.935ns
-    Source Clock Delay      (SCD):    1.429ns
-    Clock Pessimism Removal (CPR):    0.492ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.596     1.429    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X81Y82         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[1][11]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X81Y82         FDRE (Prop_fdre_C_Q)         0.141     1.570 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[1][11]/Q
-                         net (fo=6, routed)           0.103     1.674    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[2][15]_0[11]
-    SLICE_X80Y82         LUT5 (Prop_lut5_I0_O)        0.045     1.719 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[2][11]_i_1/O
-                         net (fo=1, routed)           0.000     1.719    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[2]_29[11]
-    SLICE_X80Y82         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[2][11]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.866     1.935    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X80Y82         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[2][11]/C
-                         clock pessimism             -0.492     1.442    
-    SLICE_X80Y82         FDRE (Hold_fdre_C_D)         0.121     1.563    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[2][11]
-  -------------------------------------------------------------------
-                         required time                         -1.563    
-                         arrival time                           1.719    
-  -------------------------------------------------------------------
-                         slack                                  0.155    
-
-Slack (MET) :             0.155ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][5]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][5]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.289ns  (logic 0.186ns (64.293%)  route 0.103ns (35.707%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.939ns
-    Source Clock Delay      (SCD):    1.430ns
-    Clock Pessimism Removal (CPR):    0.495ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.597     1.430    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X75Y93         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][5]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X75Y93         FDRE (Prop_fdre_C_Q)         0.141     1.571 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][5]/Q
-                         net (fo=6, routed)           0.103     1.675    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][15]_0[5]
-    SLICE_X74Y93         LUT5 (Prop_lut5_I0_O)        0.045     1.720 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[14][5]_i_1/O
-                         net (fo=1, routed)           0.000     1.720    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[14]_17[5]
-    SLICE_X74Y93         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][5]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.870     1.939    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X74Y93         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][5]/C
-                         clock pessimism             -0.495     1.443    
-    SLICE_X74Y93         FDRE (Hold_fdre_C_D)         0.121     1.564    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][5]
-  -------------------------------------------------------------------
-                         required time                         -1.564    
-                         arrival time                           1.720    
-  -------------------------------------------------------------------
-                         slack                                  0.155    
-
-Slack (MET) :             0.167ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[30][9]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[31][9]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.287ns  (logic 0.190ns (66.172%)  route 0.097ns (33.828%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.909ns
-    Source Clock Delay      (SCD):    1.401ns
-    Clock Pessimism Removal (CPR):    0.494ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.568     1.401    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X64Y96         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[30][9]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X64Y96         FDRE (Prop_fdre_C_Q)         0.141     1.542 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[30][9]/Q
-                         net (fo=6, routed)           0.097     1.639    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[31][15]_0[9]
-    SLICE_X65Y96         LUT3 (Prop_lut3_I0_O)        0.049     1.688 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[31][9]_i_1/O
-                         net (fo=1, routed)           0.000     1.688    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[31]_0[9]
-    SLICE_X65Y96         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[31][9]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.840     1.909    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X65Y96         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[31][9]/C
-                         clock pessimism             -0.494     1.414    
-    SLICE_X65Y96         FDRE (Hold_fdre_C_D)         0.107     1.521    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[31][9]
-  -------------------------------------------------------------------
-                         required time                         -1.521    
-                         arrival time                           1.688    
-  -------------------------------------------------------------------
-                         slack                                  0.167    
-
-Slack (MET) :             0.167ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[22][12]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][12]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.301ns  (logic 0.186ns (61.704%)  route 0.115ns (38.296%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.902ns
-    Source Clock Delay      (SCD):    1.397ns
-    Clock Pessimism Removal (CPR):    0.491ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.564     1.397    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X63Y84         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[22][12]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X63Y84         FDRE (Prop_fdre_C_Q)         0.141     1.538 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[22][12]/Q
-                         net (fo=6, routed)           0.115     1.654    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][15]_0[12]
-    SLICE_X62Y84         LUT5 (Prop_lut5_I2_O)        0.045     1.699 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[23][12]_i_1/O
-                         net (fo=1, routed)           0.000     1.699    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[23]_8[12]
-    SLICE_X62Y84         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][12]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.833     1.902    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X62Y84         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][12]/C
-                         clock pessimism             -0.491     1.410    
-    SLICE_X62Y84         FDRE (Hold_fdre_C_D)         0.121     1.531    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][12]
-  -------------------------------------------------------------------
-                         required time                         -1.531    
-                         arrival time                           1.699    
-  -------------------------------------------------------------------
-                         slack                                  0.167    
-
-Slack (MET) :             0.174ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[24][5]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][5]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.308ns  (logic 0.186ns (60.310%)  route 0.122ns (39.690%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.898ns
-    Source Clock Delay      (SCD):    1.393ns
+    Destination Clock Delay (DCD):    1.887ns
+    Source Clock Delay      (SCD):    1.383ns
     Clock Pessimism Removal (CPR):    0.490ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1155,14 +849,14 @@ Slack (MET) :             0.174ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.558     0.808    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.560     1.393    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X59Y82         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[24][5]/C
+                         net (fo=1089, routed)        0.550     1.383    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X61Y122        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[26][4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X59Y82         FDRE (Prop_fdre_C_Q)         0.141     1.534 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[24][5]/Q
-                         net (fo=6, routed)           0.122     1.657    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[25][15]_0[5]
-    SLICE_X60Y82         LUT5 (Prop_lut5_I0_O)        0.045     1.702 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[23][5]_i_1/O
-                         net (fo=1, routed)           0.000     1.702    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[23]_8[5]
-    SLICE_X60Y82         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][5]/D
+    SLICE_X61Y122        FDRE (Prop_fdre_C_Q)         0.141     1.524 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[26][4]/Q
+                         net (fo=6, routed)           0.078     1.603    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][15]_0[4]
+    SLICE_X60Y122        LUT5 (Prop_lut5_I0_O)        0.045     1.648 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[25][4]_i_1/O
+                         net (fo=1, routed)           0.000     1.648    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[25]_6[4]
+    SLICE_X60Y122        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[25][4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1172,30 +866,387 @@ Slack (MET) :             0.174ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.603     1.040    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.829     1.898    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X60Y82         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][5]/C
-                         clock pessimism             -0.490     1.407    
-    SLICE_X60Y82         FDRE (Hold_fdre_C_D)         0.120     1.527    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[23][5]
+                         net (fo=1089, routed)        0.817     1.887    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X60Y122        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[25][4]/C
+                         clock pessimism             -0.490     1.396    
+    SLICE_X60Y122        FDRE (Hold_fdre_C_D)         0.121     1.517    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[25][4]
+  -------------------------------------------------------------------
+                         required time                         -1.517    
+                         arrival time                           1.648    
+  -------------------------------------------------------------------
+                         slack                                  0.130    
+
+Slack (MET) :             0.130ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[28][5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.264ns  (logic 0.186ns (70.338%)  route 0.078ns (29.662%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.885ns
+    Source Clock Delay      (SCD):    1.381ns
+    Clock Pessimism Removal (CPR):    0.490ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.548     1.381    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X61Y123        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[28][5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y123        FDRE (Prop_fdre_C_Q)         0.141     1.522 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[28][5]/Q
+                         net (fo=6, routed)           0.078     1.601    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[29][15]_0[5]
+    SLICE_X60Y123        LUT5 (Prop_lut5_I0_O)        0.045     1.646 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[27][5]_i_1/O
+                         net (fo=1, routed)           0.000     1.646    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[27]_4[5]
+    SLICE_X60Y123        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.816     1.885    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X60Y123        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][5]/C
+                         clock pessimism             -0.490     1.394    
+    SLICE_X60Y123        FDRE (Hold_fdre_C_D)         0.121     1.515    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][5]
+  -------------------------------------------------------------------
+                         required time                         -1.515    
+                         arrival time                           1.646    
+  -------------------------------------------------------------------
+                         slack                                  0.130    
+
+Slack (MET) :             0.131ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][15]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][15]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.265ns  (logic 0.186ns (70.321%)  route 0.079ns (29.679%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.929ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.492ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.590     1.423    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X81Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X81Y117        FDRE (Prop_fdre_C_Q)         0.141     1.564 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][15]/Q
+                         net (fo=6, routed)           0.079     1.643    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][15]_0[15]
+    SLICE_X80Y117        LUT5 (Prop_lut5_I2_O)        0.045     1.688 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[7][15]_i_2/O
+                         net (fo=1, routed)           0.000     1.688    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[7]_24[15]
+    SLICE_X80Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.859     1.929    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X80Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][15]/C
+                         clock pessimism             -0.492     1.436    
+    SLICE_X80Y117        FDRE (Hold_fdre_C_D)         0.121     1.557    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][15]
+  -------------------------------------------------------------------
+                         required time                         -1.557    
+                         arrival time                           1.688    
+  -------------------------------------------------------------------
+                         slack                                  0.131    
+
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[30][6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[29][6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.278ns  (logic 0.186ns (66.834%)  route 0.092ns (33.166%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.886ns
+    Source Clock Delay      (SCD):    1.382ns
+    Clock Pessimism Removal (CPR):    0.490ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.549     1.382    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X63Y125        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[30][6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y125        FDRE (Prop_fdre_C_Q)         0.141     1.523 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[30][6]/Q
+                         net (fo=6, routed)           0.092     1.616    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[31][15]_0[6]
+    SLICE_X62Y125        LUT5 (Prop_lut5_I0_O)        0.045     1.661 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[29][6]_i_1/O
+                         net (fo=1, routed)           0.000     1.661    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[29]_2[6]
+    SLICE_X62Y125        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[29][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.817     1.886    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X62Y125        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[29][6]/C
+                         clock pessimism             -0.490     1.395    
+    SLICE_X62Y125        FDRE (Hold_fdre_C_D)         0.121     1.516    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[29][6]
+  -------------------------------------------------------------------
+                         required time                         -1.516    
+                         arrival time                           1.661    
+  -------------------------------------------------------------------
+                         slack                                  0.144    
+
+Slack (MET) :             0.150ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[1][7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[0][7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.294ns  (logic 0.190ns (64.530%)  route 0.104ns (35.470%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.934ns
+    Source Clock Delay      (SCD):    1.428ns
+    Clock Pessimism Removal (CPR):    0.492ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.595     1.428    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X89Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[1][7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y117        FDRE (Prop_fdre_C_Q)         0.141     1.569 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[1][7]/Q
+                         net (fo=6, routed)           0.104     1.674    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[2][15]_0[7]
+    SLICE_X88Y117        LUT3 (Prop_lut3_I0_O)        0.049     1.723 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[0][7]_i_1/O
+                         net (fo=1, routed)           0.000     1.723    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[0]_31[7]
+    SLICE_X88Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[0][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.864     1.934    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X88Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[0][7]/C
+                         clock pessimism             -0.492     1.441    
+    SLICE_X88Y117        FDRE (Hold_fdre_C_D)         0.131     1.572    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[0][7]
+  -------------------------------------------------------------------
+                         required time                         -1.572    
+                         arrival time                           1.723    
+  -------------------------------------------------------------------
+                         slack                                  0.150    
+
+Slack (MET) :             0.152ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[12][9]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[11][9]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.312ns  (logic 0.186ns (59.671%)  route 0.126ns (40.329%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.039ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.927ns
+    Source Clock Delay      (SCD):    1.418ns
+    Clock Pessimism Removal (CPR):    0.469ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.585     1.418    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X73Y114        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[12][9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X73Y114        FDRE (Prop_fdre_C_Q)         0.141     1.559 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[12][9]/Q
+                         net (fo=6, routed)           0.126     1.685    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][15]_0[9]
+    SLICE_X74Y115        LUT5 (Prop_lut5_I0_O)        0.045     1.730 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[11][9]_i_1/O
+                         net (fo=1, routed)           0.000     1.730    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[11]_20[9]
+    SLICE_X74Y115        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[11][9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.858     1.927    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X74Y115        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[11][9]/C
+                         clock pessimism             -0.469     1.457    
+    SLICE_X74Y115        FDRE (Hold_fdre_C_D)         0.121     1.578    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[11][9]
+  -------------------------------------------------------------------
+                         required time                         -1.578    
+                         arrival time                           1.730    
+  -------------------------------------------------------------------
+                         slack                                  0.152    
+
+Slack (MET) :             0.152ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[28][1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.194%)  route 0.099ns (34.806%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.885ns
+    Source Clock Delay      (SCD):    1.381ns
+    Clock Pessimism Removal (CPR):    0.490ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.548     1.381    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X61Y123        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[28][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y123        FDRE (Prop_fdre_C_Q)         0.141     1.522 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[28][1]/Q
+                         net (fo=6, routed)           0.099     1.622    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[29][15]_0[1]
+    SLICE_X60Y123        LUT5 (Prop_lut5_I0_O)        0.045     1.667 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[27][1]_i_1/O
+                         net (fo=1, routed)           0.000     1.667    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[27]_4[1]
+    SLICE_X60Y123        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.816     1.885    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X60Y123        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][1]/C
+                         clock pessimism             -0.490     1.394    
+    SLICE_X60Y123        FDRE (Hold_fdre_C_D)         0.120     1.514    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][1]
+  -------------------------------------------------------------------
+                         required time                         -1.514    
+                         arrival time                           1.667    
+  -------------------------------------------------------------------
+                         slack                                  0.152    
+
+Slack (MET) :             0.153ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.287ns  (logic 0.186ns (64.755%)  route 0.101ns (35.245%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.900ns
+    Source Clock Delay      (SCD):    1.393ns
+    Clock Pessimism Removal (CPR):    0.493ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.558     0.808    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.560     1.393    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X63Y111        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y111        FDRE (Prop_fdre_C_Q)         0.141     1.534 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][4]/Q
+                         net (fo=6, routed)           0.101     1.636    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][15]_0[4]
+    SLICE_X62Y111        LUT5 (Prop_lut5_I0_O)        0.045     1.681 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[18][4]_i_1/O
+                         net (fo=1, routed)           0.000     1.681    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[18]_13[4]
+    SLICE_X62Y111        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.603     1.040    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1089, routed)        0.831     1.900    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X62Y111        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][4]/C
+                         clock pessimism             -0.493     1.406    
+    SLICE_X62Y111        FDRE (Hold_fdre_C_D)         0.121     1.527    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[18][4]
   -------------------------------------------------------------------
                          required time                         -1.527    
-                         arrival time                           1.702    
+                         arrival time                           1.681    
   -------------------------------------------------------------------
-                         slack                                  0.174    
+                         slack                                  0.153    
 
-Slack (MET) :             0.183ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][1]/C
+Slack (MET) :             0.153ns  (arrival time - required time)
+  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][8]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][1]/D
+  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][8]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.313ns  (logic 0.186ns (59.499%)  route 0.127ns (40.501%))
+  Data Path Delay:        0.287ns  (logic 0.186ns (64.755%)  route 0.101ns (35.245%))
   Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.038ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.908ns
-    Source Clock Delay      (SCD):    1.400ns
-    Clock Pessimism Removal (CPR):    0.469ns
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.929ns
+    Source Clock Delay      (SCD):    1.423ns
+    Clock Pessimism Removal (CPR):    0.492ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -1206,65 +1257,14 @@ Slack (MET) :             0.183ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.558     0.808    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.567     1.400    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X71Y92         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][1]/C
+                         net (fo=1089, routed)        0.590     1.423    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X81Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X71Y92         FDRE (Prop_fdre_C_Q)         0.141     1.541 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][1]/Q
-                         net (fo=6, routed)           0.127     1.668    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][15]_0[1]
-    SLICE_X67Y92         LUT5 (Prop_lut5_I2_O)        0.045     1.713 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[17][1]_i_1/O
-                         net (fo=1, routed)           0.000     1.713    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[17]_14[1]
-    SLICE_X67Y92         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][1]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.603     1.040    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.839     1.908    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X67Y92         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][1]/C
-                         clock pessimism             -0.469     1.438    
-    SLICE_X67Y92         FDRE (Hold_fdre_C_D)         0.092     1.530    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[17][1]
-  -------------------------------------------------------------------
-                         required time                         -1.530    
-                         arrival time                           1.713    
-  -------------------------------------------------------------------
-                         slack                                  0.183    
-
-Slack (MET) :             0.184ns  (arrival time - required time)
-  Source:                 ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[12][8]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][8]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.312ns  (logic 0.186ns (59.625%)  route 0.126ns (40.375%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.036ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.937ns
-    Source Clock Delay      (SCD):    1.431ns
-    Clock Pessimism Removal (CPR):    0.469ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    E3                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.558     0.808    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.834 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.598     1.431    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X75Y98         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[12][8]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X75Y98         FDRE (Prop_fdre_C_Q)         0.141     1.572 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[12][8]/Q
-                         net (fo=6, routed)           0.126     1.698    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][15]_0[8]
-    SLICE_X73Y98         LUT5 (Prop_lut5_I2_O)        0.045     1.743 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[13][8]_i_1/O
-                         net (fo=1, routed)           0.000     1.743    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[13]_18[8]
-    SLICE_X73Y98         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][8]/D
+    SLICE_X81Y117        FDRE (Prop_fdre_C_Q)         0.141     1.564 r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][8]/Q
+                         net (fo=6, routed)           0.101     1.666    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][15]_0[8]
+    SLICE_X80Y117        LUT5 (Prop_lut5_I2_O)        0.045     1.711 r  ex4_i/IterativeSorterFSM_0/U0/MyAr[7][8]_i_1/O
+                         net (fo=1, routed)           0.000     1.711    ex4_i/IterativeSorterFSM_0/U0/N_MyAr[7]_24[8]
+    SLICE_X80Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1274,15 +1274,15 @@ Slack (MET) :             0.184ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.603     1.040    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.069 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1081, routed)        0.868     1.937    ex4_i/IterativeSorterFSM_0/U0/clk
-    SLICE_X73Y98         FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][8]/C
-                         clock pessimism             -0.469     1.467    
-    SLICE_X73Y98         FDRE (Hold_fdre_C_D)         0.092     1.559    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[13][8]
+                         net (fo=1089, routed)        0.859     1.929    ex4_i/IterativeSorterFSM_0/U0/clk
+    SLICE_X80Y117        FDRE                                         r  ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][8]/C
+                         clock pessimism             -0.492     1.436    
+    SLICE_X80Y117        FDRE (Hold_fdre_C_D)         0.121     1.557    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[7][8]
   -------------------------------------------------------------------
-                         required time                         -1.559    
-                         arrival time                           1.743    
+                         required time                         -1.557    
+                         arrival time                           1.711    
   -------------------------------------------------------------------
-                         slack                                  0.184    
+                         slack                                  0.153    
 
 
 
@@ -1296,36 +1296,36 @@ Period(ns):         10.000
 Sources:            { clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y32    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y32    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y42    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y42    ex4_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/CLKBWRCLK
 Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y74    ex4_i/EightDisplayControl_0/U0/div_reg[0]/C
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y76    ex4_i/EightDisplayControl_0/U0/div_reg[10]/C
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y76    ex4_i/EightDisplayControl_0/U0/div_reg[11]/C
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y77    ex4_i/EightDisplayControl_0/U0/div_reg[12]/C
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y77    ex4_i/EightDisplayControl_0/U0/div_reg[13]/C
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y77    ex4_i/EightDisplayControl_0/U0/div_reg[14]/C
-Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X86Y77    ex4_i/EightDisplayControl_0/U0/div_reg[15]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X83Y80    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[175]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X75Y94    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[179]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X77Y94    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[181]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y96    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[193]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y96    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[195]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y96    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[196]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X77Y95    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[197]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y98    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[198]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X74Y98    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[200]/C
-Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y98    ex4_i/ROM_Reader1_0/U0/data_tmp_reg[202]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X86Y78    ex4_i/EightDisplayControl_0/U0/div_reg[16]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X74Y97    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][15]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X75Y95    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][1]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X74Y93    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][3]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X74Y93    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][5]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X75Y95    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][6]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X74Y97    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[14][9]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X78Y87    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][8]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X78Y87    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[6][9]/C
-High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y91    ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[27][0]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y92    ex4_i/EightDisplayControl_0/U0/div_reg[0]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y94    ex4_i/EightDisplayControl_0/U0/div_reg[10]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y94    ex4_i/EightDisplayControl_0/U0/div_reg[11]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y95    ex4_i/EightDisplayControl_0/U0/div_reg[12]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y95    ex4_i/EightDisplayControl_0/U0/div_reg[13]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y95    ex4_i/EightDisplayControl_0/U0/div_reg[14]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X83Y95    ex4_i/EightDisplayControl_0/U0/div_reg[15]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X78Y119   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[120]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X78Y119   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[123]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X79Y119   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[124]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X79Y119   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[125]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X79Y119   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[126]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X65Y113   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[287]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y110   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[291]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X65Y114   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[296]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X66Y114   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[297]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X60Y105   ex4_i/ROM_Reader1_0/U0/data_tmp_reg[299]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X83Y92    ex4_i/EightDisplayControl_0/U0/div_reg[0]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y115   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[10][13]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X76Y115   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[10][14]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X69Y113   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[15][8]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X68Y113   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[15][9]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X67Y112   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][10]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X67Y112   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][11]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X67Y112   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][12]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X66Y113   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][13]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X66Y113   ex4_i/IterativeSorterFSM_0/U0/MyAr_reg[16][14]/C
 
 
 
